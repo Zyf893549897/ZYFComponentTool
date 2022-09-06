@@ -1,0 +1,6 @@
+framework module ZYFComponentTool {
+  umbrella header "ZYFComponentTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

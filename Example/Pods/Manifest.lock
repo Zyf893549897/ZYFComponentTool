@@ -1,0 +1,16 @@
+PODS:
+  - ZYFComponentTool (0.0.1)
+
+DEPENDENCIES:
+  - ZYFComponentTool (from `../`)
+
+EXTERNAL SOURCES:
+  ZYFComponentTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ZYFComponentTool: e9c37bee5d71b72d971bcef601ee35871d4c1881
+
+PODFILE CHECKSUM: b9f08662169e0fc57f7e0f92192dc9eb15f02b4f
+
+COCOAPODS: 1.11.2
