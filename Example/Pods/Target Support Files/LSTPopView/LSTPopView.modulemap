@@ -1,0 +1,6 @@
+module LSTPopView {
+  umbrella header "LSTPopView-umbrella.h"
+
+  export *
+  module * { export * }
+}

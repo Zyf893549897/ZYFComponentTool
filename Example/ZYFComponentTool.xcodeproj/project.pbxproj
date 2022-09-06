@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		51D590724DFC515FFB4BAB3B /* Pods_ZYFComponentTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE6B6A2B07BC2C27BAF48D59 /* Pods_ZYFComponentTool_Example.framework */; };
+		061A75EE2D82A2A0309973C6 /* libPods-ZYFComponentTool_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 344AB43FD8866C556F559580 /* libPods-ZYFComponentTool_Example.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		FA36BD45E63760258D79E5EA /* Pods_ZYFComponentTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE7AABC6EFE8D3F20D1A09CD /* Pods_ZYFComponentTool_Tests.framework */; };
+		84DA4A7C5897BD1E6E419948 /* libPods-ZYFComponentTool_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 835FBCE1A5E164D8B20637E3 /* libPods-ZYFComponentTool_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		344AB43FD8866C556F559580 /* libPods-ZYFComponentTool_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYFComponentTool_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1122EF92890306DC732CBB /* Pods-ZYFComponentTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Tests/Pods-ZYFComponentTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZYFComponentTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFComponentTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,12 +41,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		66320F99154B4E530674FFE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		835FBCE1A5E164D8B20637E3 /* libPods-ZYFComponentTool_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZYFComponentTool_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B164DA46F6256741EAD0EA52 /* Pods-ZYFComponentTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B255B7DB98C888FE424E04 /* Pods-ZYFComponentTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C70A261361909E5D08383EF0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D75F05F34D18593A6BCBC107 /* ZYFComponentTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZYFComponentTool.podspec; path = ../ZYFComponentTool.podspec; sourceTree = "<group>"; };
-		DE7AABC6EFE8D3F20D1A09CD /* Pods_ZYFComponentTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE6B6A2B07BC2C27BAF48D59 /* Pods_ZYFComponentTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCAB05FE6803F841D016C15A /* Pods-ZYFComponentTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Tests/Pods-ZYFComponentTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51D590724DFC515FFB4BAB3B /* Pods_ZYFComponentTool_Example.framework in Frameworks */,
+				061A75EE2D82A2A0309973C6 /* libPods-ZYFComponentTool_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA36BD45E63760258D79E5EA /* Pods_ZYFComponentTool_Tests.framework in Frameworks */,
+				84DA4A7C5897BD1E6E419948 /* libPods-ZYFComponentTool_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +154,8 @@
 		6A69387244B98C98C1E2E6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE6B6A2B07BC2C27BAF48D59 /* Pods_ZYFComponentTool_Example.framework */,
-				DE7AABC6EFE8D3F20D1A09CD /* Pods_ZYFComponentTool_Tests.framework */,
+				344AB43FD8866C556F559580 /* libPods-ZYFComponentTool_Example.a */,
+				835FBCE1A5E164D8B20637E3 /* libPods-ZYFComponentTool_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				2BCFFECD95519DE4015C3022 /* [CP] Embed Pods Frameworks */,
+				9A097B104FB5DCCEE5B1568F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,22 +284,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2BCFFECD95519DE4015C3022 /* [CP] Embed Pods Frameworks */ = {
+		9A097B104FB5DCCEE5B1568F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZYFComponentTool/ZYFComponentTool.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-resources.sh",
+				"${PODS_ROOT}/HXPhotoPicker/HXPhotoPicker/Resources/HXPhotoPicker.bundle",
+				"${PODS_ROOT}/KNPhotoBrowser/KNPhotoBrowser/KNPhotoBrowser/KNPhotoBrowser.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYFComponentTool.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/HXPhotoPicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/KNPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A03AEA6B39CDA46A6317042A /* [CP] Check Pods Manifest.lock */ = {

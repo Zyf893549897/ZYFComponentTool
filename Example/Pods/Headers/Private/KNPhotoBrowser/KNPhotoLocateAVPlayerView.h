@@ -1,0 +1,1 @@
+../../../KNPhotoBrowser/KNPhotoBrowser/KNPhotoBrowser/KNPhotoAVPlayer/KNPhotoLocateAVPlayerView.h

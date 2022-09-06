@@ -1,0 +1,6 @@
+module LYEmptyView {
+  umbrella header "LYEmptyView-umbrella.h"
+
+  export *
+  module * { export * }
+}

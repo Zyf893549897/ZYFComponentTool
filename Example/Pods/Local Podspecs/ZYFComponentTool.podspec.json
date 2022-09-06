@@ -1,7 +1,7 @@
 {
   "name": "ZYFComponentTool",
-  "version": "0.0.1",
-  "summary": "zhangyunfeiTool",
+  "version": "0.0.2",
+  "summary": "快速开发工具类",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zyf893549897/ZYFComponentTool",
   "license": {
@@ -13,12 +13,48 @@
   },
   "source": {
     "git": "https://github.com/Zyf893549897/ZYFComponentTool.git",
-    "tag": "0.0.1"
+    "tag": "0.0.2"
   },
   "platforms": {
     "ios": "9.0"
   },
   "swift_versions": "4.0",
   "source_files": "ZYFComponentTool/Classes/**/*.{swift,h,m,xib}",
+  "prefix_header_file": "ZYFComponentTool/Classes/PrefixHeader.pch",
+  "dependencies": {
+    "SnapKit": [
+
+    ],
+    "HXPhotoPicker": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "Kingfisher": [
+
+    ],
+    "FSPagerView": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "KNPhotoBrowser": [
+
+    ],
+    "LYEmptyView": [
+
+    ],
+    "LSTPopView": [
+
+    ],
+    "RxSwift": [
+
+    ],
+    "RxCocoa": [
+
+    ]
+  },
   "swift_version": "4.0"
 }

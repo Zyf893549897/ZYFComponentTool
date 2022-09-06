@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYFComponentTool'
-  s.version          = '0.0.1'
-  s.summary          = 'zhangyunfeiTool'
+  s.version          = '0.0.2'
+  s.summary          = '快速开发工具类'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -39,4 +39,20 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.prefix_header_file = false
+  s.prefix_header_file = 'ZYFComponentTool/Classes/PrefixHeader.pch'
+  
+  s.dependency 'SnapKit'             #自动布局
+  s.dependency 'HXPhotoPicker'       #相册
+  s.dependency 'MJRefresh'           #上下拉刷新
+  s.dependency 'Kingfisher'          #图片加载
+  s.dependency 'FSPagerView'         #banna图
+  s.dependency 'MBProgressHUD'       #提示框
+  s.dependency 'KNPhotoBrowser'      #图片浏览库
+  s.dependency 'LYEmptyView'         #无数据页面
+  s.dependency 'LSTPopView'          #各种弹框  启动广告  等 很全
+  s.dependency 'RxSwift'
+  s.dependency 'RxCocoa'
+  
 end

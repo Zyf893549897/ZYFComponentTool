@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  Pods
+//
+//  Created by issuser on 2022/3/29.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <ZYFComponentTool-Swift.h>
+
+//swift  全局 常量 oc快捷调用类
+#define Constoc [[Const_OC alloc] init]
+#define Scale(x) [Constoc scale:x]
+#define scaleFont(x) [Constoc scaleFont:x]
+#define ZYFHUD [ZYFHUDManager sharedHUDManager]
+
+/**
+ *  弱引用
+ */
+#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
+
+
+#endif /* PrefixHeader_pch */

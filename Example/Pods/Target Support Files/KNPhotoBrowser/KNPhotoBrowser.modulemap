@@ -1,0 +1,6 @@
+module KNPhotoBrowser {
+  umbrella header "KNPhotoBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}
