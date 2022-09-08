@@ -20,6 +20,13 @@
   },
   "swift_versions": "4.0",
   "source_files": "ZYFComponentTool/Classes/**/*.{swift,h,m,xib}",
+  "frameworks": [
+    "Foundation",
+    "UIKit"
+  ],
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/CommonCrypto"
+  },
   "prefix_header_file": "ZYFComponentTool/Classes/PrefixHeader.pch",
   "dependencies": {
     "SnapKit": [

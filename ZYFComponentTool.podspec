@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZYFComponentTool'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = '快速开发工具类'
 
 # This description is used to generate tags and improve search results.
@@ -40,7 +40,8 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  
+  s.frameworks =  "Foundation","UIKit"
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
   
   s.prefix_header_file = false
   s.prefix_header_file = 'ZYFComponentTool/Classes/PrefixHeader.pch'
