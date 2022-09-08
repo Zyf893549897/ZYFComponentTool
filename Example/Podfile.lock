@@ -25,7 +25,7 @@ PODS:
     - SDWebImage/Core (= 5.13.2)
   - SDWebImage/Core (5.13.2)
   - SnapKit (5.6.0)
-  - ZYFComponentTool (0.0.2):
+  - ZYFComponentTool (0.0.4):
     - FSPagerView
     - HXPhotoPicker
     - Kingfisher
@@ -77,7 +77,7 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  ZYFComponentTool: a7dfb3cefa516207f180699b9926d5b06a405eb0
+  ZYFComponentTool: 8f19ead22289c79660a149c6637e898b941116d7
 
 PODFILE CHECKSUM: 03a558c44231a28e31e6fa27bb4f82fdcaa426f7
 
