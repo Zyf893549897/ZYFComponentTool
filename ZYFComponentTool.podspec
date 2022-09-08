@@ -40,9 +40,11 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
+  
+  
   s.prefix_header_file = false
   s.prefix_header_file = 'ZYFComponentTool/Classes/PrefixHeader.pch'
-  
+#  
   s.dependency 'SnapKit'             #自动布局
   s.dependency 'HXPhotoPicker'       #相册
   s.dependency 'MJRefresh'           #上下拉刷新

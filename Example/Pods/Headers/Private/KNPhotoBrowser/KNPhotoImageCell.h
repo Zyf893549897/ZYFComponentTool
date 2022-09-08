@@ -1,1 +1,0 @@
-../../../KNPhotoBrowser/KNPhotoBrowser/KNPhotoBrowser/KNPhotoImageCell.h

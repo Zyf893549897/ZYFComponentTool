@@ -1,4 +1,4 @@
-module LYEmptyView {
+framework module LYEmptyView {
   umbrella header "LYEmptyView-umbrella.h"
 
   export *

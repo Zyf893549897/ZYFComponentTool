@@ -14,6 +14,7 @@
 #import "UIButton+ZYFCustom.h"
 #import "UILabel+YBAttributeTextTapAction.h"
 #import "FSTextView.h"
+#import "MGJRouter.h"
 #import "ZYFCustomFootRefresh.h"
 #import "ZYFFootRefresh.h"
 #import "ZYFHUDManager.h"

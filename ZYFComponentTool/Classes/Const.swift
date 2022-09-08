@@ -6,8 +6,8 @@
 //
 
 // MARK: -引入公共库-
-
 //@_exported import SnapKit
+
 
 import Foundation
 import UIKit
@@ -64,7 +64,7 @@ let ZYFColor_Random = UIColor.ColorRandomColor()
 public func scale(_ size: CGFloat) -> CGFloat {
     return size * ZYFScreenWidth / 375.0
 }
-//字体大小适配
+//字体适配
 public func scaleFont(_ font: CGFloat) -> UIFont {
     return UIFont.systemFont(ofSize: font * ZYFScreenWidth / 375.0)
 }

@@ -1,4 +1,4 @@
-module LSTPopView {
+framework module LSTPopView {
   umbrella header "LSTPopView-umbrella.h"
 
   export *

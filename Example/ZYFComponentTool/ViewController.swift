@@ -7,13 +7,15 @@
 //
 
 import UIKit
-
+import ZYFComponentTool
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .red
+        
+//        view.shadow(.right)
     }
 
     override func didReceiveMemoryWarning() {

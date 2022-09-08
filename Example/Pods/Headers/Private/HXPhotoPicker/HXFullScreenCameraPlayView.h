@@ -1,1 +1,0 @@
-../../../HXPhotoPicker/HXPhotoPicker/View/HXFullScreenCameraPlayView.h

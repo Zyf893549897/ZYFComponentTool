@@ -1,4 +1,4 @@
-module RxRelay {
+framework module RxRelay {
   umbrella header "RxRelay-umbrella.h"
 
   export *

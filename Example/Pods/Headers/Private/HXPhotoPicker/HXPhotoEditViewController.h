@@ -1,1 +1,0 @@
-../../../HXPhotoPicker/HXPhotoPicker/Controller/HXPhotoEditViewController.h

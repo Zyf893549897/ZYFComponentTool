@@ -1,1 +1,0 @@
-../../../FSPagerView/Sources/FSPagerViewObjcCompat.h

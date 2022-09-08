@@ -1,1 +1,0 @@
-../../../HXPhotoPicker/HXPhotoPicker/HXPhotoEdit/View/HXPhotoEditGraffitiColorSizeView.h
