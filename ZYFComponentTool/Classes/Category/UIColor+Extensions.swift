@@ -13,7 +13,7 @@ import UIKit
 
 public extension UIColor{
     
-    class func ColorHexColorstring(_ hexadecimal:String,_ alpha:CGFloat)->UIColor{
+    class func ColorHexColorstring(_ hexadecimal:String,_ alpha:CGFloat = 1)->UIColor{
     var cstr = hexadecimal.trimmingCharacters(in:  CharacterSet.whitespacesAndNewlines).uppercased() as NSString;
         if(cstr.length < 6){
             return UIColor.clear;

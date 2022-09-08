@@ -16,7 +16,7 @@ public extension UIBarButtonItem{
     }
     // 创建 图片 左按键
     @objc class func zyf_creatLeftImageButton(name: String?,target: Any?,action: Selector?) -> UIBarButtonItem {
-        let but = ZYFCreateImageButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), bgcolor: ZYFColor_clear, Alignment: .left, imgName: name, isbg: false, offset: 0, target: target, action: action)
+        let but = ZYFCreateImageButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), bgcolor: .clear, Alignment: .left, imgName: name, isbg: false, offset: 0, target: target, action: action)
         let item = UIBarButtonItem.init(customView: but)
         return item
     }
@@ -29,7 +29,7 @@ public extension UIBarButtonItem{
     }
     // 创建 图片 右按键
     @objc class func zyf_creatRightImageButton(name: String?,target: Any?,action: Selector?) -> UIBarButtonItem {
-        let but = ZYFCreateImageButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), bgcolor: ZYFColor_clear, Alignment: .right, imgName: name, isbg: false, offset: 0, target: target, action: action)
+        let but = ZYFCreateImageButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), bgcolor: .clear, Alignment: .right, imgName: name, isbg: false, offset: 0, target: target, action: action)
         let item = UIBarButtonItem.init(customView: but)
         return item
     }

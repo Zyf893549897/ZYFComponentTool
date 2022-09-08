@@ -36,21 +36,7 @@ public class Const_OC: NSObject {
     
     @objc public let viewHeigt_nav=ZYFviewHeigt_nav
     
-    @objc public let Color_white = ZYFColor_white
-    @objc public let Color_clear = ZYFColor_clear
-    @objc public let Color_black = ZYFColor_black
-    @objc public let Color_darkGray = ZYFColor_darkGray
-    @objc public let Color_lightGray = ZYFColor_lightGray
-    @objc public let Color_gray = ZYFColor_gray
-    @objc public let Color_red = ZYFColor_red
-    @objc public let color_blue = ZYFColor_blue
-    @objc public let Color_cyan = ZYFColor_cyan
-    @objc public let Color_green = ZYFColor_green
-    @objc public let Color_yellow = ZYFColor_yellow
-    @objc public let Color_magenta = ZYFColor_magenta
-    @objc public let Color_orange = ZYFColor_orange
-    @objc public let Color_purple = ZYFColor_purple
-    @objc public let Color_brown = ZYFColor_brown
+   
     @objc public let Color_Random = ZYFColor_Random
     
     //尺寸适配

@@ -13,13 +13,13 @@
 #import "BXNavigationController.h"
 #import "UIButton+ZYFCustom.h"
 #import "UILabel+YBAttributeTextTapAction.h"
-#import "FSTextView.h"
 #import "MGJRouter.h"
 #import "ZYFCustomFootRefresh.h"
 #import "ZYFFootRefresh.h"
 #import "ZYFHUDManager.h"
 #import "ZYFRefreshGifHeader.h"
 #import "ZYFRefreshHeader.h"
+#import "ZYFTextView.h"
 #import "ZYFTools.h"
 
 FOUNDATION_EXPORT double ZYFComponentToolVersionNumber;

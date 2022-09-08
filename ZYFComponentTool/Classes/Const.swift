@@ -43,21 +43,7 @@ let ZYF_ViewHeight = ZYFScreenHeight-(ZYF_NavHeight+ZYF_tabBarHeight)
 
 let ZYFviewHeigt_nav = ZYFScreenHeight-ZYF_NavHeight
 
-let ZYFColor_white = UIColor.white
-let ZYFColor_clear = UIColor.clear
-let ZYFColor_black = UIColor.black
-let ZYFColor_darkGray = UIColor.darkGray
-let ZYFColor_lightGray = UIColor.lightGray
-let ZYFColor_gray = UIColor.gray
-let ZYFColor_red = UIColor.red
-let ZYFColor_blue = UIColor.blue
-let ZYFColor_cyan = UIColor.cyan
-let ZYFColor_green = UIColor.green
-let ZYFColor_yellow = UIColor.yellow
-let ZYFColor_magenta = UIColor.magenta
-let ZYFColor_orange = UIColor.orange
-let ZYFColor_purple = UIColor.purple
-let ZYFColor_brown = UIColor.brown
+
 let ZYFColor_Random = UIColor.ColorRandomColor()
 
 //尺寸适配

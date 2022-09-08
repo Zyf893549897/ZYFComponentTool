@@ -20,7 +20,7 @@ public class NoDataView: UIView {
         addSubview(nodataImageView)
     }
     public lazy var nodataImageView: UIImageView = {
-        let imgView=ZYFCreatImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), imgName: "", bgcolor: ZYFColor_red, radius: 10)
+        let imgView=ZYFCreatImageView(frame: CGRect(x: 0, y: 0, width: 100, height: 100), imgName: "", bgcolor: .red, radius: 10)
         imgView.center=self.center
         return imgView
     }()

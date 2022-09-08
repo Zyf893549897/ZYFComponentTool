@@ -39,7 +39,7 @@
     UINavigationBar *appearance = [UINavigationBar appearance];
     // 1.设置导航条的背景
     appearance.translucent = NO;
-    appearance.barTintColor=Constoc.Color_white;
+    appearance.barTintColor=[UIColor whiteColor];
     // 设置文字
     NSMutableDictionary *att = [NSMutableDictionary dictionary];
     att[NSFontAttributeName] = [UIFont systemFontOfSize:20];

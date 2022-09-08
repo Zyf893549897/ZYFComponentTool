@@ -1,19 +1,25 @@
+//
+//  ZYFTextView.m
+//  ZYFComponentTool
+//
+//  Created by 张云飞 on 2022/9/8.
+//
 
-#import "FSTextView.h"
+#import "ZYFTextView.h"
 
-CGFloat const kFSTextViewPlaceholderVerticalMargin = 8.0; ///< placeholder垂直方向边距
-CGFloat const kFSTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水平方向边距
+CGFloat const kZYFTextViewPlaceholderVerticalMargin = 8.0; ///< placeholder垂直方向边距
+CGFloat const kZYFTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水平方向边距
 
-@interface FSTextView ()
+@interface ZYFTextView ()
 
-@property (nonatomic, copy) FSTextViewHandler changeHandler; ///< 文本改变Block
-@property (nonatomic, copy) FSTextViewHandler maxHandler; ///< 达到最大限制字符数Block
+@property (nonatomic, copy) ZYFTextViewHandler changeHandler; ///< 文本改变Block
+@property (nonatomic, copy) ZYFTextViewHandler maxHandler; ///< 达到最大限制字符数Block
 @property (nonatomic, strong) UILabel *placeholderLabel; ///< placeholderLabel
 @property (nonatomic, strong) UILabel* footplaceholderLabel;//尾部计数label
 @property (nonatomic, copy) NSString* footplaceholder;
 @end
 
-@implementation FSTextView
+@implementation ZYFTextView
 
 #pragma mark - Override
 
@@ -121,28 +127,28 @@ CGFloat const kFSTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水�
                                                         toItem:self
                                                      attribute:NSLayoutAttributeTop
                                                     multiplier:1.0
-                                                      constant:kFSTextViewPlaceholderVerticalMargin]];
+                                                      constant:kZYFTextViewPlaceholderVerticalMargin]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
                                                      attribute:NSLayoutAttributeLeft
                                                      relatedBy:NSLayoutRelationEqual
                                                         toItem:self
                                                      attribute:NSLayoutAttributeLeft
                                                     multiplier:1.0
-                                                      constant:kFSTextViewPlaceholderHorizontalMargin]];
+                                                      constant:kZYFTextViewPlaceholderHorizontalMargin]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
                                                      attribute:NSLayoutAttributeWidth
                                                      relatedBy:NSLayoutRelationLessThanOrEqual
                                                         toItem:self
                                                      attribute:NSLayoutAttributeWidth
                                                     multiplier:1.0
-                                                      constant:-kFSTextViewPlaceholderHorizontalMargin*2]];
+                                                      constant:-kZYFTextViewPlaceholderHorizontalMargin*2]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
                                                      attribute:NSLayoutAttributeHeight
                                                      relatedBy:NSLayoutRelationLessThanOrEqual
                                                         toItem:self
                                                      attribute:NSLayoutAttributeHeight
                                                     multiplier:1.0
-                                                      constant:-kFSTextViewPlaceholderVerticalMargin*2]];
+                                                      constant:-kZYFTextViewPlaceholderVerticalMargin*2]];
 }
 
 #pragma mark - Getter
@@ -216,28 +222,28 @@ CGFloat const kFSTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水�
                                                             toItem:self
                                                          attribute:NSLayoutAttributeBottom
                                                         multiplier:1.0
-                                                          constant:self.frame.size.height-kFSTextViewPlaceholderVerticalMargin]];
+                                                          constant:self.frame.size.height-kZYFTextViewPlaceholderVerticalMargin]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
                                                          attribute:NSLayoutAttributeRight
                                                          relatedBy:NSLayoutRelationEqual
                                                             toItem:self
                                                          attribute:NSLayoutAttributeRight
                                                         multiplier:1.0
-                                                          constant:self.frame.size.width-kFSTextViewPlaceholderHorizontalMargin]];
+                                                          constant:self.frame.size.width-kZYFTextViewPlaceholderHorizontalMargin]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
                                                          attribute:NSLayoutAttributeWidth
                                                          relatedBy:NSLayoutRelationLessThanOrEqual
                                                             toItem:self
                                                          attribute:NSLayoutAttributeWidth
                                                         multiplier:1.0
-                                                          constant:-kFSTextViewPlaceholderHorizontalMargin*2]];
+                                                          constant:-kZYFTextViewPlaceholderHorizontalMargin*2]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
                                                          attribute:NSLayoutAttributeHeight
                                                          relatedBy:NSLayoutRelationLessThanOrEqual
                                                             toItem:self
                                                          attribute:NSLayoutAttributeHeight
                                                         multiplier:1.0
-                                                          constant:-kFSTextViewPlaceholderVerticalMargin*2]];
+                                                          constant:-kZYFTextViewPlaceholderVerticalMargin*2]];
     }
 }
 - (void)setCornerRadius:(CGFloat)cornerRadius
@@ -338,12 +344,12 @@ CGFloat const kFSTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水�
     return [[self alloc] init];
 }
 
-- (void)addTextDidChangeHandler:(FSTextViewHandler)changeHandler
+- (void)addTextDidChangeHandler:(ZYFTextViewHandler)changeHandler
 {
     _changeHandler = [changeHandler copy];
 }
 
-- (void)addTextLengthDidMaxHandler:(FSTextViewHandler)maxHandler
+- (void)addTextLengthDidMaxHandler:(ZYFTextViewHandler)maxHandler
 {
     _maxHandler = [maxHandler copy];
 }

@@ -11,7 +11,7 @@ public class BaseTableViewCell: UITableViewCell {
 
     public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.backgroundColor=ZYFColor_white
+        contentView.backgroundColor = .white
         selectionStyle = .none
     }
     

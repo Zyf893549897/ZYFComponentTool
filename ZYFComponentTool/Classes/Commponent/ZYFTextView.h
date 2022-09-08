@@ -1,15 +1,22 @@
+//
+//  ZYFTextView.h
+//  ZYFComponentTool
+//
+//  Created by 张云飞 on 2022/9/8.
+//
 
 #import <UIKit/UIKit.h>
-@class FSTextView;
 
-typedef void(^FSTextViewHandler)(FSTextView *textView);
+NS_ASSUME_NONNULL_BEGIN
+
+@class ZYFTextView;
+
+typedef void(^ZYFTextViewHandler)(ZYFTextView *textView);
 
 IB_DESIGNABLE
 
-
 //带提示的文本输入框，带尾部字数统计，字数限制等
-
-@interface FSTextView : UITextView
+@interface ZYFTextView : UITextView
 @property (nonatomic, assign) BOOL showFootNumber; //是否展示尾部计数
 
 @property (nonatomic, assign) BOOL allowFirstempty; //是否允许第一个 字符为空
@@ -21,12 +28,12 @@ IB_DESIGNABLE
 /**
  设定文本改变Block回调. (切记弱化引用, 以免造成内存泄露.)
  */
-- (void)addTextDidChangeHandler:(FSTextViewHandler)eventHandler;
+- (void)addTextDidChangeHandler:(ZYFTextViewHandler)eventHandler;
 
 /**
  设定达到最大长度Block回调. (切记弱化引用, 以免造成内存泄露.)
  */
-- (void)addTextLengthDidMaxHandler:(FSTextViewHandler)maxHandler;
+- (void)addTextLengthDidMaxHandler:(ZYFTextViewHandler)maxHandler;
 
 /**
  最大限制文本长度, 默认为无穷大, 即不限制, 如果被设为 0 也同样表示不限制字符数.
@@ -74,3 +81,6 @@ IB_DESIGNABLE
 @property (nonatomic, readonly) NSString *formatText;
 
 @end
+
+
+NS_ASSUME_NONNULL_END

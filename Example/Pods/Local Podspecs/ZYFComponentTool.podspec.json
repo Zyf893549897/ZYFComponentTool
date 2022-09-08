@@ -1,6 +1,6 @@
 {
   "name": "ZYFComponentTool",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "快速开发工具类",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/Zyf893549897/ZYFComponentTool",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Zyf893549897/ZYFComponentTool.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "platforms": {
     "ios": "9.0"
