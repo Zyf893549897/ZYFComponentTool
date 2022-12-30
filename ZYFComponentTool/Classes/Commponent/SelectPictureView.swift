@@ -42,6 +42,9 @@ class SelectPictureView: UIView {
         collecView.isScrollEnabled = false
         return collecView
     }()
+    
+    
+    
     func setViewsMessage(){
         collectionView.reloadData()
         collectionView.snp.remakeConstraints { make in
