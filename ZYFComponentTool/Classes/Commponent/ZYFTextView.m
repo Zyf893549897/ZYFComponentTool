@@ -1,17 +1,6 @@
-//
-//  ZYFTextView.m
-//  ZYFComponentTool
-//
-//  Created by 张云飞 on 2022/9/8.
-//
 
 #import "ZYFTextView.h"
-
-CGFloat const kZYFTextViewPlaceholderVerticalMargin = 8.0; ///< placeholder垂直方向边距
-CGFloat const kZYFTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水平方向边距
-
 @interface ZYFTextView ()
-
 @property (nonatomic, copy) ZYFTextViewHandler changeHandler; ///< 文本改变Block
 @property (nonatomic, copy) ZYFTextViewHandler maxHandler; ///< 达到最大限制字符数Block
 @property (nonatomic, strong) UILabel *placeholderLabel; ///< placeholderLabel
@@ -93,62 +82,26 @@ CGFloat const kZYFTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水
 {
     // 基本配置 (需判断是否在Storyboard中设置了值)
     _canPerformAction = YES;
-    
     if (_maxLength == 0 || _maxLength == NSNotFound) {
-        
         _maxLength = NSUIntegerMax;
     }
     
     if (!_placeholderColor) {
-        
         _placeholderColor = [UIColor colorWithRed:0.780 green:0.780 blue:0.804 alpha:1.000];
     }
-    
     // 基本设定 (需判断是否在Storyboard中设置了值)
     if (!self.backgroundColor) {
-        
         self.backgroundColor = [UIColor whiteColor];
     }
     
     if (!self.font) {
-        
         self.font = [UIFont systemFontOfSize:15.f];
     }
-    
-    // placeholderLabel
     self.placeholderLabel.font = self.font;
     self.placeholderLabel.text = _placeholder; // 可能在Storyboard中设置了Placeholder
     self.placeholderLabel.textColor = _placeholderColor;
     [self addSubview:self.placeholderLabel];
-    // constraint
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
-                                                     attribute:NSLayoutAttributeTop
-                                                     relatedBy:NSLayoutRelationEqual
-                                                        toItem:self
-                                                     attribute:NSLayoutAttributeTop
-                                                    multiplier:1.0
-                                                      constant:kZYFTextViewPlaceholderVerticalMargin]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
-                                                     attribute:NSLayoutAttributeLeft
-                                                     relatedBy:NSLayoutRelationEqual
-                                                        toItem:self
-                                                     attribute:NSLayoutAttributeLeft
-                                                    multiplier:1.0
-                                                      constant:kZYFTextViewPlaceholderHorizontalMargin]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
-                                                     attribute:NSLayoutAttributeWidth
-                                                     relatedBy:NSLayoutRelationLessThanOrEqual
-                                                        toItem:self
-                                                     attribute:NSLayoutAttributeWidth
-                                                    multiplier:1.0
-                                                      constant:-kZYFTextViewPlaceholderHorizontalMargin*2]];
-    [self addConstraint:[NSLayoutConstraint constraintWithItem:self.placeholderLabel
-                                                     attribute:NSLayoutAttributeHeight
-                                                     relatedBy:NSLayoutRelationLessThanOrEqual
-                                                        toItem:self
-                                                     attribute:NSLayoutAttributeHeight
-                                                    multiplier:1.0
-                                                      constant:-kZYFTextViewPlaceholderVerticalMargin*2]];
+   
 }
 
 #pragma mark - Getter
@@ -193,8 +146,7 @@ CGFloat const kZYFTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水
     [self textDidChange:notification];
 }
 
-- (void)setFont:(UIFont *)font
-{
+- (void)setFont:(UIFont *)font{
     [super setFont:font];
     
     self.placeholderLabel.font = font;
@@ -209,43 +161,20 @@ CGFloat const kZYFTextViewPlaceholderHorizontalMargin = 6.0; ///< placeholder水
 -(void)setShowFootNumber:(BOOL)showFootNumber{
     _showFootNumber = showFootNumber;
     if (self.showFootNumber) {
-        // placeholderLabel
         self.footplaceholderLabel.font = self.font;
-        self.footplaceholderLabel.text = _footplaceholder;
+        self.footplaceholderLabel.text = [NSString stringWithFormat:@"0/%ld",self.maxLength];
         self.footplaceholderLabel.textColor = _placeholderColor;
         [self addSubview:self.footplaceholderLabel];
-        
-        //footplaceholderLabel
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
-                                                         attribute:NSLayoutAttributeBottom
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:self
-                                                         attribute:NSLayoutAttributeBottom
-                                                        multiplier:1.0
-                                                          constant:self.frame.size.height-kZYFTextViewPlaceholderVerticalMargin]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
-                                                         attribute:NSLayoutAttributeRight
-                                                         relatedBy:NSLayoutRelationEqual
-                                                            toItem:self
-                                                         attribute:NSLayoutAttributeRight
-                                                        multiplier:1.0
-                                                          constant:self.frame.size.width-kZYFTextViewPlaceholderHorizontalMargin]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
-                                                         attribute:NSLayoutAttributeWidth
-                                                         relatedBy:NSLayoutRelationLessThanOrEqual
-                                                            toItem:self
-                                                         attribute:NSLayoutAttributeWidth
-                                                        multiplier:1.0
-                                                          constant:-kZYFTextViewPlaceholderHorizontalMargin*2]];
-        [self addConstraint:[NSLayoutConstraint constraintWithItem:self.footplaceholderLabel
-                                                         attribute:NSLayoutAttributeHeight
-                                                         relatedBy:NSLayoutRelationLessThanOrEqual
-                                                            toItem:self
-                                                         attribute:NSLayoutAttributeHeight
-                                                        multiplier:1.0
-                                                          constant:-kZYFTextViewPlaceholderVerticalMargin*2]];
     }
 }
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    self.placeholderLabel.frame = CGRectMake(6, 5, self.frame.size.width-12, 30);
+    self.footplaceholderLabel.frame = CGRectMake(self.frame.size.width-100, self.frame.size.height-25, 90, 20);
+}
+
+
 - (void)setCornerRadius:(CGFloat)cornerRadius
 {
     _cornerRadius = cornerRadius;

@@ -22,7 +22,7 @@ public func ZYFCreatLable(frame: CGRect?,text: String?,textcolor: UIColor?,Align
     return lable
 }
 //创建 title 和 带图片 button
-public func ZYFCreateButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textcolor: UIColor?,font: CGFloat?,Alignment: UIControl.ContentHorizontalAlignment?,imgName: String?,isbg: Bool?,imgStyle: UIButtonEdgeInsetsStyle?,space: CGFloat?,offset: CGFloat?,target: Any?,action: Selector?) -> UIButton {
+public func ZYFCreateButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textcolor: UIColor?,font: UIFont?,Alignment: UIControl.ContentHorizontalAlignment?,imgName: String?,isbg: Bool?,imgStyle: ZYFUIButtonEdgeInsetsStyle?,space: CGFloat?,offset: CGFloat?,target: Any?,action: Selector?) -> UIButton {
     let button = UIButton.init()
     button.frame=frame ?? .zero
     if isbg ?? false {
@@ -38,9 +38,9 @@ public func ZYFCreateButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textc
     button.setTitleColor(textcolor ?? UIColor.clear, for: .normal)
     button.contentHorizontalAlignment=Alignment ?? .center
     // Alignment 为 left和right时  和 offset 生效
-    button.layoutButton(with: imgStyle ?? Left, imageTitleSpace: space ?? 0, offset: offset ?? 0)
+    button.layoutButton(with: imgStyle ?? img_Left, imageTitleSpace: space ?? 0, offset: offset ?? 0)
     button.backgroundColor=bgcolor ?? UIColor.clear
-    button.titleLabel?.font=scaleFont(font ?? 0)
+    button.titleLabel?.font=font
     button.addTarget(target, action: action ?? Selector(("butAction")), for: .touchUpInside)
     return button
 }
@@ -65,7 +65,7 @@ public func ZYFCreateImageButton(frame: CGRect?,bgcolor: UIColor?,Alignment: UIC
     return button
 }
 //创建文字button
-public func ZYFCreateTitleButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textcolor: UIColor?,font: CGFloat?,Alignment: UIControl.ContentHorizontalAlignment?,offset: CGFloat?,target: Any?,action: Selector?) -> UIButton {
+public func ZYFCreateTitleButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textcolor: UIColor?,font: UIFont?,Alignment: UIControl.ContentHorizontalAlignment?,offset: CGFloat?,target: Any?,action: Selector?) -> UIButton {
     let button = UIButton.init()
     button.frame=frame ?? .zero
     button.setTitle(text, for: .normal)
@@ -74,7 +74,7 @@ public func ZYFCreateTitleButton(frame: CGRect?,text: String?,bgcolor: UIColor?,
     // Alignment 为 left和right时  和 offset 生效
     button.titleOffsetDistance(offset ?? 0)
     button.backgroundColor=bgcolor ?? UIColor.clear
-    button.titleLabel?.font = scaleFont(font ?? 0)
+    button.titleLabel?.font = font
     button.addTarget(target, action: action ?? Selector(("butAction")), for: .touchUpInside)
     return button
 }
@@ -102,12 +102,12 @@ public func ZYFCreateView(frame: CGRect,bgcolor: UIColor?,radius: CGFloat) -> UI
     return view
 }
 //创建UItextfiled
-public func ZYFCreateTextfiled(frame: CGRect?,placeholder: String?,Alignment: NSTextAlignment?,font: CGFloat?,textcolor: UIColor?,bgColor: UIColor?) -> UITextField {
+public func ZYFCreateTextfiled(frame: CGRect?,placeholder: String?,Alignment: NSTextAlignment?,font: UIFont?,textcolor: UIColor?,bgColor: UIColor?) -> UITextField {
     let textfiled = UITextField.init()
     textfiled.frame=frame ?? .zero
     textfiled.placeholder=placeholder ?? ""
     textfiled.textColor=textcolor ?? UIColor.black
-    textfiled.font=scaleFont(font ?? 0)
+    textfiled.font=font
     textfiled.backgroundColor=bgColor ?? UIColor.clear
     textfiled.textAlignment=Alignment ?? .left
     return textfiled

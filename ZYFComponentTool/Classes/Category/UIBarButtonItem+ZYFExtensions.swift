@@ -10,7 +10,7 @@ import UIKit
 public extension UIBarButtonItem{
     // 创建 文字 左按键
     @objc class func zyf_creatLeftTitleButton(title: String?,bgcolor: UIColor,textColor: UIColor,target: Any?,action: Selector?) -> UIBarButtonItem {
-        let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), text: title, bgcolor: bgcolor, textcolor: textColor, font: 15, Alignment: .left, offset: 0, target: target, action: action)
+        let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), text: title, bgcolor: bgcolor, textcolor: textColor, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 15), Alignment: .left, offset: 0, target: target, action: action)
         let item = UIBarButtonItem.init(customView: but)
         return item
     }
@@ -23,7 +23,7 @@ public extension UIBarButtonItem{
     
     // 创建 文字 右按键
     @objc class func zyf_creatRightTitleButton(title: String?,bgcolor: UIColor,textColor: UIColor,target: Any?,action: Selector?) -> UIBarButtonItem {
-        let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), text: title, bgcolor: bgcolor, textcolor: textColor, font: 15, Alignment: .right, offset: 0, target: target, action: action)
+        let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 0, width: 45, height: 40), text: title, bgcolor: bgcolor, textcolor: textColor, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 15), Alignment: .right, offset: 0, target: target, action: action)
         let item = UIBarButtonItem.init(customView: but)
         return item
     }

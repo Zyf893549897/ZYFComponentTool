@@ -9,7 +9,7 @@
 *space：图片和文字之间的距离
 *offset：内容距离边界的偏移
 */
-- (void)layoutButtonWithEdgeInsetsStyle:(UIButtonEdgeInsetsStyle)style
+- (void)layoutButtonWithEdgeInsetsStyle:(ZYFUIButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space offset:(CGFloat)offset{
     CGFloat imageWith = self.currentImage.size.width;
     CGFloat imageHeight = self.currentImage.size.height;
@@ -28,12 +28,12 @@
     UIEdgeInsets labelEdgeInsets = UIEdgeInsetsZero;
     
     switch (style) {
-        case Top: {
+        case img_Top: {
             imageEdgeInsets = UIEdgeInsetsMake(-labelHeight-space, 0, 0, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith, -imageHeight-space, 0);
         }
             break;
-        case Left: {
+        case img_Left: {
             imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, space/2.0);
             labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, 0);
             if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentRight){
@@ -45,12 +45,12 @@
             }
         }
             break;
-        case Bottom: {
+        case img_Bottom: {
             imageEdgeInsets = UIEdgeInsetsMake(0, 0, -labelHeight-space, -labelWidth);
             labelEdgeInsets = UIEdgeInsetsMake(-imageHeight-space, -imageWith, 0, 0);
         }
             break;
-        case Right: {
+        case img_Right: {
             
             imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space, 0, -labelWidth-space);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space, 0, imageWith+space);

@@ -33,7 +33,7 @@ open class ZYFSheetView: UIView, UIGestureRecognizerDelegate {
         tap.delegate = self
         addGestureRecognizer(tap)
         
-        blackView=UIView.init(frame: CGRect(x: 0, y: ZYFScreenHeight - CGFloat(50*mesArr.count) - 60.0 - ZYF_TopHeight, width: ZYFScreenWidth, height: CGFloat(50*mesArr.count) + 60.0 + ZYF_TopHeight))
+        blackView=UIView.init(frame: CGRect(x: 0, y: ZYFScreenHeight - CGFloat(50*mesArr.count) - 60.0 - ZYF_BottomSafeAreaHeight, width: ZYFScreenWidth, height: CGFloat(50*mesArr.count) + 60.0 + ZYF_BottomSafeAreaHeight))
         blackView?.backgroundColor = .white
         blackView?.isUserInteractionEnabled = true
         addSubview(blackView!)
@@ -46,7 +46,7 @@ open class ZYFSheetView: UIView, UIGestureRecognizerDelegate {
         }
         
         for (index,title) in mesArr.enumerated(){
-            let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 50.0*CGFloat(index), width: ZYFScreenWidth, height: 50.0), text: title, bgcolor: .white, textcolor: UIColor.ColorHexColorstring("#00A3E0"), font: 14, Alignment: .center, offset: 0, target: self, action: #selector(butAction(but:)))
+            let but = ZYFCreateTitleButton(frame: CGRect(x: 0, y: 50.0*CGFloat(index), width: ZYFScreenWidth, height: 50.0), text: title, bgcolor: .white, textcolor: UIColor.ColorHexColorstring("#00A3E0"), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14), Alignment: .center, offset: 0, target: self, action: #selector(butAction(but:)))
             but.tag = index
             if index < mesArr.count{
                 let view = UIView.init(frame: CGRect(x: 0, y: but.endY, width: ZYFScreenWidth, height: 0.5))
@@ -59,7 +59,7 @@ open class ZYFSheetView: UIView, UIGestureRecognizerDelegate {
             blackView?.addSubview(but)
         }
         
-         let cancelBut=ZYFCreateTitleButton(frame: CGRect(x: 0, y: 50.0*CGFloat(mesArr.count) + 10.0, width: ZYFScreenWidth, height: 50), text: "取消", bgcolor: .white, textcolor: UIColor.ColorHexColorstring("#B7B7B7"), font: 14, Alignment: .center, offset: 0, target: self, action: #selector(cancelButAction))
+         let cancelBut=ZYFCreateTitleButton(frame: CGRect(x: 0, y: 50.0*CGFloat(mesArr.count) + 10.0, width: ZYFScreenWidth, height: 50), text: "取消", bgcolor: .white, textcolor: UIColor.ColorHexColorstring("#B7B7B7"), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14), Alignment: .center, offset: 0, target: self, action: #selector(cancelButAction))
     
         blackView?.addSubview(cancelBut)
     }

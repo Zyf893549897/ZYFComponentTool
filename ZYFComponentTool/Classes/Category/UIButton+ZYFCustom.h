@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 typedef enum{
-    Top,
-    Left,
-    Bottom,
-    Right,
-}UIButtonEdgeInsetsStyle;
+    img_Top,
+    img_Left,
+    img_Bottom,
+    img_Right,
+}ZYFUIButtonEdgeInsetsStyle;
 @interface UIButton (ZYFExtension)
 
 @property (nonatomic,copy) NSString *title;
@@ -26,7 +26,7 @@ typedef enum{
  *space：图片和文字之间的距离
  *offset：内容距离边界的偏移
  */
-- (void)layoutButtonWithEdgeInsetsStyle:(UIButtonEdgeInsetsStyle)style
+- (void)layoutButtonWithEdgeInsetsStyle:(ZYFUIButtonEdgeInsetsStyle)style
                         imageTitleSpace:(CGFloat)space offset:(CGFloat)offset;
 
 //偏移距离 只有文字时 设置偏移距离
