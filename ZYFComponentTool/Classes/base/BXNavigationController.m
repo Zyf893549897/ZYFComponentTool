@@ -30,7 +30,6 @@
     // 隐藏底部线条(黑线）
     [[UINavigationBar appearance] setShadowImage:[UIImage new]];
 }
-
 /**
  *  设置UIBarButtonItem的主题
  */

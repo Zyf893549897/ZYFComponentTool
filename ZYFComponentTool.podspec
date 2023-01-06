@@ -57,5 +57,6 @@ TODO: Add long description of the pod here.
   s.dependency 'LSTPopView'          #各种弹框  启动广告  等 很全
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
+  s.dependency 'Masonry'
   
 end

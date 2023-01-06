@@ -1,30 +1,29 @@
 //
-//  UITableView+ZYFExtensions.swift
-//  ZYFComponentTool
+//  Table+Extension.swift
+//  ZYFTools
 //
-//  Created by 张云飞 on 2022/9/8.
+//  Created by 幸荟 on 2022/10/13.
 //
 
 import UIKit
 
-protocol ORAReusable {
+protocol Reusable {
     static var reuseIdentifier: String { get }
 }
 
-extension ORAReusable {
+extension Reusable {
     static var reuseIdentifier: String {
         return String(describing: self)
     }
 }
+
 public extension UITableView {
-    
     //刷新cell 的高度 不刷新cell
     func refreshTableCellHeight(){
         self.beginUpdates()
         self.endUpdates()
     }
-    /// <#Description#>
-    /// - Parameter cellType: <#cellType description#>
+    
     func register<Cell: UITableViewCell>(_ cellType: Cell.Type)
     {
        register(cellType, forCellReuseIdentifier: Cell.reuseIdentifier)
@@ -40,12 +39,6 @@ public extension UITableView {
         return cell
     }
 }
-extension UITableViewCell: ORAReusable {
+extension UITableViewCell: Reusable {
     
 }
-
-
-
-
-
-

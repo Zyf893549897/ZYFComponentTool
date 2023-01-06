@@ -18,6 +18,7 @@
 #import "ZYFCustomFootRefresh.h"
 #import "ZYFFootRefresh.h"
 #import "ZYFHUDManager.h"
+#import "ZYFPlaceholderTextView.h"
 #import "ZYFRefreshGifHeader.h"
 #import "ZYFRefreshHeader.h"
 #import "ZYFTextView.h"

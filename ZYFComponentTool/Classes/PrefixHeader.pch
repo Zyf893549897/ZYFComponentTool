@@ -10,6 +10,8 @@
 
 
 #import <ZYFComponentTool/ZYFComponentTool-Swift.h>
+
+#import <Masonry/Masonry.h>
 ////swift  全局 常量 oc快捷调用类
 #define Constoc [[Const_OC alloc] init]
 //#define Scale(x) [Constoc scale:x]
