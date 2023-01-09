@@ -53,7 +53,7 @@ class TextViewController: UIViewController {
         view.textView.isScrollEnabled = false
         view.setLayer(2, 1, .red)
         view.maxLength = 1000
-        view.showFootNumber=true
+//        view.showFootNumber=true
         view.placeholder = "请输入"
         view.textView.font = UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16)
         view.placeholderFont = UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16)
