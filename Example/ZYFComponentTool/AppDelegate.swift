@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
-        let nav = UINavigationController.init(rootViewController: ViewController.init())
-        nav.navigationBar.barTintColor = .red
+        let nav = BXNavigationController.init(rootViewController: ViewController.init())
+        nav.navigationBar.isTranslucent = false
         window?.rootViewController = nav
         
         return true

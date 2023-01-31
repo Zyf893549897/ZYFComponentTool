@@ -43,7 +43,7 @@
 }
 
 //当前控制器
-+ (UIViewController *)findCurrentShowingViewController{
++ (UIViewController *)zyf_currentVC{
     //获得当前活动窗口的根视图
     UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController;
     UIViewController *currentShowingVC = [self findCurrentShowingViewControllerFrom:vc];

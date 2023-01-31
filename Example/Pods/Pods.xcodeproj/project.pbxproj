@@ -481,6 +481,8 @@
 		7A127AAF22CD735A6725F247217C09C4 /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C12B4E0DF9898973C037C2CCB1711BF /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AA799592A0E1D59141B82F0F9F6A019 /* Table+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635654F67D9BC597F27863D35EB5D7A3 /* Table+Extension.swift */; };
 		7B05A8DE072977F90AA84A0E98E23167 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA872EA4C2530AF927AD4F0C1922A6C /* MASConstraint.m */; };
+		7B4049912989116C00F58BB5 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4049902989116C00F58BB5 /* UIImageView+Extensions.swift */; };
+		7B4049932989125200F58BB5 /* ZYFTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4049922989125100F58BB5 /* ZYFTools.swift */; };
 		7BA5D9B38DAEDD6A5166ECF2A498D194 /* RxCollectionViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47101CC4F2C0FB42D1F2A919C5C72101 /* RxCollectionViewDataSourceType.swift */; };
 		7BF861D8AC8E4DB89487E1E415F0A818 /* TakeWithPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C78CA2C8DE0CAD0D7EC0B82CA9F64E /* TakeWithPredicate.swift */; };
 		7C23D514B33160775D129B21BC4D8C1D /* LYEmptyBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6D882275522C3C3B6980291EF6BED8 /* LYEmptyBaseView.m */; };
@@ -1694,6 +1696,8 @@
 		79D87AF6884A8D56E23D92547DFE731A /* KNPhotoBrowserPch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KNPhotoBrowserPch.h; path = KNPhotoBrowser/KNPhotoBrowser/KNPhotoBrowserPch.h; sourceTree = "<group>"; };
 		79FAE977273E2E44B20900AE419F7EB5 /* RxRelay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RxRelay-umbrella.h"; sourceTree = "<group>"; };
 		7ACE699C49586F113C59E40FDF261708 /* SDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAssociatedObject.m; path = SDWebImage/Private/SDAssociatedObject.m; sourceTree = "<group>"; };
+		7B4049902989116C00F58BB5 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		7B4049922989125100F58BB5 /* ZYFTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFTools.swift; sourceTree = "<group>"; };
 		7B7F23BFAA404F38FBEBE6E781A8733C /* HXAlbumListViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HXAlbumListViewController.h; path = HXPhotoPicker/Controller/HXAlbumListViewController.h; sourceTree = "<group>"; };
 		7BC62C5D56A99D472C6BFD5199BF1C9C /* HXPhotoEditConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HXPhotoEditConfiguration.h; path = HXPhotoPicker/HXPhotoEdit/HXPhotoEditConfiguration.h; sourceTree = "<group>"; };
 		7BE6192C0B0C59E4A91476B4232651E6 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Sources/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
@@ -2689,6 +2693,7 @@
 			children = (
 				5D39E3D21836E54E1A3277F4E17BDE3D /* Const.swift */,
 				DEA250C97A31395C61A8FE5E90CF569F /* Const_OC.swift */,
+				7B4049922989125100F58BB5 /* ZYFTools.swift */,
 				BC393261BA2A3C5173DFB4D60F0B4C45 /* base */,
 				67C008DE3C8DF5422FDACA1045A38BD1 /* Category */,
 				24B7417F4B5E47A77E09645A51AE1382 /* Commponent */,
@@ -3008,14 +3013,15 @@
 				2F75AC19F9F2C50F28DBACDC229ACEDA /* Collection+Extension.swift */,
 				080E096FC3F5216D6977EDE321323BDA /* Table+Extension.swift */,
 				973FED6E59ADBD26CCFB5DDC5890C5DD /* UIBarButtonItem+ZYFExtensions.swift */,
-				A42B356B17CDB04F8C736C3FB096E648 /* UIButton+ZYFCustom.h */,
-				FE365B3354F7D235321E496CC3BEA625 /* UIButton+ZYFCustom.m */,
 				F0EBEA7952F9DA33EA8D7C2514D77CC0 /* UIColor+Extensions.swift */,
 				2F9F3C1067FFE4DDA82FDC8B970BAEF8 /* UIFont+Extension.swift */,
 				FB264E0DD1AC6A28684091E69659ACB8 /* UILabel+Extensions.swift */,
+				294B3A8254B93BB62DBE87D990D7533C /* UIView+Extensions.swift */,
+				7B4049902989116C00F58BB5 /* UIImageView+Extensions.swift */,
+				A42B356B17CDB04F8C736C3FB096E648 /* UIButton+ZYFCustom.h */,
+				FE365B3354F7D235321E496CC3BEA625 /* UIButton+ZYFCustom.m */,
 				CDA0B9620A1ED98C0FBF3CAA934F8D30 /* UILabel+YBAttributeTextTapAction.h */,
 				66E580261D34B761A6C3E2D70A2D5010 /* UILabel+YBAttributeTextTapAction.m */,
-				294B3A8254B93BB62DBE87D990D7533C /* UIView+Extensions.swift */,
 				65F14EB56C5319499CD310950216ECF4 /* UIView+QJBExtension.h */,
 				0C5AE5F54511055EB042EA8C2814C576 /* UIView+QJBExtension.m */,
 			);
@@ -3429,11 +3435,11 @@
 			isa = PBXGroup;
 			children = (
 				99AEB26459378309FD21B03970823381 /* BaseTableViewCell.swift */,
-				2323E92ECBAD9196605389002676D0A7 /* BXNavigationController.h */,
-				6E8C7B4D0B0EF4192DF88844B40553B9 /* BXNavigationController.m */,
 				94DD660B58284595C88293C9A50A8999 /* ZYFBasePopView.swift */,
 				62736F2337F213F878C99046B7392B92 /* ZYFBaseViewController.swift */,
 				8D66A435C7CC93DBDE29ACD652B01C57 /* ZYFFootButBasePopView.swift */,
+				2323E92ECBAD9196605389002676D0A7 /* BXNavigationController.h */,
+				6E8C7B4D0B0EF4192DF88844B40553B9 /* BXNavigationController.m */,
 			);
 			name = base;
 			path = ZYFComponentTool/Classes/base;
@@ -5472,9 +5478,11 @@
 				D0434316F0FE3A13DE48F4969A40DEB2 /* ZYFHUDManager.m in Sources */,
 				80B7FF8D91DC4A4F3702C515AAFA44FD /* ZYFPlaceholderTextView.m in Sources */,
 				E8041A0B0E6E1D4A99CE5DE8B0A5FA44 /* ZYFRefreshFooter.swift in Sources */,
+				7B4049912989116C00F58BB5 /* UIImageView+Extensions.swift in Sources */,
 				6F5CCD54BC8C0191959EB226B12E6715 /* ZYFRefreshGifHeader.m in Sources */,
 				636C96F4E2645C718FCF6FFDEBE2F385 /* ZYFRefreshHeader.m in Sources */,
 				00459895A3F474B0C0DCDE93F325E83E /* ZYFSheetView.swift in Sources */,
+				7B4049932989125200F58BB5 /* ZYFTools.swift in Sources */,
 				B97626BC09B7063AB633E9A0BE5EF84E /* ZYFTextView.m in Sources */,
 				D8F19A653F1F53CC2D01ABD1411088B1 /* ZYFTools.m in Sources */,
 			);

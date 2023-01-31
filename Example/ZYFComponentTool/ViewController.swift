@@ -48,8 +48,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         switch indexPath.row {
         case 0:
             let vc = TextViewController.init()
-//            navigationController?.pushViewController(vc, animated: true)
-            self.present(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
+//            self.present(vc, animated: true)
         default:
             break
         }

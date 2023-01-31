@@ -120,7 +120,7 @@ public extension UIView {
     //view所处的控制器
     var currentVC:UIViewController{
         get{
-            return ZYFTools.findCurrentShowingViewController()
+            return ZYFTools.zyf_currentVC()
         }
     }
 }
@@ -137,7 +137,7 @@ public extension UIView {
         shadow(type: type, color: .black, opactiy: 0.4, shadowSize: 4)
     }
     ///常规设置
-    public func shadow(type: ShadowType, color: UIColor,  opactiy: Float, shadowSize: CGFloat) -> Void {
+    func shadow(type: ShadowType, color: UIColor,  opactiy: Float, shadowSize: CGFloat) -> Void {
         layer.masksToBounds = false;//必须要等于NO否则会把阴影切割隐藏掉
         layer.shadowColor = color.cgColor;// 阴影颜色
         layer.shadowOpacity = opactiy;// 阴影透明度，默认0

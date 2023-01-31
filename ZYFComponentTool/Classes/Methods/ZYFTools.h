@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 //根据高度度求宽度  text 计算的内容  Height 计算的高度 font字体大小
 + (CGFloat)getWidthWithText:(NSString *)text height:(CGFloat)height fontSize:(CGFloat)font;
 //当前控制器
-+ (UIViewController *)findCurrentShowingViewController;
++ (UIViewController *)zyf_currentVC;
 
 //lable 富文本 展示HTML字符串
 +(NSMutableAttributedString *)stringToAttributedstr:(NSString *)htmlString andfont:(CGFloat)font andtextColor:(UIColor *)textcolor lineSpace:(CGFloat)space;

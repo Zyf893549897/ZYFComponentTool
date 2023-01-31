@@ -13,7 +13,7 @@ class TextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        navigationItem.title = "textView"
         view.backgroundColor = .white
 //        view.addSubview(bgView)
 //        bgView.addSubview(textV)
