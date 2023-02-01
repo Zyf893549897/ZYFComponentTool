@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        setNavStyle(color: .red)
         
         tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView?.delegate = self
@@ -23,6 +23,26 @@ class ViewController: UIViewController {
             make.edges.equalToSuperview()
         }
     }
+    
+    
+    //设置导航栏颜色
+    open func setNavStyle(color: UIColor,titleColor: UIColor = HexColorstr(hexstr: "#333333")) {
+        if #available(iOS 13.0, *) {
+            let barApp = UINavigationBarAppearance.init()
+            barApp.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
+            barApp.backgroundColor = color
+            barApp.backgroundEffect = nil
+            barApp.shadowImage = UIImage.init()
+            barApp.shadowColor = .clear//底部黑线
+            navigationController?.navigationBar.scrollEdgeAppearance = barApp
+            navigationController?.navigationBar.standardAppearance = barApp
+        } else {
+            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
+            navigationController?.navigationBar.setBackgroundImage(UIImage.init(color: color), for: .any, barMetrics: .default)
+            navigationController?.navigationBar.shadowImage = UIImage.init()//底部黑线
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
