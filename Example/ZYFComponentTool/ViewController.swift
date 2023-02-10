@@ -8,40 +8,25 @@
 
 import UIKit
 import ZYFComponentTool
-class ViewController: UIViewController {
+class ViewController: ZYFBaseViewController {
     var tableView: UITableView?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setNavStyle(color: .red)
         
         tableView = UITableView.init(frame: .zero, style: .grouped)
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
         tableView!.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.equalTo(gk_navigationBar.snp.bottom)
+            make.left.right.bottom.equalTo(0)
         }
     }
     
     
-    //设置导航栏颜色
-    open func setNavStyle(color: UIColor,titleColor: UIColor = HexColorstr(hexstr: "#333333")) {
-        if #available(iOS 13.0, *) {
-            let barApp = UINavigationBarAppearance.init()
-            barApp.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
-            barApp.backgroundColor = color
-            barApp.backgroundEffect = nil
-            barApp.shadowImage = UIImage.init()
-            barApp.shadowColor = .clear//底部黑线
-            navigationController?.navigationBar.scrollEdgeAppearance = barApp
-            navigationController?.navigationBar.standardAppearance = barApp
-        } else {
-            navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: titleColor,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)]
-            navigationController?.navigationBar.setBackgroundImage(UIImage.init(color: color), for: .any, barMetrics: .default)
-            navigationController?.navigationBar.shadowImage = UIImage.init()//底部黑线
-        }
-    }
+   
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,6 +43,10 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "带收尾提示的  textview"
+        case 1:
+            cell.textLabel?.text = "button 相关工具的使用"
+        case 2:
+            cell.textLabel?.text = "label 相关工具的使用"
         default:
             break
         }
@@ -68,9 +57,17 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         switch indexPath.row {
         case 0:
             let vc = TextViewController.init()
-            navigationController?.pushViewController(vc, animated: true)
-//            self.present(vc, animated: true)
+            zyf_pushVC(vc: vc, animated: true)
+        case 1:
+            let vc = ButtonTestViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 2:
+            let vc = LabelTextViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
         default:
+            let vc = TextViewController.init()
+            vc.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(vc, animated: true)
             break
         }
     }

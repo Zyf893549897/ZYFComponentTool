@@ -15,12 +15,12 @@ class ZYFFootButBasePopView: ZYFBasePopView {
         setViewsLayout()
     }
     @objc lazy var titleLabel: UILabel={
-        let label = ZYFCreatLable(frame: CGRect.zero, text: "", textcolor: UIColor.ColorHexColorstring("#333333"), Alignment: .center, font: UIFont.setFontStlye(style: .PingFang_SC_Medium, scaleFontSize: 20), bgcolor: .clear, num: 1)
+        let label = ZYFCreatLable(frame: CGRect.zero, text: "", textcolor: UIColor.colorHexColorstring("#333333"), Alignment: .center, font: UIFont.setFontStlye(style: .PingFang_SC_Medium, scaleFontSize: 20), bgcolor: .clear, num: 1)
         return label
     }()
     
     @objc lazy var cancelBut: UIButton={
-        let but = ZYFCreateTitleButton(frame: CGRect.zero, text: "取消", bgcolor: UIColor.ColorHexColorstring("#F9F3E3"), textcolor: .gray, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16.0), Alignment: .center, offset: 0, target: self, action: #selector(cancelButAciton))
+        let but = ZYFCreateTitleButton(frame: CGRect.zero, text: "取消", bgcolor: UIColor.colorHexColorstring("#F9F3E3"), textcolor: .gray, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16.0), Alignment: .center, offset: 0, target: self, action: #selector(cancelButAciton))
         but.setlayerRadius(8, andBorderwidth: 0, andBorderColor: .clear)
         return but
     }()

@@ -8,6 +8,7 @@
 import UIKit
 import MJRefresh
 import LYEmptyView
+import GKNavigationBar
 open class ZYFBaseViewController: UIViewController{
     open override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -24,6 +25,11 @@ open class ZYFBaseViewController: UIViewController{
     open override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor=UIColor.white
+        
+        
+        //显示自定义的 navbar 需要在控制器中  使用   gk_  属性，否则显示系统导航栏
+//        gk_maxPopDistance = 40 //默认全屏 0
+        gk_navTitle = ""
         
         if #available(iOS 15.0, *) {
             baseTableView?.sectionHeaderTopPadding = 0   //.plain 属性时  起点自动向下偏移问题

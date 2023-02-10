@@ -1,5 +1,11 @@
 PODS:
+  - AxcAE_TabBar (1.0.5)
   - FSPagerView (0.8.3)
+  - GKNavigationBar (1.8.2):
+    - GKNavigationBar/GestureHandle (= 1.8.2)
+    - GKNavigationBar/NavigationBar (= 1.8.2)
+  - GKNavigationBar/GestureHandle (1.8.2)
+  - GKNavigationBar/NavigationBar (1.8.2)
   - HXPhotoPicker (3.3.1):
     - HXPhotoPicker/Default (= 3.3.1)
   - HXPhotoPicker/Default (3.3.1)
@@ -26,8 +32,13 @@ PODS:
     - SDWebImage/Core (= 5.13.2)
   - SDWebImage/Core (5.13.2)
   - SnapKit (5.6.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
   - ZYFComponentTool (0.0.5):
+    - AxcAE_TabBar
     - FSPagerView
+    - GKNavigationBar
     - HXPhotoPicker
     - Kingfisher
     - KNPhotoBrowser
@@ -39,13 +50,16 @@ PODS:
     - RxCocoa
     - RxSwift
     - SnapKit
+    - YYKit
 
 DEPENDENCIES:
   - ZYFComponentTool (from `../`)
 
 SPEC REPOS:
   trunk:
+    - AxcAE_TabBar
     - FSPagerView
+    - GKNavigationBar
     - HXPhotoPicker
     - Kingfisher
     - KNPhotoBrowser
@@ -60,13 +74,16 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
+    - YYKit
 
 EXTERNAL SOURCES:
   ZYFComponentTool:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GKNavigationBar: 206f8d5dedd5535aa3a2786dd28afdf3d59a0157
   HXPhotoPicker: f1274d0c931ad8564e0f23f33fe8b6110b639bd7
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   KNPhotoBrowser: 52e9b470754326359bc43077318f1fa532458cf8
@@ -81,8 +98,9 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  ZYFComponentTool: 2ff1d5adf6113119c01f7bde56db264c2482abfa
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZYFComponentTool: 0b8088d7a13f6bb6be7238da4621d5a327a0d65f
 
-PODFILE CHECKSUM: 03a558c44231a28e31e6fa27bb4f82fdcaa426f7
+PODFILE CHECKSUM: c9d1a4a3baf24a79ebab7da6524713d7f8dc85a5
 
 COCOAPODS: 1.11.3

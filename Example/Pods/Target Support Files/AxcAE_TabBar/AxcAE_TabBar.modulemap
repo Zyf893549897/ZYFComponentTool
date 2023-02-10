@@ -1,0 +1,6 @@
+framework module AxcAE_TabBar {
+  umbrella header "AxcAE_TabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

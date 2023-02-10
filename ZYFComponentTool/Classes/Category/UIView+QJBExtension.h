@@ -38,6 +38,8 @@ typedef enum CornerStyle{
 
 - (void)cj_showInAppWindowAnimation;
 
+//view转 image
+- (UIImage *)imageWithColors:(NSArray *)colors;
 @end
 
 NS_ASSUME_NONNULL_END

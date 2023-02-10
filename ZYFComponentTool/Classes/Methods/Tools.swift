@@ -15,5 +15,19 @@ public func timeDelay(_ delay:Double, closure:@escaping ()->()) {
 }
 //颜色
 public func HexColorstr(hexstr: String,alpha: CGFloat = 1.0) -> UIColor{
-    return UIColor.ColorHexColorstring(hexstr, alpha)
+    return UIColor.colorHexColorstring(hexstr, alpha)
+}
+
+//获取当前控制器
+public func zyf_curreVC() -> UIViewController{
+    return ZYFTools.zyf_currentVC()
+}
+
+
+//去到指定 tabbar
+func toTabarIndex(index: Int){
+//    zyf_curreVC().navigationController?.popViewController(animated: false)
+//    let tabar = UIApplication.shared.delegate?.window??.rootViewController! as! MainTabBarController
+//    zyf_curreVC().navigationController?.popToViewController((zyf_curreVC().navigationController?.viewControllers[0])!, animated: true)
+//    tabar.selectedIndex = index
 }

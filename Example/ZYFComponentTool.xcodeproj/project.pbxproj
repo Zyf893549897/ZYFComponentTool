@@ -13,8 +13,15 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */; };
+		7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE5622994EB960085C89A /* LabelTextViewController.swift */; };
 		7B404995298919F000F58BB5 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B404994298919F000F58BB5 /* header.swift */; };
 		7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3C9CC296674A600B8BC9E /* TextViewController.swift */; };
+		7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E8082993959C00750718 /* RootTabBarVC.swift */; };
+		7BD6E80B2993983700750718 /* TowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80A2993983700750718 /* TowViewController.swift */; };
+		7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80C2993984000750718 /* ThreeViewController.swift */; };
+		7BD6E80F2993984600750718 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80E2993984600750718 /* FourViewController.swift */; };
+		7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E8102993984B00750718 /* FiveViewController.swift */; };
 		AD3D5AC203E0ADDA1DFD13B1 /* Pods_ZYFComponentTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */; };
 		BBCD502364977492D024D9EA /* Pods_ZYFComponentTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA144362B56B7EAE29795C1 /* Pods_ZYFComponentTool_Example.framework */; };
 /* End PBXBuildFile section */
@@ -43,8 +50,15 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		66320F99154B4E530674FFE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
+		7B3FE5622994EB960085C89A /* LabelTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextViewController.swift; sourceTree = "<group>"; };
 		7B404994298919F000F58BB5 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
 		7BD3C9CC296674A600B8BC9E /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		7BD6E8082993959C00750718 /* RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
+		7BD6E80A2993983700750718 /* TowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowViewController.swift; sourceTree = "<group>"; };
+		7BD6E80C2993984000750718 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		7BD6E80E2993984600750718 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		7BD6E8102993984B00750718 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 		9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B164DA46F6256741EAD0EA52 /* Pods-ZYFComponentTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B255B7DB98C888FE424E04 /* Pods-ZYFComponentTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +124,15 @@
 			children = (
 				7B404994298919F000F58BB5 /* header.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				7BD6E8082993959C00750718 /* RootTabBarVC.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				7BD3C9CC296674A600B8BC9E /* TextViewController.swift */,
+				7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */,
+				7B3FE5622994EB960085C89A /* LabelTextViewController.swift */,
+				7BD6E80A2993983700750718 /* TowViewController.swift */,
+				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
+				7BD6E80E2993984600750718 /* FourViewController.swift */,
+				7BD6E8102993984B00750718 /* FiveViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -299,7 +320,9 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AxcAE_TabBar/AxcAE_TabBar.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HXPhotoPicker/HXPhotoPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/KNPhotoBrowser/KNPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -314,11 +337,14 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYFComponentTool/ZYFComponentTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AxcAE_TabBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HXPhotoPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KNPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -333,6 +359,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYFComponentTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,10 +396,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */,
 				7B404995298919F000F58BB5 /* header.swift in Sources */,
+				7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */,
+				7BD6E80B2993983700750718 /* TowViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */,
+				7BD6E80F2993984600750718 /* FourViewController.swift in Sources */,
+				7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */,
+				7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */,
+				7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +478,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -497,6 +532,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

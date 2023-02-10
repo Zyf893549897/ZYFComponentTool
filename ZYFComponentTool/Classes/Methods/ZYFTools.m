@@ -83,22 +83,25 @@
     [attrStr addAttributes:@{NSParagraphStyleAttributeName:style} range:range];
     return attrStr;
 }
+
+
 //给lable添加不同颜色文字 并且加下划线
 + (NSAttributedString *)getAttributeWith:(id)sender
                                  addline:(BOOL)isline
+                               alignment:(NSTextAlignment)alignment
                               addSpacing:(CGFloat)space
                                   string:(NSString *)string
-                               orginFont:(CGFloat)orginFont
+                               orginFont:(UIFont *)orginFont
                               orginColor:(UIColor *)orginColor
-                           attributeFont:(CGFloat)attributeFont
-                          attributeColor:(UIColor *)attributeColor
+                           attributeFont:(UIFont *)attributeFont
+                         attributeColors:(NSArray *)attributeColors
 {
     __block  NSMutableAttributedString *totalStr = [[NSMutableAttributedString alloc] initWithString:string];
-    [totalStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:orginFont] range:NSMakeRange(0, string.length)];
+    [totalStr addAttribute:NSFontAttributeName value:orginFont range:NSMakeRange(0, string.length)];
     [totalStr addAttribute:NSForegroundColorAttributeName value:orginColor range:NSMakeRange(0, string.length)];
-    
     //行间距
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    paragraphStyle.alignment = alignment;
     [paragraphStyle setLineSpacing:space];//设置距离
     [totalStr addAttribute:NSParagraphStyleAttributeName
                                 value:paragraphStyle
@@ -108,24 +111,35 @@
         __block NSString *oringinStr = string;
         __weak typeof(self) weakSelf = self;
         [sender enumerateObjectsUsingBlock:^(NSString *  _Nonnull str, NSUInteger idx, BOOL * _Nonnull stop) {
-            if(str.length > 0){
-                NSRange range = [oringinStr rangeOfString:str];
-                [totalStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:attributeFont] range:range];
-                [totalStr addAttribute:NSForegroundColorAttributeName value:attributeColor range:range];
-                if (isline) {
-                    NSRange myrange = [string rangeOfString:sender[idx]];
-                    [totalStr addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(myrange.location, myrange.length)];
+            if (str.length > 0) {
+                NSRange range = NSMakeRange(0, 0);
+                if ([oringinStr containsString:str]) {
+                    range = [oringinStr rangeOfString:str];
+                    [totalStr addAttribute:NSFontAttributeName value:attributeFont range:range];
+                    
+                    if (attributeColors.count > idx) {
+                        [totalStr addAttribute:NSForegroundColorAttributeName value:attributeColors[idx] range:range];
+                    }
+                    if (attributeColors.count == 1) {
+                        [totalStr addAttribute:NSForegroundColorAttributeName value:attributeColors.firstObject range:range];
+                    }
+                    
+                    if (isline) {
+                        NSRange myrange = [string rangeOfString:sender[idx]];
+                        [totalStr addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:NSMakeRange(myrange.location, myrange.length)];
+                    }
                 }
                 oringinStr = [oringinStr stringByReplacingCharactersInRange:range withString:[weakSelf getStringWithRange:range]];
             }
         }];
     }else if ([sender isKindOfClass:[NSString class]]) {
         NSRange range = [string rangeOfString:sender];
-        [totalStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:attributeFont] range:range];
-        [totalStr addAttribute:NSForegroundColorAttributeName value:attributeColor range:range];
+        [totalStr addAttribute:NSFontAttributeName value:attributeFont range:range];
+        [totalStr addAttribute:NSForegroundColorAttributeName value:attributeColors range:range];
     }
     return totalStr;
 }
+
 + (NSString *)getStringWithRange:(NSRange)range
 {
     NSMutableString *string = [NSMutableString string];

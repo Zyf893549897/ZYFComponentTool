@@ -7,3 +7,6 @@
 //
 
 @_exported import ZYFComponentTool
+@_exported import GKNavigationBar
+@_exported import AxcAE_TabBar
+@_exported import YYKit

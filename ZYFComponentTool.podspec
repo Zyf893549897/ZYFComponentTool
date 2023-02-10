@@ -58,5 +58,8 @@ TODO: Add long description of the pod here.
   s.dependency 'RxSwift'
   s.dependency 'RxCocoa'
   s.dependency 'Masonry'
-  
+  s.dependency 'GKNavigationBar'
+  s.dependency 'AxcAE_TabBar'
+  s.dependency 'YYKit'
+
 end

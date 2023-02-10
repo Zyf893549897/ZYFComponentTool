@@ -34,14 +34,14 @@
         }
             break;
         case img_Left: {
-            imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, space/2.0);
-            labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, 0);
+            imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, space);
+            labelEdgeInsets = UIEdgeInsetsMake(0, space, 0, 0);
             if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentRight){
-                imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, space/2.0+offset);
-                labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0, 0, offset);
+                imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, space+offset);
+                labelEdgeInsets = UIEdgeInsetsMake(0, space, 0, offset);
             }else if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentLeft){
-                imageEdgeInsets = UIEdgeInsetsMake(0, offset, 0, space/2.0);
-                labelEdgeInsets = UIEdgeInsetsMake(0, space/2.0+offset, 0, 0);
+                imageEdgeInsets = UIEdgeInsetsMake(0, offset, 0, space);
+                labelEdgeInsets = UIEdgeInsetsMake(0, space+offset, 0, 0);
             }
         }
             break;

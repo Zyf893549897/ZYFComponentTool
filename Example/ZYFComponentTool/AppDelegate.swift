@@ -20,14 +20,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
-        let nav = BXNavigationController.init(rootViewController: ViewController.init())
-//        nav.navigationBar.isTranslucent = false
-        window?.rootViewController = nav
+//        let nav = UINavigationController.rootVC(ViewController.init())// nav root 方法
+        window?.rootViewController = RootTabBarVC.init()
+        
+        //全局设置   导航栏
+        setupNavBar()
         
         return true
     }
 
-    
+    //导航栏设置
+    func setupNavBar(){
+        GKNavigationBarConfigure.sharedInstance().setupCustomConfigure { configure in
+            let v = UIView.init(frame: CGRect(x: 0, y: 0, width: ZYFScreenWidth, height: ZYF_NavHeight))
+            configure.backgroundImage = v.image(withColors: [UIColor.red.cgColor,UIColor.orange.cgColor])
+            configure.darkBackgroundImage = UIImage.gk_image(with: UIColor.lightGray)
+            configure.backgroundColor = .blue
+            configure.titleColor = .white
+            configure.titleFont = UIFont.systemFont(ofSize: 18.0)
+            configure.backStyle = .white
+            configure.statusBarStyle = .lightContent
+            configure.gk_navItemLeftSpace = 0.0
+            configure.gk_navItemRightSpace = 5.0
+            configure.gk_restoreSystemNavBar = true
+        }
+    }
 
 }
 

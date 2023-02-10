@@ -4,6 +4,10 @@ platform :ios, '10.0'
 
 target 'ZYFComponentTool_Example' do
   pod 'ZYFComponentTool', :path => '../'
+  
+  
+  
+  
 
   target 'ZYFComponentTool_Tests' do
     inherit! :search_paths
