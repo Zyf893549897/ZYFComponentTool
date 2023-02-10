@@ -16,7 +16,14 @@
 		7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */; };
 		7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE5622994EB960085C89A /* LabelTextViewController.swift */; };
 		7B404995298919F000F58BB5 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B404994298919F000F58BB5 /* header.swift */; };
+		7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */; };
+		7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AA299624C200DDC528 /* BannerCell.swift */; };
+		7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */; };
 		7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3C9CC296674A600B8BC9E /* TextViewController.swift */; };
+		7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */; };
+		7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */; };
+		7BD505702995F5D1002F3CBE /* JxsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */; };
+		7BD5057229961A7A002F3CBE /* BanneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5057129961A7A002F3CBE /* BanneViewController.swift */; };
 		7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E8082993959C00750718 /* RootTabBarVC.swift */; };
 		7BD6E80B2993983700750718 /* TowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80A2993983700750718 /* TowViewController.swift */; };
 		7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80C2993984000750718 /* ThreeViewController.swift */; };
@@ -53,7 +60,14 @@
 		7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
 		7B3FE5622994EB960085C89A /* LabelTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextViewController.swift; sourceTree = "<group>"; };
 		7B404994298919F000F58BB5 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
+		7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
+		7B6AE4AA299624C200DDC528 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTestViewController.swift; sourceTree = "<group>"; };
 		7BD3C9CC296674A600B8BC9E /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVCTestViewController.swift; sourceTree = "<group>"; };
+		7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JxPageRootViewController.swift; sourceTree = "<group>"; };
+		7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JxsonViewController.swift; sourceTree = "<group>"; };
+		7BD5057129961A7A002F3CBE /* BanneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanneViewController.swift; sourceTree = "<group>"; };
 		7BD6E8082993959C00750718 /* RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
 		7BD6E80A2993983700750718 /* TowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowViewController.swift; sourceTree = "<group>"; };
 		7BD6E80C2993984000750718 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
@@ -129,10 +143,16 @@
 				7BD3C9CC296674A600B8BC9E /* TextViewController.swift */,
 				7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */,
 				7B3FE5622994EB960085C89A /* LabelTextViewController.swift */,
+				7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */,
+				7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */,
+				7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */,
+				7BD5057129961A7A002F3CBE /* BanneViewController.swift */,
+				7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
 				7BD6E8102993984B00750718 /* FiveViewController.swift */,
+				7B6AE4A72996238800DDC528 /* views */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -184,6 +204,15 @@
 				9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B6AE4A72996238800DDC528 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */,
+				7B6AE4AA299624C200DDC528 /* BannerCell.swift */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +353,8 @@
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HXPhotoPicker/HXPhotoPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPagingView/JXPagingView.framework",
 				"${BUILT_PRODUCTS_DIR}/KNPhotoBrowser/KNPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LSTPopView/LSTPopView.framework",
@@ -346,6 +377,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HXPhotoPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPagingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KNPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSTPopView.framework",
@@ -399,12 +432,19 @@
 				7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */,
 				7B404995298919F000F58BB5 /* header.swift in Sources */,
 				7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */,
+				7BD505702995F5D1002F3CBE /* JxsonViewController.swift in Sources */,
 				7BD6E80B2993983700750718 /* TowViewController.swift in Sources */,
+				7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7BD5057229961A7A002F3CBE /* BanneViewController.swift in Sources */,
+				7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */,
 				7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */,
+				7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */,
 				7BD6E80F2993984600750718 /* FourViewController.swift in Sources */,
 				7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */,
+				7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */,
 				7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */,
 				7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */,
 			);

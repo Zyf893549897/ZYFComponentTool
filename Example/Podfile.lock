@@ -9,6 +9,8 @@ PODS:
   - HXPhotoPicker (3.3.1):
     - HXPhotoPicker/Default (= 3.3.1)
   - HXPhotoPicker/Default (3.3.1)
+  - JXCategoryView (1.6.1)
+  - JXPagingView/Pager (2.1.2)
   - Kingfisher (6.3.1)
   - KNPhotoBrowser (2.5.9):
     - SDWebImage
@@ -40,6 +42,8 @@ PODS:
     - FSPagerView
     - GKNavigationBar
     - HXPhotoPicker
+    - JXCategoryView
+    - JXPagingView/Pager
     - Kingfisher
     - KNPhotoBrowser
     - LSTPopView
@@ -61,6 +65,8 @@ SPEC REPOS:
     - FSPagerView
     - GKNavigationBar
     - HXPhotoPicker
+    - JXCategoryView
+    - JXPagingView
     - Kingfisher
     - KNPhotoBrowser
     - LSTPopView
@@ -85,6 +91,8 @@ SPEC CHECKSUMS:
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   GKNavigationBar: 206f8d5dedd5535aa3a2786dd28afdf3d59a0157
   HXPhotoPicker: f1274d0c931ad8564e0f23f33fe8b6110b639bd7
+  JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
+  JXPagingView: 90924b364a2ff7e94db534fad1fa50925ff69ee4
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   KNPhotoBrowser: 52e9b470754326359bc43077318f1fa532458cf8
   LSTPopView: 9379f00f6ce7d1fc620b50ab00ed3ef97b2d4d52
@@ -99,7 +107,7 @@ SPEC CHECKSUMS:
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
-  ZYFComponentTool: 0b8088d7a13f6bb6be7238da4621d5a327a0d65f
+  ZYFComponentTool: b6c8c746a53eec4c803536682267c9399c42cd39
 
 PODFILE CHECKSUM: c9d1a4a3baf24a79ebab7da6524713d7f8dc85a5
 

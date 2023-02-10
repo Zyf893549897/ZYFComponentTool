@@ -10,3 +10,5 @@
 @_exported import GKNavigationBar
 @_exported import AxcAE_TabBar
 @_exported import YYKit
+@_exported import JXCategoryView
+@_exported import FSPagerView

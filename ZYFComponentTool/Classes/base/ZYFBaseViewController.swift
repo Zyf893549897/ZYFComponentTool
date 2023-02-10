@@ -76,7 +76,6 @@ open class ZYFBaseViewController: UIViewController{
     //上拉加载更多
     @objc open func uploadNewData(){
         page_no += 1
-        
     }
     //结束刷新
     public func endRefresh(){
@@ -93,7 +92,7 @@ open class ZYFBaseViewController: UIViewController{
     }
     
     lazy var noDataView: NoDataView = {
-        let dataView=NoDataView.init(frame: CGRect(x: 0, y: -300, width: ZYFScreenWidth, height: 300))
+        let dataView=NoDataView.init(frame: CGRect(x: 0, y: 0, width: ZYFScreenWidth, height: 300))
         dataView.noDataStyle(type: noDataStyle)
         return dataView
     }()

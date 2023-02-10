@@ -47,6 +47,14 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "button 相关工具的使用"
         case 2:
             cell.textLabel?.text = "label 相关工具的使用"
+        case 3:
+            cell.textLabel?.text = "基类 ZYFBaseViewController 使用（上下拉刷新  无数据页面）"
+        case 4:
+            cell.textLabel?.text = "分页控制器 组件"
+        case 5:
+            cell.textLabel?.text = "轮播图"
+        case 6:
+            cell.textLabel?.text = "pop"
         default:
             break
         }
@@ -64,6 +72,19 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 2:
             let vc = LabelTextViewController.init()
             zyf_pushVC(vc: vc, animated: true)
+        case 3:
+            let vc = BaseVCTestViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 4:
+            let vc = JxPageRootViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 5:
+            let vc = BanneViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 6:
+            let vc = PopTestViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+            
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
