@@ -41,7 +41,7 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
         case 1:
             cell.textLabel?.text = "自定义 pop\(indexPath.row)"
         case 2:
-            cell.textLabel?.text = ""
+            cell.textLabel?.text = "LSTPopView 的使用"
         case 3:
             cell.textLabel?.text = ""
         case 4:
@@ -72,6 +72,15 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
             pop.cj_showInAppWindowAnimation()
             break
         case 2:
+            let pop = UIView.init(frame: CGRect(x: 0, y: 0, width: scale(278), height: scale(231)))
+            pop.backgroundColor = .red
+            let rootPop = LSTPopView.initWithCustomView(pop, popStyle: .scale, dismissStyle: .scale)
+            rootPop?.hemStyle = .center
+            rootPop?.isClickBgDismiss = true //击背景是否移除弹窗
+//            pop.blcok = {[weak rootPop] in
+//                rootPop?.dismiss()
+//            }
+            rootPop?.pop()
             break
         case 3:
             break

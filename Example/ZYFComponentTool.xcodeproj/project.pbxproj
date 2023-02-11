@@ -19,6 +19,15 @@
 		7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */; };
 		7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AA299624C200DDC528 /* BannerCell.swift */; };
 		7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */; };
+		7BB04D9C299739A70015693D /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04D9B299739A70015693D /* SelectImageViewController.swift */; };
+		7BB04DA32997409E0015693D /* SelectPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA22997409E0015693D /* SelectPictureView.swift */; };
+		7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA02997409E0015693D /* ImageCollectionCell.swift */; };
+		7BB04DA52997409E0015693D /* SelectImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA12997409E0015693D /* SelectImageTableViewCell.swift */; };
+		7BB04DA8299763940015693D /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA7299763940015693D /* TestModel.swift */; };
+		7BB04DAA299763C20015693D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA9299763C20015693D /* BaseModel.swift */; };
+		7BB04DAC2997664D0015693D /* SaveModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DAB2997664D0015693D /* SaveModelViewController.swift */; };
+		7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DB2299772490015693D /* SaveModelManger.swift */; };
+		7BB04DB5299777EE0015693D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DB4299777EE0015693D /* UserModel.swift */; };
 		7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3C9CC296674A600B8BC9E /* TextViewController.swift */; };
 		7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */; };
 		7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */; };
@@ -63,6 +72,15 @@
 		7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
 		7B6AE4AA299624C200DDC528 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTestViewController.swift; sourceTree = "<group>"; };
+		7BB04D9B299739A70015693D /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
+		7BB04DA02997409E0015693D /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		7BB04DA12997409E0015693D /* SelectImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageTableViewCell.swift; sourceTree = "<group>"; };
+		7BB04DA22997409E0015693D /* SelectPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPictureView.swift; sourceTree = "<group>"; };
+		7BB04DA7299763940015693D /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		7BB04DA9299763C20015693D /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		7BB04DAB2997664D0015693D /* SaveModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModelViewController.swift; sourceTree = "<group>"; };
+		7BB04DB2299772490015693D /* SaveModelManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveModelManger.swift; sourceTree = "<group>"; };
+		7BB04DB4299777EE0015693D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		7BD3C9CC296674A600B8BC9E /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVCTestViewController.swift; sourceTree = "<group>"; };
 		7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JxPageRootViewController.swift; sourceTree = "<group>"; };
@@ -148,11 +166,16 @@
 				7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */,
 				7BD5057129961A7A002F3CBE /* BanneViewController.swift */,
 				7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */,
+				7BB04D9B299739A70015693D /* SelectImageViewController.swift */,
+				7BB04DAB2997664D0015693D /* SaveModelViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
 				7BD6E8102993984B00750718 /* FiveViewController.swift */,
+				7BB04D9F2997407A0015693D /* SeleImageTool */,
 				7B6AE4A72996238800DDC528 /* views */,
+				7BB04DA6299763780015693D /* models */,
+				7BB04DAD299767AB0015693D /* Manager */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -213,6 +236,34 @@
 				7B6AE4AA299624C200DDC528 /* BannerCell.swift */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		7BB04D9F2997407A0015693D /* SeleImageTool */ = {
+			isa = PBXGroup;
+			children = (
+				7BB04DA12997409E0015693D /* SelectImageTableViewCell.swift */,
+				7BB04DA22997409E0015693D /* SelectPictureView.swift */,
+				7BB04DA02997409E0015693D /* ImageCollectionCell.swift */,
+			);
+			name = SeleImageTool;
+			sourceTree = "<group>";
+		};
+		7BB04DA6299763780015693D /* models */ = {
+			isa = PBXGroup;
+			children = (
+				7BB04DA9299763C20015693D /* BaseModel.swift */,
+				7BB04DA7299763940015693D /* TestModel.swift */,
+				7BB04DB4299777EE0015693D /* UserModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		7BB04DAD299767AB0015693D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7BB04DB2299772490015693D /* SaveModelManger.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +404,7 @@
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HXPhotoPicker/HXPhotoPicker.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
 				"${BUILT_PRODUCTS_DIR}/JXPagingView/JXPagingView.framework",
 				"${BUILT_PRODUCTS_DIR}/KNPhotoBrowser/KNPhotoBrowser.framework",
@@ -377,6 +429,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HXPhotoPicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPagingView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KNPhotoBrowser.framework",
@@ -430,17 +483,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */,
+				7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */,
 				7B404995298919F000F58BB5 /* header.swift in Sources */,
 				7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */,
+				7BB04DA52997409E0015693D /* SelectImageTableViewCell.swift in Sources */,
+				7BB04DA8299763940015693D /* TestModel.swift in Sources */,
+				7BB04DAA299763C20015693D /* BaseModel.swift in Sources */,
 				7BD505702995F5D1002F3CBE /* JxsonViewController.swift in Sources */,
 				7BD6E80B2993983700750718 /* TowViewController.swift in Sources */,
+				7BB04D9C299739A70015693D /* SelectImageViewController.swift in Sources */,
+				7BB04DA32997409E0015693D /* SelectPictureView.swift in Sources */,
 				7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
+				7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				7BB04DB5299777EE0015693D /* UserModel.swift in Sources */,
 				7BD5057229961A7A002F3CBE /* BanneViewController.swift in Sources */,
 				7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */,
 				7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */,
+				7BB04DAC2997664D0015693D /* SaveModelViewController.swift in Sources */,
 				7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */,
 				7BD6E80F2993984600750718 /* FourViewController.swift in Sources */,
 				7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */,

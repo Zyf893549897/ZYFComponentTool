@@ -55,6 +55,10 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "轮播图"
         case 6:
             cell.textLabel?.text = "pop"
+        case 7:
+            cell.textLabel?.text = "图片选择  图片展示 封装"
+        case 8:
+            cell.textLabel?.text = "存储数据模型  如 用户信息   首页数据缓存等"
         default:
             break
         }
@@ -83,6 +87,12 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             zyf_pushVC(vc: vc, animated: true)
         case 6:
             let vc = PopTestViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 7:
+            let vc = SelectImageViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 8:
+            let vc = SaveModelViewController.init()
             zyf_pushVC(vc: vc, animated: true)
             
         default:

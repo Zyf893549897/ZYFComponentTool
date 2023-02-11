@@ -6,8 +6,8 @@
 //
 
 import UIKit
-
-typealias ReturnImageArrBlock = (Array<String>) -> Void
+import HXPhotoPicker
+typealias ReturnImageArrBlock = (Array<Any>) -> Void
 
 enum SelectImageCellType{
     case add_image
@@ -31,7 +31,7 @@ class ImageCollectionCell: UICollectionViewCell {
         addSubview(chaBut)
     }
     lazy var chaBut: UIButton={
-        let but = ZYFCreateImageButton(frame: CGRect.zero, bgcolor: .clear, Alignment: .center, imgName: "dele_img", isbg: false, offset: 0, target: self, action: #selector(deleButAction))
+        let but = ZYFCreateImageButton(frame: CGRect.zero, bgcolor: .clear, Alignment: .center, imgName: "dele", isbg: false, offset: 0, target: self, action: #selector(deleButAction))
         return but
     }()
     lazy var imgeView: UIImageView={
@@ -52,7 +52,7 @@ class ImageCollectionCell: UICollectionViewCell {
         case .add_image:
             chaBut.isHidden = true
             imgeView.isUserInteractionEnabled = true
-            imgeView.zyf_setImage(urlstr: "", placehoder: "addimg2")
+            imgeView.zyf_setImage(urlstr: "", placehoder: "addimg")
             addimgeLayout()
             break
         case .show_image:
@@ -75,6 +75,7 @@ class ImageCollectionCell: UICollectionViewCell {
             selectPictue()
         }
     }
+    //删除图片
     @objc func deleButAction(){
         if seleImageCellType == .show_dele_image{
             if deleBlock != nil{
@@ -84,27 +85,23 @@ class ImageCollectionCell: UICollectionViewCell {
     }
     //选择图片
     func selectPictue(){
-//        zyf_curreVC().view.endEditing(true)
-//
-//        let vc = TZImagePickerController.init(maxImagesCount: maxSelectNum - havSelecNum, delegate: nil)
-//        vc?.allowPickingVideo = false
-//        vc?.allowTakeVideo = false
-//        vc?.allowPickingVideo = false
-//        vc?.allowPickingOriginalPhoto = false
-//        vc?.sortAscendingByModificationDate = false
-//        vc?.naviBgColor = color_333333
-//        vc?.naviTitleColor = color_333333
-//        vc?.didFinishPickingPhotosHandle={[weak self] photosArray,assets,isSelectOriginalPhoto in
-//            var imgdataArr = [UIImage]()
-//            for img in (photosArray ?? []){
-//                let imgdata = img.jpegData(compressionQuality: 0.4)
-//                let img = UIImage(data: imgdata ?? Data())
-//                imgdataArr.append(img ?? UIImage())
-//            }
-//            //上传 图片
-//            self?.upImgAction(imgArr: imgdataArr)
-//        }
-//        zyf_curreVC().present(vc!, animated: true, completion: nil)
+        zyf_curreVC().view.endEditing(true)
+        let manger = HXPhotoManager.init(type: .photo)
+        manger?.configuration.photoMaxNum = UInt(maxSelectNum - havSelecNum)
+//        manger?.configuration.singleSelected=true//千万不能写这个方法 不然下面的 方法无法获取  thumbPhoto对象   坑坑坑
+        zyf_curreVC().hx_presentSelectPhotoController(with: manger) {[weak self] (all, photoArr, videoArr, original, vc, manger) in
+            var imgArr = [UIImage]()
+            for model in (photoArr ?? []){
+                let imgdata = UIImageJPEGRepresentation(model.thumbPhoto ?? UIImage(), 0.4)
+                let img = UIImage(data: imgdata ?? Data())
+                imgArr.append(img ?? UIImage())
+            }
+            //选择图片后刷新
+            if self?.block != nil{
+                self?.block?(imgArr)
+            }
+        } cancel: { (vc, manger) in
+        }
     }
     
     //上传图片

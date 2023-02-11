@@ -6,6 +6,7 @@ PODS:
     - GKNavigationBar/NavigationBar (= 1.8.2)
   - GKNavigationBar/GestureHandle (1.8.2)
   - GKNavigationBar/NavigationBar (1.8.2)
+  - HandyJSON (5.0.2)
   - HXPhotoPicker (3.3.1):
     - HXPhotoPicker/Default (= 3.3.1)
   - HXPhotoPicker/Default (3.3.1)
@@ -41,6 +42,7 @@ PODS:
     - AxcAE_TabBar
     - FSPagerView
     - GKNavigationBar
+    - HandyJSON
     - HXPhotoPicker
     - JXCategoryView
     - JXPagingView/Pager
@@ -64,6 +66,7 @@ SPEC REPOS:
     - AxcAE_TabBar
     - FSPagerView
     - GKNavigationBar
+    - HandyJSON
     - HXPhotoPicker
     - JXCategoryView
     - JXPagingView
@@ -90,6 +93,7 @@ SPEC CHECKSUMS:
   AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   GKNavigationBar: 206f8d5dedd5535aa3a2786dd28afdf3d59a0157
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HXPhotoPicker: f1274d0c931ad8564e0f23f33fe8b6110b639bd7
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
   JXPagingView: 90924b364a2ff7e94db534fad1fa50925ff69ee4
@@ -107,7 +111,7 @@ SPEC CHECKSUMS:
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
-  ZYFComponentTool: b6c8c746a53eec4c803536682267c9399c42cd39
+  ZYFComponentTool: 6344a736fe27525215ad02c8c5e201fa237b1d13
 
 PODFILE CHECKSUM: c9d1a4a3baf24a79ebab7da6524713d7f8dc85a5
 

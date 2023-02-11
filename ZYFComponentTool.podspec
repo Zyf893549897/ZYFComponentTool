@@ -61,6 +61,8 @@ TODO: Add long description of the pod here.
   s.dependency 'GKNavigationBar'
   s.dependency 'AxcAE_TabBar'
   s.dependency 'YYKit'
+  s.dependency 'HandyJSON'
+  
   # 分页控制器
   s.dependency 'JXCategoryView'
   s.dependency 'JXPagingView/Pager'

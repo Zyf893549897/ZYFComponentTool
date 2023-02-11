@@ -12,10 +12,12 @@ class SelectImageView: UIView {
     
     @objc var maxImage = 3 //允许最大数量  默认 3
     
+    @objc var index: IndexPath?
+    
     @objc var cellWidth = scale(90)
     @objc var cellhight = scale(90)
     
-    @objc var picArr: Array<String>?{
+    @objc var picArr: Array<Any>?{
         didSet{
             setViewsMessage()
         }
@@ -43,7 +45,7 @@ class SelectImageView: UIView {
         collecView.isScrollEnabled = false
         return collecView
     }()
-    func setViewsMessage(){
+   func setViewsMessage(){
         collectionView.reloadData()
         collectionView.snp.remakeConstraints { make in
             make.top.equalTo(0)
@@ -73,18 +75,23 @@ class SelectImageView: UIView {
 }
 extension SelectImageView: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: cellWidth, height: cellhight)
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return picArr?.count == maxImage ? picArr?.count ?? 0 : (picArr?.count ?? 0) + 1
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(ImageCollectionCell.self, indexPath: indexPath)
         cell.maxSelectNum = maxImage //可选最大数量
         if indexPath.row < picArr?.count ?? 0{// 显示图片 排查最后一个添加符号
-            cell.imgeView.zyf_setImage(urlstr: "img_url" + "\(picArr?[indexPath.row] ?? "")", placehoder: "")
+            if picArr?.first is UIImage{
+                cell.imgeView.image = picArr?[indexPath.row] as? UIImage
+            }
+            if picArr?.first is String{
+                cell.imgeView.zyf_setImage(urlstr: "img_url" + "\(picArr?[indexPath.row] ?? "")", placehoder: "")
+            }
         }
         if indexPath.row == picArr?.count{//是否为最后一个 添加按键
             cell.setViewsMessage(type: .add_image, row: indexPath.row,haveNum: picArr?.count ?? 0)
@@ -103,7 +110,8 @@ extension SelectImageView: UICollectionViewDelegate,UICollectionViewDataSource,U
         }
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //点击放大
 //        var arr = [GKPhoto]()
 //        for urlstr in picArr ?? []{
 //            let photo = GKPhoto.init()

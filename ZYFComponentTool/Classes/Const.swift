@@ -87,7 +87,7 @@ public func scaleFont(_ font: CGFloat) -> UIFont {
 
 
 //公用 闭包
-typealias NoArgumentsBlock = () -> Void
-typealias ReturnIndexBlock = (Int) -> Void
-typealias ReturnFloatBlock = (CGFloat) -> Void
-typealias ReturnStringBlock = (String) -> Void
+public typealias NoArgumentsBlock = () -> Void
+public typealias ReturnIndexBlock = (Int) -> Void
+public typealias ReturnFloatBlock = (CGFloat) -> Void
+public typealias ReturnStringBlock = (String) -> Void
