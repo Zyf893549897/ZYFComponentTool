@@ -33,6 +33,9 @@
 		7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */; };
 		7BD505702995F5D1002F3CBE /* JxsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */; };
 		7BD5057229961A7A002F3CBE /* BanneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD5057129961A7A002F3CBE /* BanneViewController.swift */; };
+		7BD53BB7299B74E700746E8B /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD53BB6299B74E700746E8B /* TagViewController.swift */; };
+		7BD53BB9299B765800746E8B /* WaterfallCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */; };
+		7BD53BBB299B777500746E8B /* CollecCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD53BBA299B777500746E8B /* CollecCell.swift */; };
 		7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E8082993959C00750718 /* RootTabBarVC.swift */; };
 		7BD6E80B2993983700750718 /* TowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80A2993983700750718 /* TowViewController.swift */; };
 		7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80C2993984000750718 /* ThreeViewController.swift */; };
@@ -86,6 +89,9 @@
 		7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JxPageRootViewController.swift; sourceTree = "<group>"; };
 		7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JxsonViewController.swift; sourceTree = "<group>"; };
 		7BD5057129961A7A002F3CBE /* BanneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanneViewController.swift; sourceTree = "<group>"; };
+		7BD53BB6299B74E700746E8B /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewController.swift; sourceTree = "<group>"; };
+		7BD53BBA299B777500746E8B /* CollecCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollecCell.swift; sourceTree = "<group>"; };
 		7BD6E8082993959C00750718 /* RootTabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarVC.swift; sourceTree = "<group>"; };
 		7BD6E80A2993983700750718 /* TowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowViewController.swift; sourceTree = "<group>"; };
 		7BD6E80C2993984000750718 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +174,8 @@
 				7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */,
 				7BB04D9B299739A70015693D /* SelectImageViewController.swift */,
 				7BB04DAB2997664D0015693D /* SaveModelViewController.swift */,
+				7BD53BB6299B74E700746E8B /* TagViewController.swift */,
+				7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
@@ -234,6 +242,7 @@
 			children = (
 				7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */,
 				7B6AE4AA299624C200DDC528 /* BannerCell.swift */,
+				7BD53BBA299B777500746E8B /* CollecCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -421,6 +430,7 @@
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ZLCollectionViewFlowLayout/ZLCollectionViewFlowLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/ZYFComponentTool/ZYFComponentTool.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -446,6 +456,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZLCollectionViewFlowLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZYFComponentTool.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,14 +502,17 @@
 				7BB04DAA299763C20015693D /* BaseModel.swift in Sources */,
 				7BD505702995F5D1002F3CBE /* JxsonViewController.swift in Sources */,
 				7BD6E80B2993983700750718 /* TowViewController.swift in Sources */,
+				7BD53BBB299B777500746E8B /* CollecCell.swift in Sources */,
 				7BB04D9C299739A70015693D /* SelectImageViewController.swift in Sources */,
 				7BB04DA32997409E0015693D /* SelectPictureView.swift in Sources */,
 				7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				7BD53BB7299B74E700746E8B /* TagViewController.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
 				7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				7BB04DB5299777EE0015693D /* UserModel.swift in Sources */,
+				7BD53BB9299B765800746E8B /* WaterfallCollectionViewController.swift in Sources */,
 				7BD5057229961A7A002F3CBE /* BanneViewController.swift in Sources */,
 				7BD5056E2995F5C7002F3CBE /* JxPageRootViewController.swift in Sources */,
 				7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */,

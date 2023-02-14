@@ -38,6 +38,7 @@ PODS:
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
+  - ZLCollectionViewFlowLayout (1.4.8)
   - ZYFComponentTool (0.0.5):
     - AxcAE_TabBar
     - FSPagerView
@@ -57,6 +58,7 @@ PODS:
     - RxSwift
     - SnapKit
     - YYKit
+    - ZLCollectionViewFlowLayout
 
 DEPENDENCIES:
   - ZYFComponentTool (from `../`)
@@ -84,6 +86,7 @@ SPEC REPOS:
     - SDWebImage
     - SnapKit
     - YYKit
+    - ZLCollectionViewFlowLayout
 
 EXTERNAL SOURCES:
   ZYFComponentTool:
@@ -111,7 +114,8 @@ SPEC CHECKSUMS:
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
-  ZYFComponentTool: 6344a736fe27525215ad02c8c5e201fa237b1d13
+  ZLCollectionViewFlowLayout: 6cd506c05d77cb2ac0772f68155e377d50d39f8a
+  ZYFComponentTool: 2e122c21bead14fcacf4ad4d5f2da42a9666202e
 
 PODFILE CHECKSUM: c9d1a4a3baf24a79ebab7da6524713d7f8dc85a5
 

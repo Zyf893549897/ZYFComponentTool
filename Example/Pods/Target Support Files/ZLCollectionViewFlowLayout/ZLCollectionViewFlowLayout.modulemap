@@ -1,0 +1,6 @@
+framework module ZLCollectionViewFlowLayout {
+  umbrella header "ZLCollectionViewFlowLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

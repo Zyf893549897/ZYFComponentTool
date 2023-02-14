@@ -67,5 +67,7 @@ TODO: Add long description of the pod here.
   s.dependency 'JXCategoryView'
   s.dependency 'JXPagingView/Pager'
   
+  s.dependency 'ZLCollectionViewFlowLayout'#瀑布流 布局
+  
 
 end

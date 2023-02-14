@@ -36,7 +36,7 @@ class ViewController: ZYFBaseViewController {
 }
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 20
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(UITableViewCell.self)
@@ -48,7 +48,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 2:
             cell.textLabel?.text = "label 相关工具的使用"
         case 3:
-            cell.textLabel?.text = "基类 ZYFBaseViewController 使用（上下拉刷新  无数据页面）"
+            cell.textLabel?.text = "基类 ZYFBaseViewController（上下拉刷新  无数据页面）"
         case 4:
             cell.textLabel?.text = "分页控制器 组件"
         case 5:
@@ -59,6 +59,10 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "图片选择  图片展示 封装"
         case 8:
             cell.textLabel?.text = "存储数据模型  如 用户信息   首页数据缓存等"
+        case 9:
+            cell.textLabel?.text = "搜索历史 标签"
+        case 10:
+            cell.textLabel?.text = "瀑布流"
         default:
             break
         }
@@ -94,7 +98,12 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 8:
             let vc = SaveModelViewController.init()
             zyf_pushVC(vc: vc, animated: true)
-            
+        case 9:
+            let vc = TagViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
+        case 10:
+            let vc = WaterfallCollectionViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
