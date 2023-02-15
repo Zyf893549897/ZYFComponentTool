@@ -43,7 +43,7 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
         case 2:
             cell.textLabel?.text = "LSTPopView 的使用"
         case 3:
-            cell.textLabel?.text = ""
+            cell.textLabel?.text = "系统 alert 的使用"
         case 4:
             cell.textLabel?.text = ""
         case 5:
@@ -83,6 +83,14 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
             rootPop?.pop()
             break
         case 3:
+            let alertVC = UIAlertController.init(title: "", message: "", preferredStyle: .actionSheet)
+            let alerA = UIAlertAction.init(title: "按键1", style: .cancel) //加粗
+            alertVC.addAction(alerA)
+            let alerB = UIAlertAction.init(title: "按键2", style: .default)
+            alertVC.addAction(alerB)
+            let alerC = UIAlertAction.init(title: "按键3", style: .destructive)//红色
+            alertVC.addAction(alerC)
+            self.present(alertVC, animated: true)
             break
         case 4:
             break

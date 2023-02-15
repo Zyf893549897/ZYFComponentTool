@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIView {
     //获取视图的X坐标
-    var x:CGFloat{
+    var zyf_x:CGFloat{
         get{
             return self.frame.origin.x;
         }
@@ -23,7 +23,7 @@ public extension UIView {
     }
     
     //获取视图的Y坐标
-    var y:CGFloat{
+    var zyf_y:CGFloat{
         get{
             return self.frame.origin.y;
         }
@@ -36,7 +36,7 @@ public extension UIView {
     }
     
     //获取视图的宽
-    var width:CGFloat{
+    var zyf_width:CGFloat{
         get{
             return self.frame.size.width;
         }
@@ -49,7 +49,7 @@ public extension UIView {
     }
     
     //获取视图的高
-    var height:CGFloat{
+    var zyf_height:CGFloat{
         get{
             return self.frame.size.height;
         }
@@ -64,12 +64,12 @@ public extension UIView {
     //获取最大的y坐标
     var endY:CGFloat{
         get{
-            return self.y + self.height;
+            return self.zyf_y + self.zyf_height;
         }
         
         set{
             var frames = self.frame;
-            frames.origin.y = CGFloat(newValue - self.height);
+            frames.origin.y = CGFloat(newValue - self.zyf_height);
             self.frame = frames;
         }
     }
@@ -77,17 +77,17 @@ public extension UIView {
     //获取最大的X坐标
     var endX:CGFloat{
         get{
-            return self.x + self.width;
+            return self.zyf_x + self.zyf_width;
         }
         set{
             var frames = self.frame;
-            frames.origin.x = CGFloat(newValue - self.width);
+            frames.origin.x = CGFloat(newValue - self.zyf_width);
             self.frame = frames;
         }
     }
     
     //中心点X坐标
-    var centerX:CGFloat{
+    var zyf_centerX:CGFloat{
         get{
             return self.center.x;
         }
@@ -96,7 +96,7 @@ public extension UIView {
         }
     }
     //中心点Y坐标
-    var centerY:CGFloat{
+    var zyf_centerY:CGFloat{
         get{
             return self.center.y;
         }

@@ -41,15 +41,15 @@ class WaterfallCollectionViewController: ZYFBaseViewController,UICollectionViewD
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return hiestArr.count
     }
     //行间距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
     }
     //列 间距
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsetsMake(0, 0, 0, 0)
@@ -58,7 +58,7 @@ class WaterfallCollectionViewController: ZYFBaseViewController,UICollectionViewD
         return CGSize(width: ZYFTools.getWidthWithText(hiestArr[safeGet: indexPath.row] ?? "", height: scale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: scale(28))
     }
     private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: ZLCollectionViewBaseFlowLayout, typeOfLayout section: Int) -> ZLLayoutType {
-        return AbsoluteLayout
+        return LabelLayout
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(CollecCell.self, indexPath: indexPath)

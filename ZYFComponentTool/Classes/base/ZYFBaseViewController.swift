@@ -81,7 +81,7 @@ open class ZYFBaseViewController: UIViewController{
     public func endRefresh(){
         baseTableView?.ly_endLoading()
         baseTableView?.mj_header?.endRefreshing()
-        baseTableView?.mj_footer?.height = page_no > 1 ? 40 : 0
+        baseTableView?.mj_footer?.zyf_height = page_no > 1 ? 40 : 0
         guard baseTableView?.mj_footer?.state != .noMoreData else{return}
         baseTableView?.mj_footer?.state = .idle
         

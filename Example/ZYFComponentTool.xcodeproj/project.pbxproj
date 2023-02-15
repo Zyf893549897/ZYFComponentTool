@@ -19,6 +19,9 @@
 		7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */; };
 		7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AA299624C200DDC528 /* BannerCell.swift */; };
 		7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */; };
+		7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453C6299CE44600422BC1 /* ZYFSearchView.swift */; };
+		7B9453C9299CE51400422BC1 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453C8299CE51400422BC1 /* TagCell.swift */; };
+		7B9453CB299CE61800422BC1 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453CA299CE61800422BC1 /* TagCollectionCell.swift */; };
 		7BB04D9C299739A70015693D /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04D9B299739A70015693D /* SelectImageViewController.swift */; };
 		7BB04DA32997409E0015693D /* SelectPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA22997409E0015693D /* SelectPictureView.swift */; };
 		7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA02997409E0015693D /* ImageCollectionCell.swift */; };
@@ -75,6 +78,9 @@
 		7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerTableViewCell.swift; sourceTree = "<group>"; };
 		7B6AE4AA299624C200DDC528 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
 		7B6AE4AC299637F400DDC528 /* PopTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopTestViewController.swift; sourceTree = "<group>"; };
+		7B9453C6299CE44600422BC1 /* ZYFSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFSearchView.swift; sourceTree = "<group>"; };
+		7B9453C8299CE51400422BC1 /* TagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
+		7B9453CA299CE61800422BC1 /* TagCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
 		7BB04D9B299739A70015693D /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		7BB04DA02997409E0015693D /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
 		7BB04DA12997409E0015693D /* SelectImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -243,6 +249,9 @@
 				7B6AE4A82996239D00DDC528 /* BannerTableViewCell.swift */,
 				7B6AE4AA299624C200DDC528 /* BannerCell.swift */,
 				7BD53BBA299B777500746E8B /* CollecCell.swift */,
+				7B9453C6299CE44600422BC1 /* ZYFSearchView.swift */,
+				7B9453C8299CE51400422BC1 /* TagCell.swift */,
+				7B9453CA299CE61800422BC1 /* TagCollectionCell.swift */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -497,6 +506,8 @@
 				7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */,
 				7B404995298919F000F58BB5 /* header.swift in Sources */,
 				7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */,
+				7B9453C9299CE51400422BC1 /* TagCell.swift in Sources */,
+				7B9453CB299CE61800422BC1 /* TagCollectionCell.swift in Sources */,
 				7BB04DA52997409E0015693D /* SelectImageTableViewCell.swift in Sources */,
 				7BB04DA8299763940015693D /* TestModel.swift in Sources */,
 				7BB04DAA299763C20015693D /* BaseModel.swift in Sources */,
@@ -508,6 +519,7 @@
 				7BD5056C2995DA22002F3CBE /* BaseVCTestViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				7BD53BB7299B74E700746E8B /* TagViewController.swift in Sources */,
+				7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
 				7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
