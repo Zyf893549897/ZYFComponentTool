@@ -65,6 +65,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "瀑布流"
         case 11:
             cell.textLabel?.text = "保存图片功能"
+        case 12:
+            cell.textLabel?.text = "调用本机地图导航"
         default:
             break
         }
@@ -108,6 +110,14 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             zyf_pushVC(vc: vc, animated: true)
         case 11:
             saveImageToPhotoAlbum(img: UIImage(named: "duigou") ?? UIImage())
+        case 12:
+            let lociton = ABLocation.shared().lastLocation
+            if ABLocation.isCanLocation() == false || lociton == nil{
+                ZYFHUD.show(withMessage: "开启定位或者等待定位成功")
+                return
+            }
+            
+            CPMapNavigation.shared().clickGotoMap(withDestinationName: "武汉市雄楚大道", destinationCoordinate: CLLocationCoordinate2DMake(39.99517568, 114.41148289), originCoordinate: lociton?.coordinate ?? CLLocationCoordinate2DMake(0, 0))
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
