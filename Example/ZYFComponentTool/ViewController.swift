@@ -63,6 +63,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "搜索历史 标签"
         case 10:
             cell.textLabel?.text = "瀑布流"
+        case 11:
+            cell.textLabel?.text = "保存图片功能"
         default:
             break
         }
@@ -104,6 +106,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 10:
             let vc = WaterfallCollectionViewController.init()
             zyf_pushVC(vc: vc, animated: true)
+        case 11:
+            saveImageToPhotoAlbum(img: UIImage(named: "duigou") ?? UIImage())
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
@@ -111,5 +115,27 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             break
         }
     }
-    
+    //保存图片到相册
+    func saveImageToPhotoAlbum(img: UIImage) {
+        //相册权限
+        let albumStatus = PHPhotoLibrary.authorizationStatus()
+        if albumStatus == .notDetermined {
+          // 第一次触发授权 alert
+            PHPhotoLibrary.requestAuthorization { (status: PHAuthorizationStatus) in
+                DispatchQueue.main.async {
+                    if status == .authorized {
+                        UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
+                        ZYFHUD.show(withMessage: "保存成功")
+                    }else {
+                        ZYFHUD.show(withMessage: "保存失败")
+                    }
+                }
+            }
+        } else if albumStatus == .authorized {
+            UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil)
+            ZYFHUD.show(withMessage: "保存成功")
+        } else {
+            ZYFHUD.show(withMessage: "保存失败")
+        }
+    }
 }
