@@ -9,7 +9,7 @@
 #import "CPMapNavigation.h"
 #import "ABMapNavigation.h"
 
-
+#import "ZYFTools.h"
 #import "CLLocation+ABLocationTransform.h"
 
 
@@ -52,7 +52,7 @@ static  CPMapNavigation *instance;
     self.destinationName = [name copy];
     self.destinationCoordinate = Destination;
     
-    [self showActionSheetInView:Constoc.AppDelegate.window];
+    [self showActionSheet];
     
 }
 
@@ -63,65 +63,48 @@ static  CPMapNavigation *instance;
     self.destinationName = [name copy];
     self.destinationCoordinate = Destination;
     
-    [self showActionSheetInView:Constoc.AppDelegate.window];
+    [self showActionSheet];
     
 }
 
 
-- (BOOL)showActionSheetInView:(UIView *)view {
-    
+- (void)showActionSheet {
     if (![ABMapNavigation hasInstallMapApp]) {
-
         NSLog(@"您尚未安装任何地图，无法导航");
-        
-        return NO;
+        return;
     }
-    
-    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"请选择地图"
-                                                       delegate:self
-                                              cancelButtonTitle:nil
-                                         destructiveButtonTitle:nil
-                                              otherButtonTitles:nil];
+    WeakSelf(wkself)
+    UIAlertController * vc = [UIAlertController alertControllerWithTitle:@"请选择地图" message:@"" preferredStyle:UIAlertControllerStyleActionSheet];
     if([ABMapNavigation hasInstallBaiduMap]){
-        [sheet addButtonWithTitle:@"使用百度地图导航"];
+        UIAlertAction * actionA = [UIAlertAction actionWithTitle:@"使用百度地图导航" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [wkself p_navigationMapWithName:ABMapNavigationBaiduMap destinationName:wkself.destinationName destinationCoordinate:wkself.destinationCoordinate  originCoordinate:wkself.originCoordinate];
+        }];
+        [vc addAction:actionA];
     }
-    if ([ABMapNavigation hasInstallGaodeMap]) {
-        [sheet addButtonWithTitle:@"使用高德地图导航"];
+    if([ABMapNavigation hasInstallGaodeMap]){
+        UIAlertAction * actionB = [UIAlertAction actionWithTitle:@"使用高德地图导航" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [wkself p_navigationMapWithName:ABMapNavigationGaodeMap destinationName:wkself.destinationName destinationCoordinate:wkself.destinationCoordinate  originCoordinate:wkself.originCoordinate];
+        }];
+        [vc addAction:actionB];
     }
     if([ABMapNavigation hasInstallTengxunMap]){
-        [sheet addButtonWithTitle:@"使用腾讯地图导航"];
+        UIAlertAction * actionC = [UIAlertAction actionWithTitle:@"使用腾讯地图导航" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [wkself p_navigationMapWithName:ABMapNavigationTengxunMap destinationName:wkself.destinationName destinationCoordinate:wkself.destinationCoordinate  originCoordinate:wkself.originCoordinate];
+        }];
+        [vc addAction:actionC];
     }
-    
-    if ([ABMapNavigation hasInstallAppleMap]) {
-        [sheet addButtonWithTitle:@"使用苹果自带地图导航"];
+    if([ABMapNavigation hasInstallAppleMap]){
+        UIAlertAction * actionD = [UIAlertAction actionWithTitle:@"使用苹果自带地图导航" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [wkself p_navigationMapWithName:ABMapNavigationAppleMap destinationName:wkself.destinationName destinationCoordinate:wkself.destinationCoordinate  originCoordinate:wkself.originCoordinate];
+        }];
+        [vc addAction:actionD];
     }
-    [sheet addButtonWithTitle:@"取消"];
-    sheet.cancelButtonIndex=sheet.numberOfButtons-1;;
-    [sheet showInView:view];
-    return YES;
+    UIAlertAction * cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+    }];
+    [vc addAction:cancel];
     
+    [[ZYFTools zyf_currentVC] presentViewController:vc animated:YES completion:nil];
 }
-
-
-#pragma mark - actionSheetDelegate 
-
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
-   NSDictionary *mapDic =  @{@"使用百度地图导航":ABMapNavigationBaiduMap,
-                              @"使用高德地图导航":ABMapNavigationGaodeMap,
-                              @"使用腾讯地图导航":ABMapNavigationTengxunMap,
-                              @"使用谷歌地图导航":ABMapNavigationGooogleMap,
-                              @"使用苹果自带地图导航":ABMapNavigationAppleMap};
-    
-    NSLog(@"actionSheet:%ld,%@",(long)buttonIndex,[actionSheet buttonTitleAtIndex:buttonIndex]);
-    
-    
-    [self p_navigationMapWithName:mapDic[[actionSheet buttonTitleAtIndex:buttonIndex]] destinationName:self.destinationName destinationCoordinate:_destinationCoordinate  originCoordinate:_originCoordinate];
-    
-}
-
-
-
 
 - (void)p_navigationMapWithName:(NSString *)mapName destinationName:(NSString *)destinationName destinationCoordinate:(CLLocationCoordinate2D )destinationCoordinate originCoordinate:(CLLocationCoordinate2D )originCoordinate{
     
@@ -152,9 +135,7 @@ static  CPMapNavigation *instance;
     
         
     }else if ([ABMapNavigationAppleMap isEqualToString:mapName]){
- ;
         
-
         [ABMapNavigation openAppleMapWithDestinationName:destinationName
                                    destinationCoordinate:destinationCoordinate];
     }

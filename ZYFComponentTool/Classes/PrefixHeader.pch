@@ -18,10 +18,10 @@
 //#define scaleFont(x) [Constoc scaleFont:x]
 //#define ZYFHUD [ZYFHUDManager sharedHUDManager]
 //
-///**
-// *  弱引用
-// */
-//#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
+/**
+ *  弱引用
+ */
+#define WeakSelf(weakSelf) __weak typeof(self) weakSelf = self;
 
 
 #endif /* PrefixHeader_pch */

@@ -37,7 +37,6 @@ static ABLocation *instance;
     
     if (_locationManager == nil) {
         
-        
       _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self; // 设置代理
         // 设置定位距离过滤参数 (当本次定位和上次定位之间的距离大于或等于这个值时，调用代理方法)

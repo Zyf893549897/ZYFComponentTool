@@ -53,13 +53,23 @@ NSString *const ABMapNavigationAppleMap=@"苹果地图";
     //&coord_type=gcj02
     //&mode=driving / walking / transit
     
-    NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?%@&%@&mode=transit",originStr,destinationStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    
+//    NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?%@&%@&mode=transit",originStr,destinationStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+//    [aString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+
+//    //等价于
+//    [aString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@"`#%^{}\"[]|\\<> "]];
     
     
     
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    NSString *urlString = [[NSString stringWithFormat:@"baidumap://map/direction?%@&%@&mode=transit",originStr,destinationStr] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
-    
+    if ([UIApplication.sharedApplication canOpenURL:[NSURL URLWithString:urlString]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{@"":@""} completionHandler:nil];
+    }
+
     //调用打开方法后，记录这次打开的是哪个地图，下次会默认打开此地图
 //    [self setHasNavigationWithName:ABMapNavigationBaiduMap];
 }
@@ -105,8 +115,15 @@ NSString *const ABMapNavigationAppleMap=@"苹果地图";
     NSString *destinationStr=[NSString stringWithFormat:@"dname=%@&dlat=%lf&dlon=%lf&did=BGVIS2",destinationName,destinationCoordinate.latitude,destinationCoordinate.longitude];
     
     //dev=0,这里填0就行了，跟上面的gcj02一个意思 1代表wgs84 也用不上  t---》 0：驾车  1：公交   2：步行
-    NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?%@&%@&%@&dev=0&m=0&t=1",backStr,originStr,destinationStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+//    NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?%@&%@&%@&dev=0&m=0&t=1",backStr,originStr,destinationStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *urlString = [[NSString stringWithFormat:@"iosamap://path?%@&%@&%@&dev=0&m=0&t=1",backStr,originStr,destinationStr] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    
+    
+    
+    if ([UIApplication.sharedApplication canOpenURL:[NSURL URLWithString:urlString]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{@"":@""} completionHandler:nil];
+    }
 
 }
 
@@ -141,10 +158,14 @@ NSString *const ABMapNavigationAppleMap=@"苹果地图";
     //目的地  type  公交：bus 驾车：drive  步行：walk（仅适用移动端）
     NSString *destinationStr=[NSString stringWithFormat:@"tocoord=%f,%f",destinationCoordinate.latitude,destinationCoordinate.longitude];
     
-    NSString *urlString = [[NSString stringWithFormat:@"qqmap://map/routeplan?type=bus&%@&%@&coord_type=2&policy=0&from=%@&to=%@",originStr,destinationStr,originName,destinationName] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSString *urlString = [[NSString stringWithFormat:@"qqmap://map/routeplan?type=bus&%@&%@&coord_type=2&policy=0&from=%@&to=%@",originStr,destinationStr,originName,destinationName] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *urlString = [[NSString stringWithFormat:@"qqmap://map/routeplan?type=bus&%@&%@&coord_type=2&policy=0&from=%@&to=%@",originStr,destinationStr,originName,destinationName] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
 
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    if ([UIApplication.sharedApplication canOpenURL:[NSURL URLWithString:urlString]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{@"":@""} completionHandler:nil];
+    }
     
     
 }
@@ -166,8 +187,16 @@ NSString *const ABMapNavigationAppleMap=@"苹果地图";
     
     //添加编辑返回应用信息
     NSString *oaStr=[NSString stringWithFormat:@"saddr=%@&daddr=%f,%f¢er=%f,%f",destinationName,destinationCoordinate.latitude,destinationCoordinate.longitude,originCoordinate.latitude,originCoordinate.longitude];
-    NSString *urlString = [[NSString stringWithFormat:@"comgooglemaps://?%@&directionsmode=transit",oaStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
+    
+//    NSString *urlString = [[NSString stringWithFormat:@"comgooglemaps://?%@&directionsmode=transit",oaStr] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString *urlString = [[NSString stringWithFormat:@"comgooglemaps://?%@&directionsmode=transit",oaStr] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    
+
+    
+    if ([UIApplication.sharedApplication canOpenURL:[NSURL URLWithString:urlString]]){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString] options:@{@"":@""} completionHandler:nil];
+    }
     
 
 }

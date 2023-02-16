@@ -46,7 +46,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 1:
             cell.textLabel?.text = "button 相关工具的使用"
         case 2:
-            cell.textLabel?.text = "label 相关工具的使用"
+            cell.textLabel?.text = "label 相关工具的使用 多颜色  折叠  点击等"
         case 3:
             cell.textLabel?.text = "基类 ZYFBaseViewController（上下拉刷新  无数据页面）"
         case 4:
@@ -111,12 +111,11 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 11:
             saveImageToPhotoAlbum(img: UIImage(named: "duigou") ?? UIImage())
         case 12:
-            let lociton = ABLocation.shared().lastLocation
-            if ABLocation.isCanLocation() == false || lociton == nil{
+            if ABLocation.isCanLocation() == false{
                 ZYFHUD.show(withMessage: "开启定位或者等待定位成功")
                 return
             }
-            
+            let lociton = ABLocation.shared().lastLocation
             CPMapNavigation.shared().clickGotoMap(withDestinationName: "武汉市雄楚大道", destinationCoordinate: CLLocationCoordinate2DMake(39.99517568, 114.41148289), originCoordinate: lociton?.coordinate ?? CLLocationCoordinate2DMake(0, 0))
         default:
             let vc = TextViewController.init()

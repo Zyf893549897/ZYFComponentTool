@@ -71,10 +71,10 @@
     return currentShowingVC;
 }
 //lable 富文本 展示HTML字符串
-+(NSMutableAttributedString *)stringToAttributedstr:(NSString *)htmlString andfont:(CGFloat)font andtextColor:(UIColor *)textcolor lineSpace:(CGFloat)space{
++(NSMutableAttributedString *)stringToAttributedstr:(NSString *)htmlString andfont:(UIFont *)font andtextColor:(UIColor *)textcolor lineSpace:(CGFloat)space{
     NSMutableAttributedString * attrStr = [[NSMutableAttributedString alloc] initWithData:[htmlString dataUsingEncoding:NSUnicodeStringEncoding] options:@{NSDocumentTypeDocumentAttribute:NSHTMLTextDocumentType} documentAttributes:nil error:nil];
     NSRange range = NSMakeRange(0, attrStr.length);
-    [attrStr addAttributes:@{NSFontAttributeName : [UIFont systemFontOfSize:font]} range:range];//字体大小
+    [attrStr addAttributes:@{NSFontAttributeName : font} range:range];//字体大小
     [attrStr addAttributes:@{NSForegroundColorAttributeName : textcolor} range:range];// 字体颜色
 //    [attrStr addAttributes:@{NSKernAttributeName:@(3)} range:range];//设定字符间距   不需要可删除
     //段落样式  不需要可删除

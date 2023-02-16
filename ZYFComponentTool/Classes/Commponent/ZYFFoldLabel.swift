@@ -11,7 +11,7 @@ public enum TapStyle {
     case foot  //点击尾部文字有效
 }
 public class ZYFFoldLabel: UILabel {
-    public var myfont: CGFloat = 14.0
+    public var myfont: UIFont = UIFont.systemFont(ofSize: 14.0)
     public var textcolor: UIColor = UIColor.black
     public var footColor: UIColor = UIColor.red //尾部字体颜色
     public var tapType: TapStyle = .foot //默认点击尾部文字有效
@@ -21,7 +21,7 @@ public class ZYFFoldLabel: UILabel {
         }
     }
     public var tsqAttributedText:NSMutableAttributedString?
-    public var open = false
+    public var showAll = false
     public var closure:((Bool)->Void)?
     public init(maxLines:Int = 0) {
         self.maxLines = maxLines
@@ -42,7 +42,7 @@ public class ZYFFoldLabel: UILabel {
                 var optAttrKeys = attrKeys
                 optAttrKeys[NSAttributedString.Key.foregroundColor] = footColor
                 var optAttText:NSMutableAttributedString!
-                if open {
+                if showAll {
                     optAttText = NSMutableAttributedString(string: " 收起", attributes: optAttrKeys)
                 } else {
                     optAttText = NSMutableAttributedString(string: "... 展开 ", attributes: attrKeys)
@@ -55,14 +55,14 @@ public class ZYFFoldLabel: UILabel {
                 //附加文字的宽度   文字的 宽度
                 let optWidth = optAttText.boundingRect(with: CGSize(width: rect.width, height: lineBounds.height), options: [.usesLineFragmentOrigin], context: nil).width+5
                 
-                let maxLen = open ? attTxt.length : min(CTLineGetStringIndexForPosition(ctLines[maxLines-1], CGPoint(x: rect.width - optWidth, y: 0)), length)
-                
-//                print("==vvvvvvv====\(maxLen)")
-//                print("=====asdf=====\(tsqAttributedText?.string)")
-//                
+                let maxLen = showAll ? attTxt.length : min(CTLineGetStringIndexForPosition(ctLines[maxLines-1], CGPoint(x: rect.width - optWidth, y: 0)), length)
                 
                 let vAttText = NSMutableAttributedString(attributedString: attTxt.attributedSubstring(from: NSRange(location: 0, length: maxLen)))
-//                let vAttText = NSMutableAttributedString(attributedString: attTxt.attributedSubstring(from: NSRange(location: 0, length: open ? maxLen : maxLen-3)))//这里的修改是因为 在收缩展示时 刚好遇到了空格  有几个 空格或者换行符 就-几
+                
+                //因为如果尾部刚好遇到 \n 或者空格时  会导致  尾部的  展开 收起 显示不出来，这里  去除 最后一段文字中的 空格和换行
+                vAttText.mutableString.replaceOccurrences(of: "\n", with: "", options: NSString.CompareOptions(rawValue: 0), range: NSRange(location: (vAttText.length) - 20, length: 20))
+                vAttText.mutableString.replaceOccurrences(of: " ", with: "", options: NSString.CompareOptions(rawValue: 0), range: NSRange(location: (vAttText.length) - 20, length: 20))
+                
                 vAttText.append(optAttText)
                 attributedText = vAttText
                 
@@ -70,10 +70,9 @@ public class ZYFFoldLabel: UILabel {
                     isUserInteractionEnabled = true
                     addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(on_trunc_toggle)))
                 }else{
-//                    isUserInteractionEnabled = false
-                    self.yb_addAttributeTapAction(with: ["展开","收起"]) {[weak self] (lab, str, range, indx) in
-                        self?.open.toggle();
-                        self?.closure?(self?.open ?? false)
+                    self.yb_addAttributeTapAction(with: ["... 展开","收起"]) {[weak self] (lab, str, range, indx) in
+                        self?.showAll.toggle();
+                        self?.closure?(self?.showAll ?? false)
                     }
                 }
             }
@@ -81,19 +80,19 @@ public class ZYFFoldLabel: UILabel {
         super.draw(rect)
     }
  
-    @objc private func on_trunc_toggle() { open.toggle();closure?(open) }
+    @objc private func on_trunc_toggle() { showAll.toggle();closure?(showAll) }
     /*
      attr  需要显示的类容   
      open  默认是展开还是收起
      */
-    public func setAttrText(attr:String,open:Bool,isAttstr: Bool,closure:@escaping (Bool)->Void) {
-        numberOfLines = open ? 0 : maxLines
+    public func setAttrText(attr:String,showAll:Bool,isAttstr: Bool,closure:@escaping (Bool)->Void) {
+        numberOfLines = showAll ? 0 : maxLines
         var str=NSMutableAttributedString.init()
         if isAttstr == false {//展示  普通 string
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 5
             str = NSMutableAttributedString(string: attr, attributes: [
-                NSAttributedString.Key.font: UIFont.systemFont(ofSize: myfont),
+                NSAttributedString.Key.font: myfont,
                                             NSAttributedString.Key.paragraphStyle:paragraphStyle
             ])
         }else{// 展示  html 字符串
@@ -105,7 +104,7 @@ public class ZYFFoldLabel: UILabel {
         self.tsqAttributedText = str
         attributedText = str
         self.closure = closure
-        self.open = open
+        self.showAll = showAll
         setNeedsDisplay()
     }
 }

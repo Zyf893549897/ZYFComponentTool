@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
 //当前控制器
 + (UIViewController *)zyf_currentVC;
 //lable 富文本 展示HTML字符串
-+(NSMutableAttributedString *)stringToAttributedstr:(NSString *)htmlString andfont:(CGFloat)font andtextColor:(UIColor *)textcolor lineSpace:(CGFloat)space;
++(NSMutableAttributedString *)stringToAttributedstr:(NSString *)htmlString andfont:(UIFont *)font andtextColor:(UIColor *)textcolor lineSpace:(CGFloat)space;
 
 
 //给lable添加不同颜色文字 并且加下划线
