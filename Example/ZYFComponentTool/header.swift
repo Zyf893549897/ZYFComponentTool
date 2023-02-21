@@ -16,3 +16,9 @@
 @_exported import HXPhotoPicker
 @_exported import HandyJSON
 @_exported import ZLCollectionViewFlowLayout
+
+@_exported import RxCocoa
+@_exported import RxSwift
+
+import RxCocoa
+import RxSwift

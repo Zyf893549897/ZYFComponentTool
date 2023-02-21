@@ -35,6 +35,12 @@ PODS:
     - SDWebImage/Core (= 5.13.2)
   - SDWebImage/Core (5.13.2)
   - SnapKit (5.6.0)
+  - UMCCommonLog (2.0.2)
+  - UMCommon (7.3.8):
+    - UMDevice
+  - UMDevice (2.2.1)
+  - UMPush (4.0.4):
+    - UMCommon
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -61,6 +67,10 @@ PODS:
     - ZLCollectionViewFlowLayout
 
 DEPENDENCIES:
+  - UMCCommonLog
+  - UMCommon
+  - UMDevice
+  - UMPush
   - ZYFComponentTool (from `../`)
 
 SPEC REPOS:
@@ -85,6 +95,10 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
+    - UMCCommonLog
+    - UMCommon
+    - UMDevice
+    - UMPush
     - YYKit
     - ZLCollectionViewFlowLayout
 
@@ -113,10 +127,14 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
+  UMCommon: fdb5bac9e7ec2aca4f9cfc0febf414b59ed302cb
+  UMDevice: 053478c4b4d7292f31f0a275c227d3c4007a5571
+  UMPush: 1496cebc2f50a1ff9ef74b69bf868c6c3960c97f
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZLCollectionViewFlowLayout: 6cd506c05d77cb2ac0772f68155e377d50d39f8a
   ZYFComponentTool: 2e122c21bead14fcacf4ad4d5f2da42a9666202e
 
-PODFILE CHECKSUM: c9d1a4a3baf24a79ebab7da6524713d7f8dc85a5
+PODFILE CHECKSUM: 5d9af8c7c9a28fdd897647f4a6ffdc7c15495db8
 
 COCOAPODS: 1.11.3

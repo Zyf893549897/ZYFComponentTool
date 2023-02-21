@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7B0D9DDA29A465CE007A6E33 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0D9DD929A465CE007A6E33 /* RxViewController.swift */; };
 		7B3FE55F2994E0800085C89A /* ButtonTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */; };
 		7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3FE5622994EB960085C89A /* LabelTextViewController.swift */; };
 		7B404995298919F000F58BB5 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B404994298919F000F58BB5 /* header.swift */; };
@@ -44,6 +45,8 @@
 		7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80C2993984000750718 /* ThreeViewController.swift */; };
 		7BD6E80F2993984600750718 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E80E2993984600750718 /* FourViewController.swift */; };
 		7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD6E8102993984B00750718 /* FiveViewController.swift */; };
+		7BE8B84329A348E900A40CD6 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE8B84229A348E900A40CD6 /* UserNotifications.framework */; };
+		7BE8B84629A3496200A40CD6 /* AppDelegate+ZYFPush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE8B84529A3496200A40CD6 /* AppDelegate+ZYFPush.swift */; };
 		AD3D5AC203E0ADDA1DFD13B1 /* Pods_ZYFComponentTool_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */; };
 		BBCD502364977492D024D9EA /* Pods_ZYFComponentTool_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA144362B56B7EAE29795C1 /* Pods_ZYFComponentTool_Example.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +75,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		66320F99154B4E530674FFE2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7B0D9DD929A465CE007A6E33 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 		7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTestViewController.swift; sourceTree = "<group>"; };
 		7B3FE5622994EB960085C89A /* LabelTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextViewController.swift; sourceTree = "<group>"; };
 		7B404994298919F000F58BB5 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
@@ -103,6 +107,10 @@
 		7BD6E80C2993984000750718 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		7BD6E80E2993984600750718 /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		7BD6E8102993984B00750718 /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		7BE8B84229A348E900A40CD6 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		7BE8B84429A3490500A40CD6 /* ZYFComponentTool_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZYFComponentTool_Example.entitlements; sourceTree = "<group>"; };
+		7BE8B84529A3496200A40CD6 /* AppDelegate+ZYFPush.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ZYFPush.swift"; sourceTree = "<group>"; };
+		7BE8B84729A35A0100A40CD6 /* ZYFComponentTool_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZYFComponentTool_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B164DA46F6256741EAD0EA52 /* Pods-ZYFComponentTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B255B7DB98C888FE424E04 /* Pods-ZYFComponentTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BE8B84329A348E900A40CD6 /* UserNotifications.framework in Frameworks */,
 				BBCD502364977492D024D9EA /* Pods_ZYFComponentTool_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +154,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				7BE8B84429A3490500A40CD6 /* ZYFComponentTool_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for ZYFComponentTool */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -168,6 +178,7 @@
 			children = (
 				7B404994298919F000F58BB5 /* header.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				7BE8B84529A3496200A40CD6 /* AppDelegate+ZYFPush.swift */,
 				7BD6E8082993959C00750718 /* RootTabBarVC.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				7BD3C9CC296674A600B8BC9E /* TextViewController.swift */,
@@ -182,6 +193,7 @@
 				7BB04DAB2997664D0015693D /* SaveModelViewController.swift */,
 				7BD53BB6299B74E700746E8B /* TagViewController.swift */,
 				7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */,
+				7B0D9DD929A465CE007A6E33 /* RxViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
@@ -194,6 +206,7 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				7BE8B84729A35A0100A40CD6 /* ZYFComponentTool_Example-Bridging-Header.h */,
 			);
 			name = "Example for ZYFComponentTool";
 			path = ZYFComponentTool;
@@ -237,6 +250,7 @@
 		6A69387244B98C98C1E2E6D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7BE8B84229A348E900A40CD6 /* UserNotifications.framework */,
 				4EA144362B56B7EAE29795C1 /* Pods_ZYFComponentTool_Example.framework */,
 				9AEB121410B57F515B38A393 /* Pods_ZYFComponentTool_Tests.framework */,
 			);
@@ -296,6 +310,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				51824291C53F85BE8ED27590 /* [CP] Embed Pods Frameworks */,
+				691FC584725D81ECA18DA14A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -337,8 +352,8 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = S788UP2UMM;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = L73RHYANJX;
+						LastSwiftMigration = 1420;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -473,6 +488,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		691FC584725D81ECA18DA14A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-resources.sh",
+				"${PODS_ROOT}/UMCCommonLog/UMCommonLog/UMCommonLog.bundle",
+				"${PODS_ROOT}/UMPush/UMPush/UMPushResource.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMCommonLog.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMPushResource.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A03AEA6B39CDA46A6317042A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +555,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				7BD53BB7299B74E700746E8B /* TagViewController.swift in Sources */,
 				7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */,
+				7BE8B84629A3496200A40CD6 /* AppDelegate+ZYFPush.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
 				7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -530,6 +566,7 @@
 				7BD3C9CD296674A600B8BC9E /* TextViewController.swift in Sources */,
 				7BB04DAC2997664D0015693D /* SaveModelViewController.swift in Sources */,
 				7B6AE4AD299637F400DDC528 /* PopTestViewController.swift in Sources */,
+				7B0D9DDA29A465CE007A6E33 /* RxViewController.swift in Sources */,
 				7BD6E80F2993984600750718 /* FourViewController.swift in Sources */,
 				7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */,
 				7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */,
@@ -682,13 +719,17 @@
 			baseConfigurationReference = B164DA46F6256741EAD0EA52 /* Pods-ZYFComponentTool_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S788UP2UMM;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZYFComponentTool_Example.entitlements;
+				DEVELOPMENT_TEAM = L73RHYANJX;
 				INFOPLIST_FILE = ZYFComponentTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = zyftestdemo.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYFComponentTool/ZYFComponentTool_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -699,13 +740,16 @@
 			baseConfigurationReference = C0B255B7DB98C888FE424E04 /* Pods-ZYFComponentTool_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = S788UP2UMM;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = ZYFComponentTool_Example.entitlements;
+				DEVELOPMENT_TEAM = L73RHYANJX;
 				INFOPLIST_FILE = ZYFComponentTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = zyftestdemo.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZYFComponentTool/ZYFComponentTool_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};

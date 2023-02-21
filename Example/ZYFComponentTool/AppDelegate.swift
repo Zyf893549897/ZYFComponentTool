@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -25,6 +28,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //全局设置   导航栏
         setupNavBar()
+        
+        
+        //友盟推送
+        registerUPushLaunchOptions(launchOptions: launchOptions)
         
         return true
     }

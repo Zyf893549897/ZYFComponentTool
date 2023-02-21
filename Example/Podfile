@@ -6,8 +6,11 @@ target 'ZYFComponentTool_Example' do
   pod 'ZYFComponentTool', :path => '../'
   
   
-  
-  
+  # 友盟推送
+  pod 'UMCommon'#//原为'UMCCommon'
+  pod 'UMPush'#//原为'UMCPush'
+  pod 'UMDevice'
+  pod 'UMCCommonLog'
 
   target 'ZYFComponentTool_Tests' do
     inherit! :search_paths

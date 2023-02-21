@@ -476,6 +476,26 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
+## UMCCommonLog
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
+## UMCommon
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
+## UMDevice
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
+## UMPush
+
+Copyright 2011 - 2018 umeng.com. All rights reserved.
+
+
 ## YYKit
 
 The MIT License (MIT)

@@ -67,6 +67,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "保存图片功能"
         case 12:
             cell.textLabel?.text = "调用本机地图导航"
+        case 13:
+            cell.textLabel?.text = "rx的简单使用"
         default:
             break
         }
@@ -117,6 +119,9 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             }
             let lociton = ABLocation.shared().lastLocation
             CPMapNavigation.shared().clickGotoMap(withDestinationName: "武汉市雄楚大道", destinationCoordinate: CLLocationCoordinate2DMake(39.99517568, 114.41148289), originCoordinate: lociton?.coordinate ?? CLLocationCoordinate2DMake(0, 0))
+            
+        case 13:
+            zyf_pushVC(vc: RxViewController.init(), animated: true)
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
