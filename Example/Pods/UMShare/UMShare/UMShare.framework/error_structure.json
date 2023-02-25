@@ -1,0 +1,83 @@
+136,138d135
+< ./SocialLibraries/Douban
+< ./SocialLibraries/Douban/UMSocialDoubanHandler.h
+< ./SocialLibraries/Douban/libSocialDouban.a
+284,286d280
+< ./SocialLibraries/GooglePlus
+< ./SocialLibraries/GooglePlus/UMSocialGooglePlusHandler.h
+< ./SocialLibraries/GooglePlus/libSocialGooglePlus.a
+348,360d341
+< ./SocialLibraries/LaiWang
+< ./SocialLibraries/LaiWang/LWApiConfig.h
+< ./SocialLibraries/LaiWang/LWApiConnection.h
+< ./SocialLibraries/LaiWang/LWApiImageObject.h
+< ./SocialLibraries/LaiWang/LWApiMediaObject.h
+< ./SocialLibraries/LaiWang/LWApiMessage.h
+< ./SocialLibraries/LaiWang/LWApiRequest.h
+< ./SocialLibraries/LaiWang/LWApiResponse.h
+< ./SocialLibraries/LaiWang/LWApiSDK.h
+< ./SocialLibraries/LaiWang/LWApiUtils.h
+< ./SocialLibraries/LaiWang/UMSocialLaiWangHandler.h
+< ./SocialLibraries/LaiWang/libLWApiSDK.a
+< ./SocialLibraries/LaiWang/libSocialLaiWang.a
+422a404,405
+> ./SocialLibraries/QQ/QQSDK/TencentOpenAPI.framework/Headers/TencentOpenApiUmbrellaHeader.h
+> ./SocialLibraries/QQ/QQSDK/TencentOpenAPI.framework/Headers/module.modulemap
+424d406
+< ./SocialLibraries/QQ/QQSDK/TencentOpenAPI.framework/Resources
+425a408,446
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/Info.plist
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/btn_cancel.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/btn_cancel_hover.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/refresh.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/refresh@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_pengyouquan.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_pengyouquan@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_qq.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_qq@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_qzone.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_qzone@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_safari.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_safari@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_weixin.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/share_weixin@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_back.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_back@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_backtogame.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_backtogame@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_backward.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_backward@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_for.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_for@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_forward.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_forward@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_more.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_more@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_recommand.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_recommand@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_stop.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_stop@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_toolbg.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/WebViewResources/webview_toolbg@2x.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/error.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/local.html
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/qqicon.png
+> ./SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle/success.png
+428,430d448
+< ./SocialLibraries/Renren
+< ./SocialLibraries/Renren/UMSocialRenrenHandler.h
+< ./SocialLibraries/Renren/libSocialRenren.a
+448,450d465
+< ./SocialLibraries/TencentWeibo
+< ./SocialLibraries/TencentWeibo/UMSocialTCWeiboHandler.h
+< ./SocialLibraries/TencentWeibo/libSocialTencentWeibo.a
+871a887
+> ./UMShare.framework/Headers/UMShareLink.h
+932a949
+> ./UMSocialUI/UMSocialSDKResources.bundle/UMSocialPlatformTheme/default/umsocial_wechatwork.png
+953c970
+< 201 directories, 749 files
+---
+> 197 directories, 770 files

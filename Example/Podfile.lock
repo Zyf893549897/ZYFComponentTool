@@ -41,6 +41,15 @@ PODS:
   - UMDevice (2.2.1)
   - UMPush (4.0.4):
     - UMCommon
+  - UMShare/Core (6.10.7):
+    - UMCommon
+  - UMShare/Social/ReducedWeChat (6.10.7):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.7):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -71,6 +80,7 @@ DEPENDENCIES:
   - UMCommon
   - UMDevice
   - UMPush
+  - UMShare/Social/WeChat
   - ZYFComponentTool (from `../`)
 
 SPEC REPOS:
@@ -99,6 +109,7 @@ SPEC REPOS:
     - UMCommon
     - UMDevice
     - UMPush
+    - UMShare
     - YYKit
     - ZLCollectionViewFlowLayout
 
@@ -131,10 +142,11 @@ SPEC CHECKSUMS:
   UMCommon: fdb5bac9e7ec2aca4f9cfc0febf414b59ed302cb
   UMDevice: 053478c4b4d7292f31f0a275c227d3c4007a5571
   UMPush: 1496cebc2f50a1ff9ef74b69bf868c6c3960c97f
+  UMShare: 8a1030a9793941d1129a82d5bc02cd97df5ae210
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZLCollectionViewFlowLayout: 6cd506c05d77cb2ac0772f68155e377d50d39f8a
   ZYFComponentTool: 2e122c21bead14fcacf4ad4d5f2da42a9666202e
 
-PODFILE CHECKSUM: 5d9af8c7c9a28fdd897647f4a6ffdc7c15495db8
+PODFILE CHECKSUM: aee12cdd83c75e21766a93f19fa42ebdaa0b957b
 
 COCOAPODS: 1.11.3

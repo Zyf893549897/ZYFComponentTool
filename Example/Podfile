@@ -6,12 +6,17 @@ target 'ZYFComponentTool_Example' do
   pod 'ZYFComponentTool', :path => '../'
   
   
-  # 友盟推送
+  # 友盟基础组件   推送分享都要集成这2个
   pod 'UMCommon'#//原为'UMCCommon'
-  pod 'UMPush'#//原为'UMCPush'
   pod 'UMDevice'
+    #推送用
+  pod 'UMPush'#//原为'UMCPush'
   pod 'UMCCommonLog'
-
+    #分享用
+  pod 'UMShare/Social/WeChat'
+  #pod 'UMShare/Social/QQ' qq分享
+  #pod 'UMShare/Social/Sina' 微博分享
+  
   target 'ZYFComponentTool_Tests' do
     inherit! :search_paths
 

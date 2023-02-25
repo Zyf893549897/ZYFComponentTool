@@ -8,3 +8,7 @@
 #import <UMCommon/UMCommon.h>
 #import <UMCommonLog/UMCommonLogHeaders.h> //日志
 #import <UMPush/UMessage.h>    //推送
+
+
+// U-Share核心SDK
+#import <UMShare/UMShare.h>

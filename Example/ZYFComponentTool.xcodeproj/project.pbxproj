@@ -23,6 +23,8 @@
 		7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453C6299CE44600422BC1 /* ZYFSearchView.swift */; };
 		7B9453C9299CE51400422BC1 /* TagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453C8299CE51400422BC1 /* TagCell.swift */; };
 		7B9453CB299CE61800422BC1 /* TagCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9453CA299CE61800422BC1 /* TagCollectionCell.swift */; };
+		7B95A6D729A8AD2600B3BF52 /* AppDelegate+ZYFShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95A6D629A8AD2600B3BF52 /* AppDelegate+ZYFShare.swift */; };
+		7B95A6D929A8AF2100B3BF52 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95A6D829A8AF2100B3BF52 /* ShareViewController.swift */; };
 		7BB04D9C299739A70015693D /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04D9B299739A70015693D /* SelectImageViewController.swift */; };
 		7BB04DA32997409E0015693D /* SelectPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA22997409E0015693D /* SelectPictureView.swift */; };
 		7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB04DA02997409E0015693D /* ImageCollectionCell.swift */; };
@@ -85,6 +87,8 @@
 		7B9453C6299CE44600422BC1 /* ZYFSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYFSearchView.swift; sourceTree = "<group>"; };
 		7B9453C8299CE51400422BC1 /* TagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCell.swift; sourceTree = "<group>"; };
 		7B9453CA299CE61800422BC1 /* TagCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionCell.swift; sourceTree = "<group>"; };
+		7B95A6D629A8AD2600B3BF52 /* AppDelegate+ZYFShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ZYFShare.swift"; sourceTree = "<group>"; };
+		7B95A6D829A8AF2100B3BF52 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		7BB04D9B299739A70015693D /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		7BB04DA02997409E0015693D /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
 		7BB04DA12997409E0015693D /* SelectImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				7B404994298919F000F58BB5 /* header.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				7BE8B84529A3496200A40CD6 /* AppDelegate+ZYFPush.swift */,
+				7B95A6D629A8AD2600B3BF52 /* AppDelegate+ZYFShare.swift */,
 				7BD6E8082993959C00750718 /* RootTabBarVC.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				7BD3C9CC296674A600B8BC9E /* TextViewController.swift */,
@@ -194,6 +199,7 @@
 				7BD53BB6299B74E700746E8B /* TagViewController.swift */,
 				7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */,
 				7B0D9DD929A465CE007A6E33 /* RxViewController.swift */,
+				7B95A6D829A8AF2100B3BF52 /* ShareViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
@@ -557,6 +563,7 @@
 				7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */,
 				7BE8B84629A3496200A40CD6 /* AppDelegate+ZYFPush.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
+				7B95A6D929A8AF2100B3BF52 /* ShareViewController.swift in Sources */,
 				7BB04DB3299772490015693D /* SaveModelManger.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				7BB04DB5299777EE0015693D /* UserModel.swift in Sources */,
@@ -569,6 +576,7 @@
 				7B0D9DDA29A465CE007A6E33 /* RxViewController.swift in Sources */,
 				7BD6E80F2993984600750718 /* FourViewController.swift in Sources */,
 				7BD6E8112993984B00750718 /* FiveViewController.swift in Sources */,
+				7B95A6D729A8AD2600B3BF52 /* AppDelegate+ZYFShare.swift in Sources */,
 				7B6AE4A92996239D00DDC528 /* BannerTableViewCell.swift in Sources */,
 				7BD6E8092993959C00750718 /* RootTabBarVC.swift in Sources */,
 				7B3FE5632994EB960085C89A /* LabelTextViewController.swift in Sources */,

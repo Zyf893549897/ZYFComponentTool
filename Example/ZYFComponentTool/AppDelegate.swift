@@ -30,8 +30,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupNavBar()
         
         
+    //友盟推送  分享
+        //注册友盟
+        //打开加密传输
+        UMConfigure.setEncryptEnabled(true)
+        //设置日志
+        UMConfigure.setLogEnabled(true)
+        //开发者需要显式的调用此函数，日志系统才能工作
+        UMCommonLogManager.setUp()
+        
+        //初始化
+        UMConfigure.initWithAppkey("63f30f074ed5d4501aecf65c", channel: nil)
+        
         //友盟推送
         registerUPushLaunchOptions(launchOptions: launchOptions)
+        //友盟分享
+        setUMShareMessage()
         
         return true
     }

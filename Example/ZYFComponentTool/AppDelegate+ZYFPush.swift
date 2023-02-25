@@ -13,16 +13,6 @@ import Foundation
 extension AppDelegate:UNUserNotificationCenterDelegate{
     
     func registerUPushLaunchOptions(launchOptions: [UIApplicationLaunchOptionsKey: Any]?){
-        //注册友盟
-        //开发者需要显式的调用此函数，日志系统才能工作
-        UMCommonLogManager.setUp()
-        //打开加密传输
-        UMConfigure.setEncryptEnabled(true)
-        //设置日志
-        UMConfigure.setLogEnabled(true)
-        //初始化
-        UMConfigure.initWithAppkey("63f30f074ed5d4501aecf65c", channel: "zyftest")
-        
         // 推送通知相关
         let entity = UMessageRegisterEntity.init()
         //type是对推送的几个参数的选择，可以选择一个或者多个。默认是三个全部打开，即：声音，弹窗，角标
@@ -30,7 +20,6 @@ extension AppDelegate:UNUserNotificationCenterDelegate{
         UNUserNotificationCenter.current().delegate = self
         UMessage.registerForRemoteNotifications(launchOptions: launchOptions, entity: entity) { granted, error in
         }
-        
         
 //        //  在登录的 地方调用
 //        //登录成功时设置推送别名

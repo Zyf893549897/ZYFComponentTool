@@ -25,6 +25,8 @@
 		<string>qqmap</string>
 		<string>iosamap</string>
 		<string>baidumap</string>
+		<string>wechat</string>
+		<string>weixin</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>

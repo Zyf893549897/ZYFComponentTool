@@ -496,6 +496,11 @@ Copyright 2011 - 2021 umeng.com. All rights reserved.
 Copyright 2011 - 2018 umeng.com. All rights reserved.
 
 
+## UMShare
+
+Copyright 2011 - 2021 umeng.com. All rights reserved.
+
+
 ## YYKit
 
 The MIT License (MIT)
