@@ -63,7 +63,7 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
             pop.titleLabel.text = "提示"
             pop.mesLabel.text = "阿很快收到货发可接受的饭卡啊上岛咖啡哈可接受的发卡机东方航空久啊稍等哈发卡机阿好哒会计法哈哈"
             pop.defaultStyleLayout()
-            pop.cj_showInAppWindowAnimation()
+            pop.showPop()
             break
         case 1:
             let pop = ZYFPopView.init(frame: ZYFScreenBounds)

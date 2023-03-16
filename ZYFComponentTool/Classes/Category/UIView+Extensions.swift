@@ -112,7 +112,7 @@ public extension UIView {
         }
     }
     // 倒角和边框
-    func setLayer(_ radius :CGFloat,_ bordwidth :CGFloat,_ color :UIColor) -> Void {
+    func setLayer(_ radius :CGFloat,_ bordwidth :CGFloat = 0.0,_ color :UIColor = .clear) -> Void {
         self.layer.cornerRadius=radius
         self.layer.borderWidth=bordwidth
         self.layer.borderColor=color.cgColor

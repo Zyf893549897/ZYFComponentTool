@@ -92,7 +92,7 @@ public class ZYFFoldLabel: UILabel {
             let paragraphStyle = NSMutableParagraphStyle()
             paragraphStyle.lineSpacing = 5
             str = NSMutableAttributedString(string: attr, attributes: [
-                NSAttributedString.Key.font: myfont,
+                NSAttributedString.Key.font: myfont,NSAttributedString.Key.foregroundColor:textcolor,
                                             NSAttributedString.Key.paragraphStyle:paragraphStyle
             ])
         }else{// 展示  html 字符串

@@ -46,7 +46,9 @@ open class ZYFPopView: ZYFBasePopView {
         }
         dismiss()
     }
-    
+    public func showPop(){
+        self.cj_showInAppWindowAnimation()
+    }
    @objc public func defaultStyleLayout(){
         super.setViewsLayout()
         
