@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LYEmptyView/LYEmptyView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,weak)id<RefreshNodataDelegate> refrashDelegate;
 @property (nonatomic, assign) NSInteger page_no;//刷新参数 页码
 @property(nonatomic,strong)LYEmptyView * emptyView; //无数据页面
-@property(nonatomic,strong)OCNODateView * noDataView;
+@property(nonatomic,strong)NoDataView * noDataView;
 //上下拉刷新
 -(void)addUpAndDownRefresh;//添加刷新
 //下拉

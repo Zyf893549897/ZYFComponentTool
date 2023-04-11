@@ -1,3 +1,5 @@
+> [推荐使用：Swift版本（照片/视频编辑器支持添加滤镜效果）](https://github.com/SilenceLove/HXPHPicker)
+
 <img src="http://tsnrhapp.oss-cn-hangzhou.aliyuncs.com/chartle/show_tip_2.png">
 
 <p align="center">
@@ -8,8 +10,6 @@
 <a href="https://developer.apple.com/Objective-C"><img src="http://img.shields.io/badge/language-ObjC-red.svg?logo=common-workflow-language"></a>
 <a href="http://mit-license.org"><img src="http://img.shields.io/badge/license-MIT-333333.svg?logo=letterboxd&logoColor=ffffff"></a>
 </p>
-
-> [Swift版本](https://github.com/SilenceLove/HXPHPicker)
 
 | <img src="http://tsnrhapp.oss-cn-hangzhou.aliyuncs.com/chartle/show_tag_4.PNG"> | <img src="http://tsnrhapp.oss-cn-hangzhou.aliyuncs.com/chartle/sample_graph_1.PNG"> | <img src="http://tsnrhapp.oss-cn-hangzhou.aliyuncs.com/chartle/sample_graph_2.PNG"> |
 | ------ | ------ | ------ |
@@ -65,13 +65,13 @@
 ``` ruby
 # 将以下内容添加到您的Podfile中：
 # 不使用网络图片功能
-pod 'HXPhotoPicker', '~> 3.3.1'
+pod 'HXPhotoPicker', '~> 3.3.2'
   
 # 使用SDWebImage加载网络图片
-pod 'HXPhotoPicker/SDWebImage', '~> 3.3.1'
+pod 'HXPhotoPicker/SDWebImage', '~> 3.3.2'
   
 # 使用YYWebImage加载网络图片
-pod 'HXPhotoPicker/YYWebImage', '~> 3.3.1'
+pod 'HXPhotoPicker/YYWebImage', '~> 3.3.2'
 
 # 搜索不到库或最新版时请执行
 pod repo update 或 rm ~/Library/Caches/CocoaPods/search_index.json
@@ -716,7 +716,8 @@ frame.size.height 就是 HXPhotoView 的正确高度
   <summary><strong>最近更新</strong></summary>
    
 ```
-- v3.3.1　-　修复相册权限未`选择部分`，照片列表未添加相机cell时,滑动到最后一个然后返回会崩溃问题
+- v3.3.2　-　适配iOS16、iPhone14Pro/ProMax，日语本地化文件完善，修复iOS9.3.5 获取fileSize崩溃
+- v3.3.1　-　修复相册权限为`选择部分`，照片列表未添加相机cell时,滑动到最后一个然后返回会崩溃问题
 - v3.3.0　-　HXPhotoModel添加压缩视频方法
 - v3.2.9　-　修复在iOS15上，单选模式裁剪图片之后的界面显示问题
 - v3.2.7　-　完善iOS15适配，修复裁剪视频时可能会出现导出失败的问题

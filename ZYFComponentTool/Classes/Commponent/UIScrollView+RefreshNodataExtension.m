@@ -9,6 +9,17 @@
 #import "UIScrollView+RefreshNodataExtension.h"
 #import <objc/runtime.h>
 #import "UIView+Empty.h"
+#import <MJRefresh/MJRefresh.h>
+
+// 获取屏幕宽高
+#define KScreenWidth [UIApplication sharedApplication].windows.firstObject.bounds.size.width
+#define KScreenHeight [UIApplication sharedApplication].windows.firstObject.bounds.size.height
+
+//宽度对比的比例值
+#define Width_biLi KScreenWidth/375.0f
+//按比例计算后的值得大小
+#define Scale(size) Width_biLi*size
+
 @interface UIScrollView ()
 
 @end
@@ -35,10 +46,10 @@ static void *emptyViewKey = &emptyViewKey;
 
 
 static void *noDataViewKey = &noDataViewKey;
-- (void)setNoDataView:(OCNODateView *)noDataView{
+- (void)setNoDataView:(NoDataView *)noDataView{
     objc_setAssociatedObject(self, &noDataViewKey, noDataView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-- (OCNODateView *)noDataView{
+- (NoDataView *)noDataView{
     return objc_getAssociatedObject(self, &noDataViewKey);
 }
 
@@ -68,7 +79,7 @@ static void *refrashDelegateKey = &refrashDelegateKey;
     self.mj_footer.mj_h = 0;
     
     
-    self.noDataView = [[OCNODateView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, Scale(190))];
+    self.noDataView = [[NoDataView alloc] initWithFrame:CGRectMake(0, 0, KScreenWidth, Scale(190))];
     self.emptyView = [LYEmptyView emptyViewWithCustomView:self.noDataView];
     self.emptyView.autoShowEmptyView = YES;
     self.ly_emptyView = self.emptyView;
