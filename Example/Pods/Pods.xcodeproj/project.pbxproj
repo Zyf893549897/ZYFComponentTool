@@ -92,6 +92,8 @@
 		044C9895D2215BC2315615D6E1175330 /* Infallible+Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D5AA6812929B0669DF21227D74E0B /* Infallible+Zip+arity.swift */; };
 		04637C70546B34F93C3A1D79C3F78B37 /* ConstraintDirectionalInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05570653E374BAB8F2FA0C2B73409829 /* ConstraintDirectionalInsetTarget.swift */; };
 		046B0C73E240D103F38C3353692803F7 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AC0C9EA9D0105FC3CB1FB9ADD61C02 /* Sequence.swift */; };
+		04728B3929E507F50007E215 /* UIScrollView+RefreshNodataExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 04728B3729E507F40007E215 /* UIScrollView+RefreshNodataExtension.m */; };
+		04728B3A29E507F50007E215 /* UIScrollView+RefreshNodataExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 04728B3829E507F50007E215 /* UIScrollView+RefreshNodataExtension.h */; };
 		047628DE8B37DDD373E8831069D0A0EB /* JXPagingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9007F6016259E715C50B97BBDECC5CE1 /* JXPagingView-dummy.m */; };
 		04A4631D6E5CD7BBC7A0935A95CD05B2 /* KNReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 182486D3A81E7D963F8AEC8562102AB8 /* KNReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E8C652BD3375E6A8CCDF47A9F6AFD1 /* ZYFCustomFootRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = C59C0351FF663E93527FFBA2334EAE1E /* ZYFCustomFootRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1825,6 +1827,8 @@
 		04371E3613A8ECE121D3423A96498697 /* ZYFComponentTool */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZYFComponentTool; path = ZYFComponentTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		044B7445CB149B279B9C64013C906831 /* SharedSequence+Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Concurrency.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Concurrency.swift"; sourceTree = "<group>"; };
 		0458D797E12E3FB76DD8ECEDD295CAC1 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
+		04728B3729E507F40007E215 /* UIScrollView+RefreshNodataExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+RefreshNodataExtension.m"; sourceTree = "<group>"; };
+		04728B3829E507F50007E215 /* UIScrollView+RefreshNodataExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+RefreshNodataExtension.h"; sourceTree = "<group>"; };
 		04B87E725AB5B1EA8F9BB19E19EEBC1D /* Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Create.swift; path = RxSwift/Observables/Create.swift; sourceTree = "<group>"; };
 		04E5C8ED958F4BB512DF0216ED78B43A /* UIViewController+HXExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HXExtension.h"; path = "HXPhotoPicker/Category/UIViewController+HXExtension.h"; sourceTree = "<group>"; };
 		050A62E4C01A7FE4D5FE5D7C7FB89256 /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
@@ -5514,6 +5518,8 @@
 				53AE335395679AFB63655282516831D5 /* ZYFSheetView.swift */,
 				3E440A1E5A9BB853F82D083A97F2B8C8 /* ZYFTextView.h */,
 				B8923B3942E22D3568BD4918FBD8F2F5 /* ZYFTextView.m */,
+				04728B3829E507F50007E215 /* UIScrollView+RefreshNodataExtension.h */,
+				04728B3729E507F40007E215 /* UIScrollView+RefreshNodataExtension.m */,
 				8A3F5CCB1947038D0C5A66EAA39DD424 /* ZYFMapNav */,
 			);
 			name = Commponent;
@@ -5952,6 +5958,7 @@
 				BD65F518FE3A69D6AD03F90F4879782C /* ZYFRefreshHeader.h in Headers */,
 				6ED048A96FA5BC23342089898E308AD2 /* ZYFTextView.h in Headers */,
 				DA059A20A0C477CF767FCE18228522A8 /* ZYFTools.h in Headers */,
+				04728B3A29E507F50007E215 /* UIScrollView+RefreshNodataExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7333,6 +7340,7 @@
 				792B3008830D6CC9011EB422EDB0761C /* BaseTableViewCell.swift in Sources */,
 				FEA138434D0D4BFECA7EA068D3314E1A /* CLLocation+ABLocationTransform.m in Sources */,
 				24ADBD3EF281EE255AC79A2E37FA6E61 /* Collection+Extension.swift in Sources */,
+				04728B3929E507F50007E215 /* UIScrollView+RefreshNodataExtension.m in Sources */,
 				24ADBD3EF281EE255AC79A2E37FA6E61 /* Collection+Extension.swift in Sources */,
 				BD4F676597843719BCAAD2DE977322FC /* Const.swift in Sources */,
 				88693A81AC289C4A32876C1E86276593 /* Const_OC.swift in Sources */,
