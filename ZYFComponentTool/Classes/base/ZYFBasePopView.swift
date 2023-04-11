@@ -62,7 +62,7 @@ open class ZYFBasePopView: UIView , UIGestureRecognizerDelegate{
         super.layoutSubviews()
         
     }
-    private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         if ((touch.view?.isDescendant(of: bgView)) == true){
             return false
         }

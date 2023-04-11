@@ -119,7 +119,7 @@
 		B164DA46F6256741EAD0EA52 /* Pods-ZYFComponentTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C0B255B7DB98C888FE424E04 /* Pods-ZYFComponentTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Example.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Example/Pods-ZYFComponentTool_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C70A261361909E5D08383EF0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D75F05F34D18593A6BCBC107 /* ZYFComponentTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYFComponentTool.podspec; path = ../ZYFComponentTool.podspec; sourceTree = "<group>"; };
+		D75F05F34D18593A6BCBC107 /* ZYFComponentTool.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZYFComponentTool.podspec; path = ../ZYFComponentTool.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FCAB05FE6803F841D016C15A /* Pods-ZYFComponentTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Tests/Pods-ZYFComponentTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,7 +359,6 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = L73RHYANJX;
 						LastSwiftMigration = 1420;
 					};
 					607FACE41AFB9204008FA782 = {
