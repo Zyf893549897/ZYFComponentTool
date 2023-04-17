@@ -16,7 +16,7 @@
 #define Constoc [[Const_OC alloc] init]
 //#define Scale(x) [Constoc scale:x]
 //#define scaleFont(x) [Constoc scaleFont:x]
-//#define ZYFHUD [ZYFHUDManager sharedHUDManager]
+
 //
 /**
  *  弱引用

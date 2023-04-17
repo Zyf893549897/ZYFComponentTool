@@ -71,6 +71,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "调用本机地图导航"
         case 14:
             cell.textLabel?.text = "rx的简单使用"
+        case 15:
+            cell.textLabel?.text = "限制输入的 textfiled"
         default:
             break
         }
@@ -127,6 +129,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             
         case 14:
             zyf_pushVC(vc: RxViewController.init(), animated: true)
+        case 15:
+            zyf_pushVC(vc: TextFieldViewController.init(), animated: true)
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true
