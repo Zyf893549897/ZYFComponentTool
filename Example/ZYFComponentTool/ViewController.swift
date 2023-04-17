@@ -50,24 +50,26 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 3:
             cell.textLabel?.text = "基类 ZYFBaseViewController（上下拉刷新  无数据页面）"
         case 4:
-            cell.textLabel?.text = "分页控制器 组件"
+            cell.textLabel?.text = "UIscollview扩展方式（上下拉刷新  无数据页面）"
         case 5:
-            cell.textLabel?.text = "轮播图"
+            cell.textLabel?.text = "分页控制器 组件"
         case 6:
-            cell.textLabel?.text = "pop"
+            cell.textLabel?.text = "轮播图"
         case 7:
-            cell.textLabel?.text = "图片选择  图片展示 封装"
+            cell.textLabel?.text = "pop"
         case 8:
-            cell.textLabel?.text = "存储数据模型  如 用户信息   首页数据缓存等"
+            cell.textLabel?.text = "图片选择  图片展示 封装"
         case 9:
-            cell.textLabel?.text = "搜索历史 标签"
+            cell.textLabel?.text = "存储数据模型  如 用户信息   首页数据缓存等"
         case 10:
-            cell.textLabel?.text = "瀑布流"
+            cell.textLabel?.text = "搜索历史 标签"
         case 11:
-            cell.textLabel?.text = "保存图片功能"
+            cell.textLabel?.text = "瀑布流"
         case 12:
-            cell.textLabel?.text = "调用本机地图导航"
+            cell.textLabel?.text = "保存图片功能"
         case 13:
+            cell.textLabel?.text = "调用本机地图导航"
+        case 14:
             cell.textLabel?.text = "rx的简单使用"
         default:
             break
@@ -90,29 +92,32 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             let vc = BaseVCTestViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 4:
-            let vc = JxPageRootViewController.init()
+            let vc = RefrashViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 5:
-            let vc = BanneViewController.init()
+            let vc = JxPageRootViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 6:
-            let vc = PopTestViewController.init()
+            let vc = BanneViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 7:
-            let vc = SelectImageViewController.init()
+            let vc = PopTestViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 8:
-            let vc = SaveModelViewController.init()
+            let vc = SelectImageViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 9:
-            let vc = TagViewController.init()
+            let vc = SaveModelViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 10:
-            let vc = WaterfallCollectionViewController.init()
+            let vc = TagViewController.init()
             zyf_pushVC(vc: vc, animated: true)
         case 11:
-            saveImageToPhotoAlbum(img: UIImage(named: "duigou") ?? UIImage())
+            let vc = WaterfallCollectionViewController.init()
+            zyf_pushVC(vc: vc, animated: true)
         case 12:
+            saveImageToPhotoAlbum(img: UIImage(named: "duigou") ?? UIImage())
+        case 13:
             if ABLocation.isCanLocation() == false{
                 ZYFHUD.show(withMessage: "开启定位或者等待定位成功")
                 return
@@ -120,7 +125,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             let lociton = ABLocation.shared().lastLocation
             CPMapNavigation.shared().clickGotoMap(withDestinationName: "武汉市雄楚大道", destinationCoordinate: CLLocationCoordinate2DMake(39.99517568, 114.41148289), originCoordinate: lociton?.coordinate ?? CLLocationCoordinate2DMake(0, 0))
             
-        case 13:
+        case 14:
             zyf_pushVC(vc: RxViewController.init(), animated: true)
         default:
             let vc = TextViewController.init()

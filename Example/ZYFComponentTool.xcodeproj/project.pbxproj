@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0420B48B29ED268500DB5126 /* RefrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420B48A29ED268500DB5126 /* RefrashViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0420B48A29ED268500DB5126 /* RefrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrashViewController.swift; sourceTree = "<group>"; };
 		4B1122EF92890306DC732CBB /* Pods-ZYFComponentTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Tests/Pods-ZYFComponentTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4EA144362B56B7EAE29795C1 /* Pods_ZYFComponentTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ZYFComponentTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFComponentTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 				7B3FE55E2994E0800085C89A /* ButtonTestViewController.swift */,
 				7B3FE5622994EB960085C89A /* LabelTextViewController.swift */,
 				7BD5056B2995DA22002F3CBE /* BaseVCTestViewController.swift */,
+				0420B48A29ED268500DB5126 /* RefrashViewController.swift */,
 				7BD5056D2995F5C7002F3CBE /* JxPageRootViewController.swift */,
 				7BD5056F2995F5D1002F3CBE /* JxsonViewController.swift */,
 				7BD5057129961A7A002F3CBE /* BanneViewController.swift */,
@@ -543,6 +546,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0420B48B29ED268500DB5126 /* RefrashViewController.swift in Sources */,
 				7BD6E80D2993984000750718 /* ThreeViewController.swift in Sources */,
 				7BB04DA42997409E0015693D /* ImageCollectionCell.swift in Sources */,
 				7B404995298919F000F58BB5 /* header.swift in Sources */,
