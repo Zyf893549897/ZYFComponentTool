@@ -41,6 +41,9 @@
     if (@available(iOS 13.0, *)) {
         [hud activityItemsConfiguration];
     }
+    
+    [self delayedExecution];
+    
     return hud;
 }
 - (MBProgressHUD *)showLoadingWithMessage:(NSString *)title atView:(UIView *)view{
@@ -56,8 +59,21 @@
     if (@available(iOS 13.0, *)) {
         [hud activityItemsConfiguration];
     }
+    
+    [self delayedExecution];
+    
     return hud;
 }
+
+//当遇到加载超时时
+-(void)delayedExecution{
+    WeakSelf(myself);
+    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(15.0 * NSEC_PER_SEC));
+    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+        [myself dismissHUD];
+    });
+}
+
 - (void)dismissHUD {
     [self dismissHUDDelay:0.5];
 }
