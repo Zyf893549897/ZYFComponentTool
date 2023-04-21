@@ -51,7 +51,6 @@
         }
             break;
         case img_Right: {
-            
             imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space, 0, -labelWidth-space);
             labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith-space, 0, imageWith+space);
             if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentRight){
@@ -61,7 +60,6 @@
                 imageEdgeInsets = UIEdgeInsetsMake(0, labelWidth+space+offset, 0, -labelWidth-space);
                 labelEdgeInsets = UIEdgeInsetsMake(0, -imageWith+offset, 0, imageWith+space);
             }
-            
         }
             break;
         default:
