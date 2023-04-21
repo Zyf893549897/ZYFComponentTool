@@ -23,6 +23,7 @@
         self.delegate = self;
         self.type = other;
         self.keyboardType = type;
+        [self addTarget:self action:@selector(textFieldDidChangeSelection:) forControlEvents:UIControlEventValueChanged];
     }
     return self;
 }
@@ -80,6 +81,8 @@
     
     return YES;
 }
+
+
 -(void)textFieldDidEndEditing:(UITextField *)textField{
     if([self isValidateMobile:textField.text]){
         if (self.block != nil) {
@@ -89,6 +92,11 @@
         [OCZYFHUD showWithMessage:@"请输入正确的11位手机号"];
     }
 }
+
+- (void)textFieldDidChangeSelection:(UITextField *)textField{
+    
+}
+
 #pragma mark - 手机号码验证
 
 //逐步判断输入的是否为手机号     区别于手机号正则  @"^1[3456789]\\d{9}$";

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0420B48B29ED268500DB5126 /* RefrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0420B48A29ED268500DB5126 /* RefrashViewController.swift */; };
 		0489588429ED34DE00F9C0CD /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0489588329ED34DE00F9C0CD /* TextFieldViewController.swift */; };
+		04D5597429F287B50082EC9A /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5597329F287B50082EC9A /* ShowImageViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		0420B48A29ED268500DB5126 /* RefrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrashViewController.swift; sourceTree = "<group>"; };
 		0489588329ED34DE00F9C0CD /* TextFieldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		04D5597329F287B50082EC9A /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
 		4B1122EF92890306DC732CBB /* Pods-ZYFComponentTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYFComponentTool_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZYFComponentTool_Tests/Pods-ZYFComponentTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4EA144362B56B7EAE29795C1 /* Pods_ZYFComponentTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZYFComponentTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* ZYFComponentTool_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYFComponentTool_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,12 +206,13 @@
 				7BD53BB6299B74E700746E8B /* TagViewController.swift */,
 				7BD53BB8299B765800746E8B /* WaterfallCollectionViewController.swift */,
 				7B0D9DD929A465CE007A6E33 /* RxViewController.swift */,
+				0489588329ED34DE00F9C0CD /* TextFieldViewController.swift */,
+				04D5597329F287B50082EC9A /* ShowImageViewController.swift */,
 				7B95A6D829A8AF2100B3BF52 /* ShareViewController.swift */,
 				7BD6E80A2993983700750718 /* TowViewController.swift */,
 				7BD6E80C2993984000750718 /* ThreeViewController.swift */,
 				7BD6E80E2993984600750718 /* FourViewController.swift */,
 				7BD6E8102993984B00750718 /* FiveViewController.swift */,
-				0489588329ED34DE00F9C0CD /* TextFieldViewController.swift */,
 				7BB04D9F2997407A0015693D /* SeleImageTool */,
 				7B6AE4A72996238800DDC528 /* views */,
 				7BB04DA6299763780015693D /* models */,
@@ -448,6 +451,8 @@
 				"${BUILT_PRODUCTS_DIR}/AxcAE_TabBar/AxcAE_TabBar.framework",
 				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/GKNavigationBar/GKNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/GKPhotoBrowser/GKPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/GKSliderView/GKSliderView.framework",
 				"${BUILT_PRODUCTS_DIR}/HXPhotoPicker/HXPhotoPicker.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/JXCategoryView/JXCategoryView.framework",
@@ -474,6 +479,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AxcAE_TabBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GKSliderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HXPhotoPicker.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXCategoryView.framework",
@@ -568,6 +575,7 @@
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				7BD53BB7299B74E700746E8B /* TagViewController.swift in Sources */,
 				7B9453C7299CE44600422BC1 /* ZYFSearchView.swift in Sources */,
+				04D5597429F287B50082EC9A /* ShowImageViewController.swift in Sources */,
 				7BE8B84629A3496200A40CD6 /* AppDelegate+ZYFPush.swift in Sources */,
 				7B6AE4AB299624C200DDC528 /* BannerCell.swift in Sources */,
 				7B95A6D929A8AF2100B3BF52 /* ShareViewController.swift in Sources */,

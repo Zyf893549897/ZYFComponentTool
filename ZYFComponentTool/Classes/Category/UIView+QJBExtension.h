@@ -40,6 +40,9 @@ typedef enum CornerStyle{
 
 //view转 image
 - (UIImage *)imageWithColors:(NSArray *)colors;
+
+//获取绝对坐标
+-(CGRect)getAbsolutePosition;
 @end
 
 NS_ASSUME_NONNULL_END

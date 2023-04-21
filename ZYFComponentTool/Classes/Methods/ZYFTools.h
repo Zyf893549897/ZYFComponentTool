@@ -55,6 +55,14 @@ NS_ASSUME_NONNULL_BEGIN
                            attributeFont:(UIFont *)attributeFont
                          attributeColors:(NSArray *)attributeColors;
 
+
+//显示图片  imgArr 图片数组url地址   index 第几个图片
++(void)showImage:(NSArray *)imgArr andIndex:(NSInteger)index;
+
+
+//显示图片  imgArr 图片数组url地址   index 第几个图片  tapView: 点击img 对象
++(void)showImage:(NSArray *)imgArr andIndex:(NSInteger)index andSourceFrame:(UIView *)tapView;
+
 @end
 
 NS_ASSUME_NONNULL_END

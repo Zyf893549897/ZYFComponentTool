@@ -6,7 +6,8 @@
 //
 
 #import "ZYFTools.h"
-
+#import <GKPhotoBrowser/GKPhotoBrowser.h>
+#import "UIView+QJBExtension.h"
 @implementation ZYFTools
 //根据宽度求高度  content 计算的内容  width 计算的宽度 font字体大小  带行间距
 + (CGFloat)getHeightWithText:(NSString *)text width:(CGFloat)width font: (UIFont *)font andlineSpace:(CGFloat)space{
@@ -148,4 +149,34 @@
     }
     return string;
 }
+
+//显示图片  imgArr 图片数组url地址   index 第几个图片
++(void)showImage:(NSArray *)imgArr andIndex:(NSInteger)index{
+    NSMutableArray *photos = [[NSMutableArray alloc] init];
+    [imgArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        GKPhoto *photo = [[GKPhoto alloc] init];
+        photo.url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",obj]];
+        [photos addObject:photo];
+    }];
+    GKPhotoBrowser *browser = [GKPhotoBrowser photoBrowserWithPhotos:photos currentIndex:index];
+    browser.showStyle = GKPhotoBrowserShowStyleNone;
+    [browser showFromVC:[ZYFTools zyf_currentVC]];
+}
+
+//显示图片  imgArr 图片数组url地址   index 第几个图片  tapView: 点击img 对象
++(void)showImage:(NSArray *)imgArr andIndex:(NSInteger)index andSourceFrame:(UIView *)tapView{
+    CGRect frame = [tapView getAbsolutePosition];
+    NSMutableArray *photos = [[NSMutableArray alloc] init];
+    [imgArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        GKPhoto *photo = [[GKPhoto alloc] init];
+        photo.url = [NSURL URLWithString:[NSString stringWithFormat:@"%@",obj]];
+        photo.sourceFrame = frame;
+        [photos addObject:photo];
+    }];
+    GKPhotoBrowser *browser = [GKPhotoBrowser photoBrowserWithPhotos:photos currentIndex:index];
+    browser.showStyle = GKPhotoBrowserShowStyleZoom;
+    browser.hideStyle = GKPhotoBrowserHideStyleZoomScale;
+    [browser showFromVC:[ZYFTools zyf_currentVC]];
+}
+
 @end

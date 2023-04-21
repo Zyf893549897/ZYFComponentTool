@@ -73,6 +73,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "rx的简单使用"
         case 15:
             cell.textLabel?.text = "限制输入的 textfiled"
+        case 16:
+            cell.textLabel?.text = "图片的放大展示 类似 微信"
         default:
             break
         }
@@ -131,6 +133,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             zyf_pushVC(vc: RxViewController.init(), animated: true)
         case 15:
             zyf_pushVC(vc: TextFieldViewController.init(), animated: true)
+        case 16:
+            zyf_pushVC(vc: ShowImageViewController.init(), animated: true)
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true

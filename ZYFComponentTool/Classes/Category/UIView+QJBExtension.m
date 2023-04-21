@@ -166,4 +166,11 @@
     return image;
 }
 
+
+//获取绝对坐标
+-(CGRect)getAbsolutePosition{
+    UIWindow * widow = [[UIApplication sharedApplication] keyWindow];
+    CGRect rect = [self convertRect:self.bounds toView:widow];
+    return rect;
+}
 @end

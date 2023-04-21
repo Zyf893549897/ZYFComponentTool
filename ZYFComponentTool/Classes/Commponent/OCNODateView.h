@@ -2,7 +2,7 @@
 //  OCNODateView.h
 //  QJB-iOS
 //
-//  Created by 幸荟 on 2022/12/1.
+//  Created by 张云飞 on 2022/12/1.
 //
 
 #import <UIKit/UIKit.h>

@@ -2,7 +2,7 @@
 //  AppDelegate+ZYFShare.swift
 //  ZYFComponentTool_Example
 //
-//  Created by 幸荟 on 2023/2/24.
+//  Created by 张云飞 on 2023/2/24.
 //  Copyright © 2023 CocoaPods. All rights reserved.
 //
 

@@ -6,6 +6,19 @@ PODS:
     - GKNavigationBar/NavigationBar (= 1.8.4)
   - GKNavigationBar/GestureHandle (1.8.4)
   - GKNavigationBar/NavigationBar (1.8.4)
+  - GKPhotoBrowser (2.5.7):
+    - GKPhotoBrowser/Default (= 2.5.7)
+  - GKPhotoBrowser/AVPlayer (2.5.7):
+    - GKPhotoBrowser/Core
+  - GKPhotoBrowser/Core (2.5.7):
+    - GKSliderView
+  - GKPhotoBrowser/Default (2.5.7):
+    - GKPhotoBrowser/AVPlayer
+    - GKPhotoBrowser/SD
+  - GKPhotoBrowser/SD (2.5.7):
+    - GKPhotoBrowser/Core
+    - SDWebImage (~> 5.0)
+  - GKSliderView (1.1.0)
   - HandyJSON (5.0.2)
   - HXPhotoPicker (3.3.2):
     - HXPhotoPicker/Default (= 3.3.2)
@@ -58,6 +71,7 @@ PODS:
     - AxcAE_TabBar
     - FSPagerView
     - GKNavigationBar
+    - GKPhotoBrowser
     - HandyJSON
     - HXPhotoPicker
     - JXCategoryView
@@ -88,6 +102,8 @@ SPEC REPOS:
     - AxcAE_TabBar
     - FSPagerView
     - GKNavigationBar
+    - GKPhotoBrowser
+    - GKSliderView
     - HandyJSON
     - HXPhotoPicker
     - JXCategoryView
@@ -121,6 +137,8 @@ SPEC CHECKSUMS:
   AxcAE_TabBar: 1d5bcf6c4921889dc38839b6ba2c584a9b55251a
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
   GKNavigationBar: 329602e567ffaf87cd22fa7f1cff59fbbeca5701
+  GKPhotoBrowser: e1d153b63b6ecd639f8b502b08d3994eaa3c569b
+  GKSliderView: b5fc3b68bbfdb05ee403303377921d6564de61a9
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   HXPhotoPicker: 3d0526bc46cd2a4510a777d5f57dfad8e683fcfd
   JXCategoryView: 7b1ee69ede4843c581688afe84d0f047723262f2
@@ -145,7 +163,7 @@ SPEC CHECKSUMS:
   UMShare: 8a1030a9793941d1129a82d5bc02cd97df5ae210
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZLCollectionViewFlowLayout: c99024652ce9f0c57d33ab53052c9b85e4a936b7
-  ZYFComponentTool: bf78cae7d1e29ac2c4f497ce4ba67a0627973656
+  ZYFComponentTool: 7dc85a243b72ca53cd843785ac14a3576d237d87
 
 PODFILE CHECKSUM: e7bd94f383629dc352ccbc4528ce6c2482d489a9
 
