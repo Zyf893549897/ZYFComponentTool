@@ -7,6 +7,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, ZYFPlaceholderTextViewStyle) {
+    defaultStyle,
+    textfieldStyle,
+};
+
 typedef void(^ZYFTextViewHandler)(NSString *text);
 
 @interface ZYFPlaceholderTextView : UIView<UITextViewDelegate>
@@ -17,6 +22,12 @@ typedef void(^ZYFTextViewHandler)(NSString *text);
 
 @property (nonatomic, assign) BOOL allowFirstempty; //是否允许第一个 字符为空
 
+@property (nonatomic, assign) ZYFPlaceholderTextViewStyle style; 
+
+-(instancetype)initStyle:(ZYFPlaceholderTextViewStyle)style;
+
+//textfield 显示风格
+-(void)textFiledLayoutStyle;
 /**
  设定文本改变Block回调. (切记弱化引用, 以免造成内存泄露.)
  */

@@ -37,12 +37,17 @@
     
     return self;
 }
-
+-(instancetype)initStyle:(ZYFPlaceholderTextViewStyle)style{
+    if (!(self = [super init])) return nil;
+    self.style = style;
+    [self initialize];
+    [self showStyle:style];
+    return self;
+}
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (!(self = [super initWithFrame:frame])) return nil;
     [self initialize];
-    
     return self;
 }
 
@@ -63,10 +68,7 @@
 
 #pragma mark - Private
 
-- (void)initialize
-{
-    
-    
+- (void)initialize{
     self.userInteractionEnabled = YES;
     self.textView.delegate=self;
     [self addSubview:self.textView];
@@ -147,6 +149,7 @@
     }
     // 回调文本改变的Block.
     !_changeHandler ?: _changeHandler(str);
+   
     self.footplaceholderLabel.text=[NSString stringWithFormat:@"%ld/%ld",str.length,self.maxLength];
     
     return YES;
@@ -168,39 +171,83 @@
     [self isShowFootNumberLayout:showFootNumber];
 }
 
--(void)isShowFootNumberLayout:(BOOL)show{
-    if (show){
-        [self.textView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.mas_equalTo(0);
-            make.bottom.mas_equalTo(-20);
-        }];
-        [self.placeholderLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(6);
-            make.top.mas_equalTo(8);
-            make.right.mas_equalTo(-6);
-        }];
-        [self.footplaceholderLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(-6);
-            make.right.mas_equalTo(-8);
-        }];
+-(void)showStyle:(ZYFPlaceholderTextViewStyle)style{
+    if(style == defaultStyle){
+        [self showFootNumberStyle];
     }else{
-        [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.top.right.mas_equalTo(0);
-            make.bottom.mas_equalTo(0);
-        }];
-        [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.left.mas_equalTo(6);
-            make.top.mas_equalTo(8);
-            make.right.mas_equalTo(-6);
-        }];
-        [self.footplaceholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(-6);
-            make.right.mas_equalTo(-8);
-        }];
+        [self textFiledLayoutStyle];
     }
-    
 }
-
+//默认布局
+-(void)showFootNumberStyle{
+    [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.mas_equalTo(0);
+        make.bottom.mas_equalTo(-20);
+    }];
+    [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(6);
+        make.top.mas_equalTo(8);
+        make.right.mas_equalTo(-6);
+    }];
+    [self.footplaceholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-6);
+        make.right.mas_equalTo(-8);
+        make.width.mas_offset(100);
+    }];
+}
+-(void)isShowFootNumberLayout:(BOOL)show{
+    if(self.style == defaultStyle){
+        if (show){
+            [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.top.right.mas_equalTo(0);
+                make.bottom.mas_equalTo(-20);
+            }];
+            [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.mas_equalTo(6);
+                make.top.mas_equalTo(8);
+                make.right.mas_equalTo(-6);
+            }];
+            [self.footplaceholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.bottom.mas_equalTo(-6);
+                make.right.mas_equalTo(-8);
+                make.width.mas_offset(100);
+            }];
+        }else{
+            [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.top.right.mas_equalTo(0);
+                make.bottom.mas_equalTo(0);
+            }];
+            [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.left.mas_equalTo(6);
+                make.top.mas_equalTo(8);
+                make.right.mas_equalTo(-6);
+            }];
+            [self.footplaceholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+                make.bottom.mas_equalTo(-6);
+                make.right.mas_equalTo(-8);
+            }];
+        }
+    }
+}
+//textfield 显示风格
+-(void)textFiledLayoutStyle{
+    [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(0);
+        make.centerY.equalTo(self.mas_centerY);
+        make.top.mas_offset(3);
+        make.bottom.mas_offset(0);
+    }];
+    [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(6);
+        make.top.bottom.mas_offset(0);
+        make.centerY.equalTo(self.textView.mas_centerY).offset(-2);
+    }];
+    [self.footplaceholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.right.mas_equalTo(-8);
+        make.width.mas_equalTo(40);
+        make.centerY.equalTo(self.mas_centerY);
+    }];
+}
 - (void)setCornerRadius:(CGFloat)cornerRadius{
     _cornerRadius = cornerRadius;
     self.layer.cornerRadius = _cornerRadius;

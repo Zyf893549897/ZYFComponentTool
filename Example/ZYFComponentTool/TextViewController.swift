@@ -21,6 +21,7 @@ class TextViewController: ZYFBaseViewController {
         view.backgroundColor = .white
 
         view.addSubview(textV)
+        view.addSubview(textVB)
         view.addSubview(but)
         textV.snp.makeConstraints { make in
             make.left.equalTo(40)
@@ -28,6 +29,14 @@ class TextViewController: ZYFBaseViewController {
             make.width.equalTo(scale(200))
             make.height.greaterThanOrEqualTo(100)
         }
+        
+        textVB.snp.makeConstraints { make in
+            make.left.equalTo(40)
+            make.top.equalTo(textV.snp.bottom).offset(50)
+            make.width.equalTo(scale(200))
+            make.height.greaterThanOrEqualTo(45)
+        }
+        
         but.snp.makeConstraints { make in
             make.left.equalTo(10)
             make.top.equalTo(500)
@@ -56,6 +65,23 @@ class TextViewController: ZYFBaseViewController {
             print("======max======")
         }
         return view
+    }()
+    
+    lazy var textVB: ZYFPlaceholderTextView={
+        let view = ZYFPlaceholderTextView.init(style: .textfieldStyle)
+        view?.setLayer(2, 1, .red)
+        view?.maxLength = 10
+        view?.showFootNumber=true
+        view?.placeholder = "请输入"
+        view?.textView.font = UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14)
+        view?.placeholderFont = UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14)
+        view?.addTextDidChangeHandler { str in
+            print("=====\(str ?? "")")
+        }
+        view?.addTextLengthDidMaxHandler { str in
+            print("======max======")
+        }
+        return view ?? ZYFPlaceholderTextView()
     }()
   
     @objc func butAction(){
