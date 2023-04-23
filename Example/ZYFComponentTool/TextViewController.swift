@@ -34,7 +34,7 @@ class TextViewController: ZYFBaseViewController {
             make.left.equalTo(40)
             make.top.equalTo(textV.snp.bottom).offset(50)
             make.width.equalTo(scale(200))
-            make.height.greaterThanOrEqualTo(45)
+            make.height.greaterThanOrEqualTo(40)
         }
         
         but.snp.makeConstraints { make in
@@ -68,7 +68,7 @@ class TextViewController: ZYFBaseViewController {
     }()
     
     lazy var textVB: ZYFPlaceholderTextView={
-        let view = ZYFPlaceholderTextView.init(style: .textfieldStyle)
+        let view = ZYFPlaceholderTextView.init(style: .textfieldStyle) //textfieldStyle
         view?.setLayer(2, 1, .red)
         view?.maxLength = 10
         view?.showFootNumber=true

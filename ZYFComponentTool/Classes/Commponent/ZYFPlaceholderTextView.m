@@ -234,8 +234,7 @@
     [self.textView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.right.mas_equalTo(0);
         make.centerY.equalTo(self.mas_centerY);
-        make.top.mas_offset(3);
-        make.bottom.mas_offset(0);
+        make.height.mas_offset(40);
     }];
     [self.placeholderLabel mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(6);
