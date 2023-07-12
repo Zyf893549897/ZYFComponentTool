@@ -16,6 +16,7 @@
 				5390A87C0FDC4B170EB4664F93E2A01C /* PBXTargetDependency */,
 			);
 			name = UMCommon;
+			productName = UMCommon;
 		};
 		0E9476196A0AF8C157A1957006F90A02 /* UMPush */ = {
 			isa = PBXAggregateTarget;
@@ -26,6 +27,7 @@
 				E7B39D6996442EA74EB3BAD48F21E709 /* PBXTargetDependency */,
 			);
 			name = UMPush;
+			productName = UMPush;
 		};
 		6075E73CE9761233A64B697DA4780D60 /* UMCCommonLog */ = {
 			isa = PBXAggregateTarget;
@@ -35,6 +37,7 @@
 			dependencies = (
 			);
 			name = UMCCommonLog;
+			productName = UMCCommonLog;
 		};
 		76CE6FDA7554B437965BADCED6281CAB /* UMShare */ = {
 			isa = PBXAggregateTarget;
@@ -45,6 +48,7 @@
 				95CA00C56584CCBC82BC179ED0EEBFCE /* PBXTargetDependency */,
 			);
 			name = UMShare;
+			productName = UMShare;
 		};
 		CEB9AD2C3CFC208BFBE1F22F5EC3E1FC /* UMDevice */ = {
 			isa = PBXAggregateTarget;
@@ -54,6 +58,7 @@
 			dependencies = (
 			);
 			name = UMDevice;
+			productName = UMDevice;
 		};
 /* End PBXAggregateTarget section */
 
@@ -1326,6 +1331,7 @@
 		E701606F1A72DFA117D0B7E746DACAE5 /* VirtualTimeConverterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE204B9DBD0CE12C4DFE53A05BDD6DF2 /* VirtualTimeConverterType.swift */; };
 		E7035A074129575E62A0136DD93D8E8F /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFECCABE20072CC8579F0C35E4A6C9 /* DateTransform.swift */; };
 		E710A550162879CE918FC411CF567789 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86908A594358239919F3BF886A5BE4C0 /* Logger.swift */; };
+		E7293F812A5E8B50005C6013 /* UIButton+ZYFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7293F802A5E8B50005C6013 /* UIButton+ZYFExtension.swift */; };
 		E739A6DC63B5DC1EB6A3917484A32EAC /* AsMaybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36B9B0938944E7113B47A3930E2A38 /* AsMaybe.swift */; };
 		E7D844D3BC5957FD863DF4E10A7BE3C6 /* LSTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E1E3B7A4A701F1BA3BC979DDEFCE4 /* LSTTimer.m */; };
 		E7E51C82D9FB5D9654346BD72ED1C5B3 /* ZLCollectionViewBackgroundViewLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B98CB5812200225851180C8ED083E36 /* ZLCollectionViewBackgroundViewLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -2272,7 +2278,7 @@
 		3A77E4038B819D46935746B5D233CA01 /* LSTPopView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSTPopView-prefix.pch"; sourceTree = "<group>"; };
 		3A784D7DCEBF240A7E37F4D3C6695B64 /* HXPhotoEditGraffitiColorSizeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HXPhotoEditGraffitiColorSizeView.h; path = HXPhotoPicker/HXPhotoEdit/View/HXPhotoEditGraffitiColorSizeView.h; sourceTree = "<group>"; };
 		3AADF66952CE5DEB0017A22CA527421A /* JXCategoryFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryFactory.m; path = Sources/Common/JXCategoryFactory.m; sourceTree = "<group>"; };
-		3AEBE7BD135B786B222256BD3310F4D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3AEBE7BD135B786B222256BD3310F4D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3B129EA4AC9832C20B2DAFD149A98CC1 /* RxPickerViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDelegateProxy.swift; sourceTree = "<group>"; };
 		3B16A4F127387EE9EB8E89F5C9476A46 /* Signal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Signal.swift; path = RxCocoa/Traits/Signal/Signal.swift; sourceTree = "<group>"; };
 		3B3479B04BA23BA7A9B5E026B802142B /* UIGestureRecognizer+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIGestureRecognizer+Rx.swift"; path = "RxCocoa/iOS/UIGestureRecognizer+Rx.swift"; sourceTree = "<group>"; };
@@ -2661,7 +2667,7 @@
 		7ED6F3E0D4B510FF4DA95C5F4DE2F6EC /* KNPhotoBrowser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KNPhotoBrowser-Info.plist"; sourceTree = "<group>"; };
 		7FA2912F5C069F6A8719540D9666254D /* ZLCollectionViewVerticalLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZLCollectionViewVerticalLayout.m; path = ZLCollectionViewFlowLayout/ZLCollectionViewVerticalLayout.m; sourceTree = "<group>"; };
 		7FA5708E4E8E119B87A23D230A84F92F /* YYTextKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextKeyboardManager.m; path = YYKit/Text/Component/YYTextKeyboardManager.m; sourceTree = "<group>"; };
-		7FAA363AFC18EA11A181AFA7897AFD14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7FAA363AFC18EA11A181AFA7897AFD14 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		803ECCB0A61C5CDAFF0CDB85232167DD /* Bag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bag.swift; path = Platform/DataStructures/Bag.swift; sourceTree = "<group>"; };
 		809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxSwift; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80AF8D801A4FA68CAA8FCA54CA4DA568 /* GKPhotoRotationHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GKPhotoRotationHandler.h; path = GKPhotoBrowser/Core/GKPhotoRotationHandler.h; sourceTree = "<group>"; };
@@ -2817,7 +2823,7 @@
 		9D28CC46755B62D11AE82AC178F8EA4A /* CLLocation+ABLocationTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+ABLocationTransform.m"; sourceTree = "<group>"; };
 		9D48737E3764EEA63A98063C50D9D5D9 /* YYKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYKeychain.m; path = YYKit/Utility/YYKeychain.m; sourceTree = "<group>"; };
 		9D52E3F35CB266F27A24490022C08712 /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Rx.swift"; path = "RxCocoa/iOS/UINavigationController+Rx.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA5F27B6CBCD0E46655E625AF561C22 /* YYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCache.m; path = YYKit/Cache/YYCache.m; sourceTree = "<group>"; };
 		9DC4AF1FFD66FA99DAF6C1F55F93B147 /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ObservableType+Extensions.swift"; path = "RxSwift/ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		9DD3BC432E00C9BC0DCC02EC938019FD /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
@@ -3253,7 +3259,7 @@
 		DC9A6C8C5A86D69642B054BA7938E211 /* JXCategoryTitleCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JXCategoryTitleCellModel.m; path = Sources/Title/JXCategoryTitleCellModel.m; sourceTree = "<group>"; };
 		DCF120B5E73F19722C5A8FDF2CAA1241 /* LSTPopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSTPopView.m; path = LSTPopView/Classes/Code/LSTPopView.m; sourceTree = "<group>"; };
 		DCF8809D223D5929FC4F6F609F5575C3 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		DD10248D0F1E48BABE8C5D1171073B11 /* ZYFComponentTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZYFComponentTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD10248D0F1E48BABE8C5D1171073B11 /* ZYFComponentTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZYFComponentTool.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DD50F9D77DA6CB4D70BFFB0B210E53E6 /* Observable+Bind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Observable+Bind.swift"; path = "RxRelay/Observable+Bind.swift"; sourceTree = "<group>"; };
 		DD8032A7C4CAAA34C426D1D3D28ECBA8 /* RxSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxSwift-Info.plist"; sourceTree = "<group>"; };
 		DD8C24F17C8F7A0A2F35943D7D7F54C0 /* MJRefresh-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJRefresh-prefix.pch"; sourceTree = "<group>"; };
@@ -3316,6 +3322,7 @@
 		E676DC34E475E915E4E1BE2778551544 /* UIStepper+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIStepper+Rx.swift"; path = "RxCocoa/iOS/UIStepper+Rx.swift"; sourceTree = "<group>"; };
 		E685669C523A067BE08940D386D1659C /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
 		E714375D580644F7CBEAD7977AC292C9 /* TimeTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeTool.swift; sourceTree = "<group>"; };
+		E7293F802A5E8B50005C6013 /* UIButton+ZYFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ZYFExtension.swift"; sourceTree = "<group>"; };
 		E765801ABA45E724505212DDB4D233F7 /* RxTabBarControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		E76D54AB5F9852B9F54DEE34FA2A17FB /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		E7C8ADE6642E95A6ED6BDAE268A42A8A /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
@@ -3768,7 +3775,6 @@
 				563CF5EB44042DE340E1D213F3DB0EA2 /* Resources */,
 				528487930158A810D11C0716913BB28A /* Support Files */,
 			);
-			name = MJRefresh;
 			path = MJRefresh;
 			sourceTree = "<group>";
 		};
@@ -3779,7 +3785,6 @@
 				17EF57D62DE51627D32E55C3E3D001E2 /* GKSliderView.m */,
 				9C8149902BDF8BDEE3F2F3703C456352 /* Support Files */,
 			);
-			name = GKSliderView;
 			path = GKSliderView;
 			sourceTree = "<group>";
 		};
@@ -3819,7 +3824,6 @@
 				C4C3D320C7FE66B0655244195F72038B /* Resources */,
 				4B6C27E7486A811AF62130ECAE576EAC /* Support Files */,
 			);
-			name = KNPhotoBrowser;
 			path = KNPhotoBrowser;
 			sourceTree = "<group>";
 		};
@@ -3908,7 +3912,6 @@
 				0C538255655508A66050723D470F443C /* Resources */,
 				6120847BF7B162082EBCF9C88B6C638A /* Support Files */,
 			);
-			name = UMCCommonLog;
 			path = UMCCommonLog;
 			sourceTree = "<group>";
 		};
@@ -4079,7 +4082,6 @@
 				A1AD741C1B8AE704CCFA34E0B6E56529 /* no-arc */,
 				541B5D9CAFF03A9791370226351C52B6 /* Support Files */,
 			);
-			name = YYKit;
 			path = YYKit;
 			sourceTree = "<group>";
 		};
@@ -4118,7 +4120,6 @@
 				B5427FBA5EF5CD86F98C3FB6EDF6E8EC /* Utils.swift */,
 				CD134FA133423AF8B14CFC257324F186 /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -4134,7 +4135,6 @@
 				25CAA9051FD035F32FB72D26A6E9E4C6 /* CPMapNavigation.h */,
 				0E040007AF41EC99A08A35AA922E070F /* CPMapNavigation.m */,
 			);
-			name = ZYFMapNav;
 			path = ZYFMapNav;
 			sourceTree = "<group>";
 		};
@@ -4456,7 +4456,6 @@
 				818E0D081F334AF14F7ED5F8DB67F9C2 /* WKWebView+Rx.swift */,
 				799D03FC6472CEBCB76657E78329EEBB /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -4474,7 +4473,6 @@
 				99B1F825C2EEFEA69142DB7A5E01D080 /* FSPageViewTransformer.swift */,
 				67072000D369B6DCD9DF1904220CF916 /* Support Files */,
 			);
-			name = FSPagerView;
 			path = FSPagerView;
 			sourceTree = "<group>";
 		};
@@ -4522,7 +4520,6 @@
 				0E9E1E3B7A4A701F1BA3BC979DDEFCE4 /* LSTTimer.m */,
 				904F161A8322C87BB040B1B431F2FE80 /* Support Files */,
 			);
-			name = LSTTimer;
 			path = LSTTimer;
 			sourceTree = "<group>";
 		};
@@ -4797,7 +4794,6 @@
 				389036761DA7FCD352A4E0A43F6790BB /* Zip+Collection.swift */,
 				D747BFD601E2E9739DED02656C1442C8 /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -4808,7 +4804,6 @@
 				D7F9CA9CDC151DAC1AA33D941742B669 /* Resources */,
 				84679346FCCF4F8C3AFDCFF796C11C75 /* Support Files */,
 			);
-			name = UMPush;
 			path = UMPush;
 			sourceTree = "<group>";
 		};
@@ -4883,6 +4878,7 @@
 				1B9EB609E47D137966664D61ED7DF58B /* Collection+Extension.swift */,
 				928F79C9045D06DBB4280D92EDFCF9CE /* Table+Extension.swift */,
 				B78FFDFE95871257EC737F0552153BD5 /* UIBarButtonItem+ZYFExtensions.swift */,
+				E7293F802A5E8B50005C6013 /* UIButton+ZYFExtension.swift */,
 				DA73774A306C0D7D23D3326B674BAECF /* UIButton+ZYFCustom.h */,
 				A53353760D9714F308D3E4845D66188F /* UIButton+ZYFCustom.m */,
 				64255FFA58C7F245C6382B028A2CB6B1 /* UIColor+Extensions.swift */,
@@ -4982,7 +4978,6 @@
 				BEC460EE5820D18BC2D45E6EE6511C5B /* ViewController+MASAdditions.m */,
 				53DEBBDF3281145A7041CB2219F7BB81 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -5004,7 +4999,6 @@
 				C7F8BD289D2701032792B87838340A1D /* Frameworks */,
 				E1CDF2468120FD9D1F1F5132B7513D02 /* Support Files */,
 			);
-			name = UMDevice;
 			path = UMDevice;
 			sourceTree = "<group>";
 		};
@@ -5043,7 +5037,6 @@
 				02ABA0F057C1DD567A3E18D925A677E0 /* AxcAE_TabBarItem.m */,
 				DBA6EF66FF13E65B95692344CA6959A8 /* Support Files */,
 			);
-			name = AxcAE_TabBar;
 			path = AxcAE_TabBar;
 			sourceTree = "<group>";
 		};
@@ -5215,7 +5208,6 @@
 				B9D7345D2E9F39FC9A533D471984265A /* UIColor+JXAdd.m */,
 				8FA48F8B0565DD968A481F098114CA14 /* Support Files */,
 			);
-			name = JXCategoryView;
 			path = JXCategoryView;
 			sourceTree = "<group>";
 		};
@@ -5315,7 +5307,6 @@
 				A9B474CA286B303C93F7A5E827D971AD /* URLTransform.swift */,
 				C2780FBBA53E7EA6AE50650FB399AF91 /* Support Files */,
 			);
-			name = HandyJSON;
 			path = HandyJSON;
 			sourceTree = "<group>";
 		};
@@ -5386,7 +5377,6 @@
 				DEA0D4C6E31B854BD88A536125B25F05 /* Pager */,
 				82A87850D46DE95FB92691FC3C651421 /* Support Files */,
 			);
-			name = JXPagingView;
 			path = JXPagingView;
 			sourceTree = "<group>";
 		};
@@ -5398,7 +5388,6 @@
 				F9E535F8F53756E5EB3E6701CC808E19 /* SD */,
 				6631FF5EB773BB06C780C3FB957E7C67 /* Support Files */,
 			);
-			name = GKPhotoBrowser;
 			path = GKPhotoBrowser;
 			sourceTree = "<group>";
 		};
@@ -5496,7 +5485,6 @@
 				433B6E8DCD18C11728F2EC7B4F51E96A /* WKInterfaceImage+Kingfisher.swift */,
 				4C8A560F3D5D230AA3242CA239844A1D /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -5506,7 +5494,6 @@
 				B95FCD70811ADCC08AEB7B6983278076 /* Core */,
 				D345BEC0692AEFCA104F6A46CB42DCBF /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -5669,7 +5656,6 @@
 				CAF7D6AA4F47BD69F4AECCFD74107E4E /* NavigationBar */,
 				0DB4FAD800F6D15A8741899E46459837 /* Support Files */,
 			);
-			name = GKNavigationBar;
 			path = GKNavigationBar;
 			sourceTree = "<group>";
 		};
@@ -5715,7 +5701,6 @@
 				7D354828DD895CB743F26E99A6AD52A4 /* UILayoutSupport+Extensions.swift */,
 				692C7F665F3ED78C66B15137375DE25B /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -5779,7 +5764,6 @@
 				B7A54C3A558B660D9CB698D3E0CBCD1D /* MBProgressHUD.m */,
 				4B1EFB71F4EAFF6C2FD8CACB74CD47DD /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -5859,7 +5843,6 @@
 				084DC3D081EE00C90C0310D87F9D2A9F /* Code */,
 				F3E9E968DD1B7F4F4ACB94B0EE452E83 /* Support Files */,
 			);
-			name = LSTPopView;
 			path = LSTPopView;
 			sourceTree = "<group>";
 		};
@@ -5912,7 +5895,6 @@
 				FA29EF342CA7D5D5CC9CE95CF118E612 /* Social */,
 				B221337B76858D3139678234FE63E008 /* Support Files */,
 			);
-			name = UMShare;
 			path = UMShare;
 			sourceTree = "<group>";
 		};
@@ -6001,7 +5983,6 @@
 				7C9DB5CA2D093CEEA1EA58F6D12B0324 /* UIView+LYExtension.m */,
 				E7F3A4C53F98B98C2DA43E55513F64CB /* Support Files */,
 			);
-			name = LYEmptyView;
 			path = LYEmptyView;
 			sourceTree = "<group>";
 		};
@@ -6071,7 +6052,6 @@
 				7FA2912F5C069F6A8719540D9666254D /* ZLCollectionViewVerticalLayout.m */,
 				E30F9516A10B1A0B0B078AF721B48ADF /* Support Files */,
 			);
-			name = ZLCollectionViewFlowLayout;
 			path = ZLCollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
@@ -6096,7 +6076,6 @@
 				2F08EF54443D6411E221B6EE60916695 /* Default */,
 				B2A3F74CC72C9639900BF41C57F5E7AD /* Support Files */,
 			);
-			name = HXPhotoPicker;
 			path = HXPhotoPicker;
 			sourceTree = "<group>";
 		};
@@ -6165,7 +6144,6 @@
 				977F6108C777F742E191ADA481809211 /* Frameworks */,
 				3430BB863BE5126D02547028B8C18BE3 /* Support Files */,
 			);
-			name = UMCommon;
 			path = UMCommon;
 			sourceTree = "<group>";
 		};
@@ -6189,7 +6167,6 @@
 				AA4812E2D55EE66DF709F99747EFFA4E /* TTGTextTagStyle.m */,
 				C9206F7661007F9D4DF58EBEBD2A2529 /* Support Files */,
 			);
-			name = TTGTagCollectionView;
 			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
@@ -8232,6 +8209,7 @@
 				AB5E8E62D6B28960F231AEBA7355A0F9 /* RefreshNodata.swift in Sources */,
 				C479ECA001C95D45723497D49D05002D /* RestrictedInputTextField.m in Sources */,
 				805770AC0621DF96767F8C541D066FA0 /* Table+Extension.swift in Sources */,
+				E7293F812A5E8B50005C6013 /* UIButton+ZYFExtension.swift in Sources */,
 				805770AC0621DF96767F8C541D066FA0 /* Table+Extension.swift in Sources */,
 				215F4053E21C7A19D88A4D035B2AB0C3 /* TimeTool.swift in Sources */,
 				C1630B5D72D71132C1ABF216D9BE2F7C /* Tools.swift in Sources */,

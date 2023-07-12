@@ -23,7 +23,7 @@ class ButtonTestViewController: ZYFBaseViewController {
     }
     
     lazy var but: UIButton={
-        let but = ZYFCreateButton(frame: .zero, text: "按键按键", bgcolor: .orange, textcolor: .blue, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16), Alignment: .center, imgName: "yuan", isbg: false, imgStyle: img_Top, space: 10, offset: 0, target: nil, action: nil)
+        let but = ZYFCreateButton(frame: .zero, text: "按键按键", bgcolor: .orange, textcolor: .blue, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 16), Alignment: .center, imgName: "yuan", isbg: false, imgStyle: .z_img_Top, space: 10, offset: 0, target: nil, action: nil)
         //通过 runtime 添加的 属性
         but.title = "aaaa"
         but.indexPath = IndexPath.init(row: 0, section: 0)

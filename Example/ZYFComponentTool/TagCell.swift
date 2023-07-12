@@ -27,7 +27,7 @@ class TagCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewDataSou
         return label
     }()
     lazy var clearBut: UIButton={
-        let but = ZYFCreateButton(frame: .zero, text: "清空", bgcolor: .clear, textcolor: HexColorstr(hexstr: "#000000"), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14), Alignment: .right, imgName: "删除-地址", isbg: false, imgStyle: img_Left, space: 2, offset: 0, target: self, action: #selector(deleAction))
+        let but = ZYFCreateButton(frame: .zero, text: "清空", bgcolor: .clear, textcolor: HexColorstr(hexstr: "#000000"), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 14), Alignment: .right, imgName: "删除-地址", isbg: false, imgStyle: .z_img_Left, space: 2, offset: 0, target: self, action: #selector(deleAction))
         return but
     }()
     lazy  var collectionView: UICollectionView = {

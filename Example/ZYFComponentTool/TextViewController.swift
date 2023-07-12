@@ -44,7 +44,7 @@ class TextViewController: ZYFBaseViewController {
         
     }
     lazy var but: UIButton={
-        let but = ZYFCreateButton(frame: .zero, text: "hasdf", bgcolor: .white, textcolor: .red, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 20), Alignment: .center, imgName: "", isbg: false, imgStyle: img_Left, space: 0, offset: 0, target: self, action: #selector(butAction))
+        let but = ZYFCreateButton(frame: .zero, text: "hasdf", bgcolor: .white, textcolor: .red, font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 20), Alignment: .center, imgName: "", isbg: false, imgStyle: .z_img_Left, space: 0, offset: 0, target: self, action: #selector(butAction))
         return but
     }()
     lazy var textV: ZYFPlaceholderTextView={

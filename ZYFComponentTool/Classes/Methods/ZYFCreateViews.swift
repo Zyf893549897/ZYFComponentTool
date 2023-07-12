@@ -38,7 +38,7 @@ public func ZYFCreateButton(frame: CGRect?,text: String?,bgcolor: UIColor?,textc
     button.setTitleColor(textcolor ?? UIColor.clear, for: .normal)
     button.contentHorizontalAlignment=Alignment ?? .center
     // Alignment 为 left和right时  和 offset 生效
-    button.layoutButton(with: imgStyle ?? img_Left, imageTitleSpace: space ?? 0, offset: offset ?? 0)
+    button.layoutButton(withEdgeInsetsStyle: imgStyle ?? .z_img_Left, imageTitleSpace: space ?? 0, offset: offset ?? 0)
     button.backgroundColor=bgcolor ?? UIColor.clear
     button.titleLabel?.font=font
     button.addTarget(target, action: action ?? Selector(("butAction")), for: .touchUpInside)
@@ -59,7 +59,7 @@ public func ZYFCreateImageButton(frame: CGRect?,bgcolor: UIColor?,Alignment: UIC
     }
     button.contentHorizontalAlignment=Alignment ?? .center
     // Alignment 为 left和right时  和 offset 生效
-    button.imageOffsetDistance(offset ?? 0)
+    button.imageOffsetDistance(offset: offset ?? 0)
     button.backgroundColor=bgcolor ?? UIColor.clear
     button.addTarget(target, action: action ?? Selector(("butAction")), for: .touchUpInside)
     return button
@@ -72,7 +72,7 @@ public func ZYFCreateTitleButton(frame: CGRect?,text: String?,bgcolor: UIColor?,
     button.setTitleColor(textcolor ?? UIColor.clear, for: .normal)
     button.contentHorizontalAlignment=Alignment ?? .center
     // Alignment 为 left和right时  和 offset 生效
-    button.titleOffsetDistance(offset ?? 0)
+    button.titleOffsetDistance(offset: offset ?? 0)
     button.backgroundColor=bgcolor ?? UIColor.clear
     button.titleLabel?.font = font
     button.addTarget(target, action: action ?? Selector(("butAction")), for: .touchUpInside)
