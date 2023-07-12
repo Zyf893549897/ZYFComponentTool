@@ -55,7 +55,7 @@ open class ZYFPopView: ZYFBasePopView {
         titleLabel.snp.makeConstraints { make in
             make.left.equalTo(16)
             make.right.equalTo(-16)
-            make.top.equalTo(scale(18))
+            make.top.equalTo(zScale(18))
         }
         mesLabel.snp.makeConstraints { make in
             make.left.equalTo(16)
@@ -64,17 +64,17 @@ open class ZYFPopView: ZYFBasePopView {
         }
         cancelBut.snp.makeConstraints { make in
             make.left.equalTo(16)
-            make.bottom.equalTo(-scale(20))
-            make.width.equalTo(scale(110))
+            make.bottom.equalTo(-zScale(20))
+            make.width.equalTo(zScale(110))
             make.top.equalTo(mesLabel.snp.bottom).offset(25)
-            make.height.equalTo(scale(44))
+            make.height.equalTo(zScale(44))
         }
         sureBut.snp.makeConstraints { make in
             make.right.equalTo(-16)
-            make.bottom.equalTo(-scale(20))
-            make.width.equalTo(scale(110))
+            make.bottom.equalTo(-zScale(20))
+            make.width.equalTo(zScale(110))
             make.top.equalTo(mesLabel.snp.bottom).offset(25)
-            make.height.equalTo(scale(44))
+            make.height.equalTo(zScale(44))
         }
     }
     
@@ -83,8 +83,8 @@ open class ZYFPopView: ZYFBasePopView {
         mesLabel.snp.remakeConstraints { make in
             make.left.equalTo(16)
             make.right.equalTo(-16)
-            make.top.equalTo(scale(18))
-            make.bottom.equalTo(-scale(20))
+            make.top.equalTo(zScale(18))
+            make.bottom.equalTo(-zScale(20))
         }
     }
     required public init?(coder: NSCoder) {

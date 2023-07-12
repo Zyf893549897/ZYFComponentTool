@@ -55,7 +55,7 @@ class WaterfallCollectionViewController: ZYFBaseViewController,UICollectionViewD
         return UIEdgeInsetsMake(0, 0, 0, 0)
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: ZYFTools.getWidthWithText(hiestArr[safeGet: indexPath.row] ?? "", height: scale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: scale(28))
+        return CGSize(width: ZYFTools.getWidthWithText(hiestArr[safeGet: indexPath.row] ?? "", height: zScale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: zScale(28))
     }
     private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: ZLCollectionViewBaseFlowLayout, typeOfLayout section: Int) -> ZLLayoutType {
         return LabelLayout

@@ -48,6 +48,7 @@ PODS:
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
   - SnapKit (5.6.0)
+  - TTGTagCollectionView (2.4.2)
   - UMCCommonLog (2.0.2)
   - UMCommon (7.3.8):
     - UMDevice
@@ -90,6 +91,7 @@ PODS:
     - ZLCollectionViewFlowLayout
 
 DEPENDENCIES:
+  - TTGTagCollectionView
   - UMCCommonLog
   - UMCommon
   - UMDevice
@@ -121,6 +123,7 @@ SPEC REPOS:
     - RxSwift
     - SDWebImage
     - SnapKit
+    - TTGTagCollectionView
     - UMCCommonLog
     - UMCommon
     - UMDevice
@@ -156,6 +159,7 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  TTGTagCollectionView: 0d4625aaf7ee3ad755c39d549368a4ce69bd17d1
   UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
   UMCommon: fdb5bac9e7ec2aca4f9cfc0febf414b59ed302cb
   UMDevice: 053478c4b4d7292f31f0a275c227d3c4007a5571
@@ -165,6 +169,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: c99024652ce9f0c57d33ab53052c9b85e4a936b7
   ZYFComponentTool: 7dc85a243b72ca53cd843785ac14a3576d237d87
 
-PODFILE CHECKSUM: e7bd94f383629dc352ccbc4528ce6c2482d489a9
+PODFILE CHECKSUM: f8c1d06d15c154d2166188e8b96b82a841882e2a
 
-COCOAPODS: 1.12.0
+COCOAPODS: 1.12.1

@@ -16,8 +16,6 @@ class TextViewController: ZYFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         view.backgroundColor = .white
 
         view.addSubview(textV)
@@ -26,14 +24,14 @@ class TextViewController: ZYFBaseViewController {
         textV.snp.makeConstraints { make in
             make.left.equalTo(40)
             make.top.equalTo(gk_navigationBar.snp.bottom)
-            make.width.equalTo(scale(200))
+            make.width.equalTo(zScale(200))
             make.height.greaterThanOrEqualTo(100)
         }
         
         textVB.snp.makeConstraints { make in
             make.left.equalTo(40)
             make.top.equalTo(textV.snp.bottom).offset(50)
-            make.width.equalTo(scale(200))
+            make.width.equalTo(zScale(200))
             make.height.greaterThanOrEqualTo(40)
         }
         

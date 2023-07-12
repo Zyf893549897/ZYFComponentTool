@@ -80,7 +80,7 @@ class TagCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewDataSou
         }
         clearBut.snp.makeConstraints { make in
             make.right.equalTo(-16)
-            make.width.equalTo(scale(80))
+            make.width.equalTo(zScale(80))
             make.centerY.equalTo(titleLabel.snp.centerY)
         }
         collectionView.snp.makeConstraints { make in
@@ -112,12 +112,12 @@ class TagCell: UITableViewCell, UICollectionViewDelegate,UICollectionViewDataSou
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if showMore == true{
-            return CGSize(width: ZYFTools.getWidthWithText(tagArr[safeGet: indexPath.row] ?? "", height: scale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: scale(28))
+            return CGSize(width: ZYFTools.getWidthWithText(tagArr[safeGet: indexPath.row] ?? "", height: zScale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: zScale(28))
         }else{
             if tagArr.count > minNum && minNum == indexPath.row{
-                return CGSize(width: scale(28), height: scale(28))
+                return CGSize(width: zScale(28), height: zScale(28))
             }else{
-                return CGSize(width: ZYFTools.getWidthWithText(tagArr[safeGet: indexPath.row] ?? "", height: scale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: scale(28))
+                return CGSize(width: ZYFTools.getWidthWithText(tagArr[safeGet: indexPath.row] ?? "", height: zScale(28), font: UIFont.setFontStlye(style: .Peugeot_New, scaleFontSize: 12)) + 20, height: zScale(28))
             }
         }
         

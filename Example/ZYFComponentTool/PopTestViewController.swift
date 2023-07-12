@@ -45,7 +45,7 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
         case 3:
             cell.textLabel?.text = "系统 alert 的使用"
         case 4:
-            cell.textLabel?.text = ""
+            cell.textLabel?.text = "自定义actionSheet 组件"
         case 5:
             cell.textLabel?.text = ""
         case 6:
@@ -72,7 +72,7 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
             pop.cj_showInAppWindowAnimation()
             break
         case 2:
-            let pop = UIView.init(frame: CGRect(x: 0, y: 0, width: scale(278), height: scale(231)))
+            let pop = UIView.init(frame: CGRect(x: 0, y: 0, width: zScale(278), height: zScale(231)))
             pop.backgroundColor = .red
             let rootPop = LSTPopView.initWithCustomView(pop, popStyle: .scale, dismissStyle: .scale)
             rootPop?.hemStyle = .center
@@ -93,7 +93,11 @@ extension PopTestViewController: UITableViewDelegate,UITableViewDataSource{
             self.present(alertVC, animated: true)
             break
         case 4:
-            break
+            let pop = ZYFSheetView.init(titles: ["1","2","3"])
+            
+            
+            pop.show()
+            
         case 5:
             break
         case 6:

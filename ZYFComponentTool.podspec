@@ -68,6 +68,6 @@ TODO: Add long description of the pod here.
   s.dependency 'JXPagingView/Pager'
   
   s.dependency 'ZLCollectionViewFlowLayout'#瀑布流 布局
-  
+  #s.dependency 'TTGTagCollectionView' #标签
 
 end

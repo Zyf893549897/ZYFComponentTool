@@ -35,45 +35,45 @@ extension UIFont {
     public class func setFontStlye(style: FontStly,scaleFontSize: CGFloat) -> UIFont{
         switch style {
         case .PingFang_SC_Regular:
-            return UIFont.init(name: "PingFang-SC-Regular", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PingFang-SC-Regular", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PingFang_SC_Medium:
-            return UIFont.init(name: "PingFang-SC-Medium", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PingFang-SC-Medium", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PingFang_SC_Light:
-            return UIFont.init(name: "PingFang-SC-Light", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PingFang-SC-Light", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PingFang_SC_Semibold:
-            return UIFont.init(name: "PingFang-SC-Semibold", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PingFang-SC-Semibold", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .Peugeot_New:
-            return UIFont.init(name: "Peugeot New", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "Peugeot New", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_Black:
-            return UIFont.init(name: "PeugeotNew-Black", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-Black", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_BlackItalic:
-            return UIFont.init(name: "PeugeotNew-BlackItalic", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-BlackItalic", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_BoldItalic:
-            return UIFont.init(name: "PeugeotNew-BoldItalic", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-BoldItalic", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_Bold:
-            return UIFont.init(name: "PeugeotNew-Bold", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-Bold", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_LightItalic:
-            return UIFont.init(name: "PeugeotNew-LightItalic", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-LightItalic", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_Light:
-            return UIFont.init(name: "PeugeotNew-Light", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-Light", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_ExtraLightItalic:
-            return UIFont.init(name: "PeugeotNew-ExtraLightItalic", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-ExtraLightItalic", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_ExtraLight:
-            return UIFont.init(name: "PeugeotNew-ExtraLight", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-ExtraLight", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_Italic:
-            return UIFont.init(name: "PeugeotNew-Italic", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-Italic", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .PeugeotNew_Regular:
-            return UIFont.init(name: "PeugeotNew-Regular", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "PeugeotNew-Regular", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .FZLTHJW_GB1_0:
-            return UIFont.init(name: "FZLTHJW--GB1-0", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "FZLTHJW--GB1-0", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .FZLTXHJW_GB1_0:
-            return UIFont.init(name: "FZLTXHJW--GB1-0", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "FZLTXHJW--GB1-0", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .FZLTZHJW_GB1_0:
-            return UIFont.init(name: "FZLTZHJW--GB1-0", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "FZLTZHJW--GB1-0", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         case .FZLTDHJW_GB1_0:
-            return UIFont.init(name: "FZLTDHJW--GB1-0", size: scale(scaleFontSize)) ?? UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.init(name: "FZLTDHJW--GB1-0", size: zScale(scaleFontSize)) ?? UIFont.systemFont(ofSize: zScale(scaleFontSize))
         default:
-            return UIFont.systemFont(ofSize: scale(scaleFontSize))
+            return UIFont.systemFont(ofSize: zScale(scaleFontSize))
         }
     }
 }

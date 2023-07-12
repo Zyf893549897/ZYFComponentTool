@@ -19,7 +19,7 @@ class TagCollectionCell: UICollectionViewCell {
         return but
     }()
     func setViewsLayout(){
-        self.setLayer(scale(14), 0, .clear)
+        self.setLayer(zScale(14), 0, .clear)
         addSubview(tagBut)
         
         tagBut.snp.makeConstraints { make in

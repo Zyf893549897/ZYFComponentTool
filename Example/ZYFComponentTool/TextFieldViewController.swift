@@ -19,8 +19,8 @@ class TextFieldViewController: ZYFBaseViewController {
         view.addSubview(textField)
         
         textField.snp.makeConstraints { make in
-            make.left.equalTo(scale(10))
-            make.top.equalTo(scale(100))
+            make.left.equalTo(zScale(10))
+            make.top.equalTo(zScale(100))
             make.width.equalTo(150)
             make.height.equalTo(50)
         }

@@ -13,24 +13,22 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .white
-//        let nav = UINavigationController.rootVC(ViewController.init())// nav root 方法
+        // let nav = UINavigationController.rootVC(ViewController.init())// nav root 方法
         window?.rootViewController = RootTabBarVC.init()
         
         //全局设置   导航栏
         setupNavBar()
         
-        
-    //友盟推送  分享
+        //友盟推送  分享
         //注册友盟
         //打开加密传输
         UMConfigure.setEncryptEnabled(true)
@@ -49,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     //导航栏设置
     func setupNavBar(){
         GKNavigationBarConfigure.sharedInstance().setupCustomConfigure { configure in
@@ -66,6 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configure.gk_restoreSystemNavBar = true
         }
     }
-
+    
 }
 

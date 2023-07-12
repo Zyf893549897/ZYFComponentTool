@@ -11,7 +11,6 @@ import ZYFComponentTool
 class ViewController: ZYFBaseViewController {
     var tableView: UITableView?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,10 +23,7 @@ class ViewController: ZYFBaseViewController {
             make.left.right.bottom.equalTo(0)
         }
     }
-    
-    
-   
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -75,6 +71,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             cell.textLabel?.text = "限制输入的 textfiled"
         case 16:
             cell.textLabel?.text = "图片的放大展示 类似 微信"
+        case 17:
+            cell.textLabel?.text = "标签选择"
         default:
             break
         }
@@ -135,6 +133,8 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
             zyf_pushVC(vc: TextFieldViewController.init(), animated: true)
         case 16:
             zyf_pushVC(vc: ShowImageViewController.init(), animated: true)
+        case 17:
+            zyf_pushVC(vc: SelectTagViewController.init(), animated: true)
         default:
             let vc = TextViewController.init()
             vc.hidesBottomBarWhenPushed = true

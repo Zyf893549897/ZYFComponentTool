@@ -69,7 +69,7 @@ public extension UIScrollView{
         self.mj_footer?.mj_h = 0
         
 
-        noDataView = NoDataView.init(frame: CGRect(x: 0, y: 0, width: ZYFScreenWidth, height: scale(190)))
+        noDataView = NoDataView.init(frame: CGRect(x: 0, y: 0, width: ZYFScreenWidth, height: zScale(190)))
         self.emptyView = LYEmptyView.emptyView(withCustomView: noDataView)
         self.emptyView?.autoShowEmptyView = true
         self.ly_emptyView = emptyView

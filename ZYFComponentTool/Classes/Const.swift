@@ -76,7 +76,7 @@ public let ZYFviewHeigt_nav = ZYFScreenHeight-ZYF_NavHeight
 let ZYFColor_Random = UIColor.ColorRandomColor()
 
 //尺寸适配
-public func scale(_ size: CGFloat) -> CGFloat {
+public func zScale(_ size: CGFloat) -> CGFloat {
     return ceil(size * ZYFScreenWidth / 375.0)
 }
 //字体适配

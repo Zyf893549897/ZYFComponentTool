@@ -18,7 +18,7 @@ class JxPageRootViewController: ZYFBaseViewController {
         super.viewDidLoad()
 
         //titileView
-        categoryView=JXCategoryTitleView.init(frame: CGRect(x: 0, y: ZYF_NavHeight, width: ZYFScreenWidth, height: scale(43)))
+        categoryView=JXCategoryTitleView.init(frame: CGRect(x: 0, y: ZYF_NavHeight, width: ZYFScreenWidth, height: zScale(43)))
         categoryView?.backgroundColor = .blue
         categoryView?.titles = titleArr
         categoryView?.isTitleLabelZoomEnabled = true
@@ -33,7 +33,7 @@ class JxPageRootViewController: ZYFBaseViewController {
         //指示器
         let lineView = JXCategoryIndicatorLineView.init()
         lineView.indicatorColor = .red
-        lineView.indicatorWidth = scale(40)
+        lineView.indicatorWidth = zScale(40)
         categoryView?.indicators = [lineView]
         //容器控制器
         listContainerView = JXCategoryListContainerView.init(type: .scrollView, delegate: self)

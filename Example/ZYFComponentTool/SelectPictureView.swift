@@ -14,8 +14,8 @@ class SelectImageView: UIView {
     
     @objc var index: IndexPath?
     
-    @objc var cellWidth = scale(90)
-    @objc var cellhight = scale(90)
+    @objc var cellWidth = zScale(90)
+    @objc var cellhight = zScale(90)
     
     @objc var picArr: Array<Any>?{
         didSet{

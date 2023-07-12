@@ -151,7 +151,7 @@ class ImageCollectionCell: UICollectionViewCell {
         }
         chaBut.snp.makeConstraints { make in
             make.top.right.equalTo(0)
-            make.width.height.equalTo(scale(15))
+            make.width.height.equalTo(zScale(15))
         }
     }
     

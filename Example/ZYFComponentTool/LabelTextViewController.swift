@@ -18,7 +18,6 @@ class LabelTextViewController: ZYFBaseViewController {
             make.left.equalTo(50)
             make.top.equalTo(200)
             make.width.equalTo(200)
-            
         }
         
         //lable  字体颜色
@@ -29,10 +28,7 @@ class LabelTextViewController: ZYFBaseViewController {
             print("====\(lab)===\(str)===\(range)===\(indx)")
         }
         
-        
         //可折叠的  lable
-        
-        
         zelabel.setAttrText(attr: "lable功能啊海口市大富科技\n啊哈        上岛咖啡哈克斯答复哈可视电话lable功能啊海口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话l\n\n\nable功能啊海\n\n\n\n\n口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话lable功能啊海口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话lable功能啊海口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话lable功能啊海口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话lable功能啊海口市大富科技啊哈上岛咖啡哈克斯答复哈可视电话", showAll: false, isAttstr: false) {[weak self] isze in
             self?.zelabel.numberOfLines = isze == true ? 0:4
         }

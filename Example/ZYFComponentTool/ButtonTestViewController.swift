@@ -20,7 +20,6 @@ class ButtonTestViewController: ZYFBaseViewController {
             make.width.height.equalTo(100)
         }
         
-        
     }
     
     lazy var but: UIButton={

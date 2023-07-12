@@ -55,14 +55,14 @@ class ZYFSearchView: UIView,UITextFieldDelegate {
     func setViewsLayout(){
         
         self.snp.makeConstraints { make in
-            make.width.equalTo(ZYFScreenWidth-scale(70))
+            make.width.equalTo(ZYFScreenWidth-zScale(70))
             make.height.equalTo(30)
         }//这段代码是因为  这个  view 本身放在nav上的 缘故    即 navTitleView = self 的缘故   如增加该布局
         
         
         searchImageView.snp.makeConstraints { make in
             make.left.equalTo(15)
-            make.width.height.equalTo(scale(15))
+            make.width.height.equalTo(zScale(15))
             make.centerY.equalTo(self.snp.centerY)
         }
         textfiled.snp.makeConstraints { make in
