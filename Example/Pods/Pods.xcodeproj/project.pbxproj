@@ -1332,6 +1332,7 @@
 		E7035A074129575E62A0136DD93D8E8F /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DFECCABE20072CC8579F0C35E4A6C9 /* DateTransform.swift */; };
 		E710A550162879CE918FC411CF567789 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86908A594358239919F3BF886A5BE4C0 /* Logger.swift */; };
 		E7293F812A5E8B50005C6013 /* UIButton+ZYFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7293F802A5E8B50005C6013 /* UIButton+ZYFExtension.swift */; };
+		E7293F852A5E955D005C6013 /* UIScrollView+ZYFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7293F842A5E955D005C6013 /* UIScrollView+ZYFExtension.swift */; };
 		E739A6DC63B5DC1EB6A3917484A32EAC /* AsMaybe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36B9B0938944E7113B47A3930E2A38 /* AsMaybe.swift */; };
 		E7D844D3BC5957FD863DF4E10A7BE3C6 /* LSTTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E9E1E3B7A4A701F1BA3BC979DDEFCE4 /* LSTTimer.m */; };
 		E7E51C82D9FB5D9654346BD72ED1C5B3 /* ZLCollectionViewBackgroundViewLayoutAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B98CB5812200225851180C8ED083E36 /* ZLCollectionViewBackgroundViewLayoutAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -3323,6 +3324,7 @@
 		E685669C523A067BE08940D386D1659C /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
 		E714375D580644F7CBEAD7977AC292C9 /* TimeTool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TimeTool.swift; sourceTree = "<group>"; };
 		E7293F802A5E8B50005C6013 /* UIButton+ZYFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ZYFExtension.swift"; sourceTree = "<group>"; };
+		E7293F842A5E955D005C6013 /* UIScrollView+ZYFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ZYFExtension.swift"; path = "../Category/UIScrollView+ZYFExtension.swift"; sourceTree = "<group>"; };
 		E765801ABA45E724505212DDB4D233F7 /* RxTabBarControllerDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxTabBarControllerDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxTabBarControllerDelegateProxy.swift; sourceTree = "<group>"; };
 		E76D54AB5F9852B9F54DEE34FA2A17FB /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		E7C8ADE6642E95A6ED6BDAE268A42A8A /* RxPickerViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxPickerViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxPickerViewDataSourceProxy.swift; sourceTree = "<group>"; };
@@ -5056,6 +5058,7 @@
 				D176632EAF6BDE4186B7BFD969C43110 /* Table+Extension.swift */,
 				C5F7AC076395099CCA5DFB9EA8942CF8 /* UIScrollView+RefreshNodataExtension.h */,
 				FE0C18612D9C13A68A18951D31BE4283 /* UIScrollView+RefreshNodataExtension.m */,
+				E7293F842A5E955D005C6013 /* UIScrollView+ZYFExtension.swift */,
 				E49809123F38FF5A9BE0D67988AD67FC /* ZYFCustomFootRefresh.h */,
 				71A5A5DA51F21B9B1F1B78295EFFD4F2 /* ZYFCustomFootRefresh.m */,
 				502012241E30AE8FFB6D485B095B718B /* ZYFFoldLabel.swift */,
@@ -8210,6 +8213,7 @@
 				C479ECA001C95D45723497D49D05002D /* RestrictedInputTextField.m in Sources */,
 				805770AC0621DF96767F8C541D066FA0 /* Table+Extension.swift in Sources */,
 				E7293F812A5E8B50005C6013 /* UIButton+ZYFExtension.swift in Sources */,
+				E7293F852A5E955D005C6013 /* UIScrollView+ZYFExtension.swift in Sources */,
 				805770AC0621DF96767F8C541D066FA0 /* Table+Extension.swift in Sources */,
 				215F4053E21C7A19D88A4D035B2AB0C3 /* TimeTool.swift in Sources */,
 				C1630B5D72D71132C1ABF216D9BE2F7C /* Tools.swift in Sources */,

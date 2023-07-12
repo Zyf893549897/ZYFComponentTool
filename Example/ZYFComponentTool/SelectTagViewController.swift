@@ -13,18 +13,28 @@ class SelectTagViewController: ZYFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.addSubview(creatTableView(style: .grouped))
+        baseTableView?.delegate = self
+        baseTableView?.dataSource = self
+        baseTableView?.register(HXTagSelectCell.self)
+        baseTableView?.snp.makeConstraints { make in
+            make.top.equalTo(gk_navigationBar.snp.bottom)
+            make.left.right.bottom.equalTo(0)
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+}
+extension SelectTagViewController: UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
-
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(HXTagSelectCell.self)
+        cell.setViewsMes()
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+       
+    }
 }

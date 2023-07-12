@@ -62,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             configure.gk_navItemLeftSpace = 0.0
             configure.gk_navItemRightSpace = 5.0
             configure.gk_restoreSystemNavBar = true
+            configure.lineHidden = true // 隐藏分割线
         }
     }
     
