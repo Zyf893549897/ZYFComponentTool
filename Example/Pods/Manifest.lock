@@ -48,6 +48,7 @@ PODS:
     - SDWebImage/Core (= 5.15.5)
   - SDWebImage/Core (5.15.5)
   - SnapKit (5.6.0)
+  - SwiftyUserDefaults (5.3.0)
   - TTGTagCollectionView (2.4.2)
   - UMCCommonLog (2.0.2)
   - UMCommon (7.3.8):
@@ -87,11 +88,12 @@ PODS:
     - RxCocoa
     - RxSwift
     - SnapKit
+    - SwiftyUserDefaults
+    - TTGTagCollectionView
     - YYKit
     - ZLCollectionViewFlowLayout
 
 DEPENDENCIES:
-  - TTGTagCollectionView
   - UMCCommonLog
   - UMCommon
   - UMDevice
@@ -100,7 +102,7 @@ DEPENDENCIES:
   - ZYFComponentTool (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - AxcAE_TabBar
     - FSPagerView
     - GKNavigationBar
@@ -120,9 +122,9 @@ SPEC REPOS:
     - MJRefresh
     - RxCocoa
     - RxRelay
-    - RxSwift
     - SDWebImage
     - SnapKit
+    - SwiftyUserDefaults
     - TTGTagCollectionView
     - UMCCommonLog
     - UMCommon
@@ -131,6 +133,9 @@ SPEC REPOS:
     - UMShare
     - YYKit
     - ZLCollectionViewFlowLayout
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - RxSwift
+    - SDWebImage
 
 EXTERNAL SOURCES:
   ZYFComponentTool:
@@ -159,6 +164,7 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SDWebImage: fd7e1a22f00303e058058278639bf6196ee431fe
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
   TTGTagCollectionView: 0d4625aaf7ee3ad755c39d549368a4ce69bd17d1
   UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
   UMCommon: fdb5bac9e7ec2aca4f9cfc0febf414b59ed302cb
@@ -167,8 +173,8 @@ SPEC CHECKSUMS:
   UMShare: 8a1030a9793941d1129a82d5bc02cd97df5ae210
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
   ZLCollectionViewFlowLayout: c99024652ce9f0c57d33ab53052c9b85e4a936b7
-  ZYFComponentTool: 7dc85a243b72ca53cd843785ac14a3576d237d87
+  ZYFComponentTool: 8a35f72ecd26e45e6e1b44c80bac805e856c0654
 
-PODFILE CHECKSUM: f8c1d06d15c154d2166188e8b96b82a841882e2a
+PODFILE CHECKSUM: 68f9ef870945a5f54b66f17b22370d884af05258
 
 COCOAPODS: 1.12.1

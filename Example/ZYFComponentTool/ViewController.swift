@@ -56,7 +56,7 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         case 8:
             cell.textLabel?.text = "图片选择  图片展示 封装"
         case 9:
-            cell.textLabel?.text = "存储数据模型  如 用户信息   首页数据缓存等"
+            cell.textLabel?.text = "存储数据模型  数据缓存 Defaults的使用"
         case 10:
             cell.textLabel?.text = "搜索历史 标签"
         case 11:

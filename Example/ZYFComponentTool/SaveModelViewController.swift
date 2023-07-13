@@ -8,6 +8,7 @@
 
 import UIKit
 import YYKit
+import SwiftyUserDefaults
 class SaveModelViewController: ZYFBaseViewController {
     var model = UserModel.init()
     override func viewDidLoad() {
@@ -29,6 +30,12 @@ class SaveModelViewController: ZYFBaseViewController {
     
         
         print("====\(model.modelToJSONObject() as? NSDictionary)")
+        
+        
+        print("=======aaaaa=====\(Defaults.testdefaults)======\(Defaults.teststr)")
+        // Defaults 存储数据
+        Defaults.testdefaults = true
+        Defaults.teststr = "zyf"
     }
     
     
