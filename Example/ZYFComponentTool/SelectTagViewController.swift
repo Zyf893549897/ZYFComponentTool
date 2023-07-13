@@ -10,6 +10,10 @@ import UIKit
 
 class SelectTagViewController: ZYFBaseViewController {
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        gk_navigationBar.isHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,7 +1,7 @@
 use_frameworks!
 use_modular_headers!
 platform :ios, '11.0'
-
+source 'https://github.com/CocoaPods/Specs.git'
 target 'ZYFComponentTool_Example' do
   pod 'ZYFComponentTool', :path => '../'
   # 友盟基础组件   推送分享都要集成这2个
@@ -14,8 +14,6 @@ target 'ZYFComponentTool_Example' do
   pod 'UMShare/Social/WeChat'
   #pod 'UMShare/Social/QQ' qq分享
   #pod 'UMShare/Social/Sina' 微博分享
-  
-  pod 'TTGTagCollectionView'
   
   target 'ZYFComponentTool_Tests' do
     inherit! :search_paths
