@@ -10,6 +10,8 @@ import UIKit
 
 class RxViewController: ZYFBaseViewController {
     var disposeBag = DisposeBag()
+    
+    var touxiang = BehaviorRelay<String>(value: "") // self?.touxiang.accept("Hello")
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -48,6 +50,24 @@ class RxViewController: ZYFBaseViewController {
             make.width.equalTo(150)
             make.height.equalTo(50)
         }
+        
+        let mesStrValid = touxiang
+            .map { !$0.isEmpty }
+        mesStrValid.bind(to: fabuBut.rx.isEnabled)
+            .disposed(by: disposeBag)
+        // 绑定 条件
+        mesStrValid.subscribe {[weak self] event in
+            if case let .next(isok) = event {
+                if isok == false {
+                    self?.fabuBut.backgroundColor = hx_D9D9D9
+                    self?.fabuBut.isEnabled = false
+                } else {
+                    self?.fabuBut.backgroundColor = hx_5EAEFF
+                    self?.fabuBut.isEnabled = true
+                }
+            }
+
+        }.disposed(by: disposeBag)
         
         
         //rx 的简单使用
